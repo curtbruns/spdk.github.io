@@ -1,6 +1,6 @@
 var files_dup =
 [
-    [ "accel_engine.h", "accel__engine_8h.html", "accel__engine_8h" ],
+    [ "accel.h", "accel_8h.html", "accel_8h" ],
     [ "assert.h", "assert_8h.html", "assert_8h" ],
     [ "barrier.h", "barrier_8h.html", "barrier_8h" ],
     [ "base64.h", "base64_8h.html", "base64_8h" ],
@@ -17,6 +17,7 @@ var files_dup =
     [ "cpuset.h", "cpuset_8h.html", "cpuset_8h" ],
     [ "crc16.h", "crc16_8h.html", "crc16_8h" ],
     [ "crc32.h", "crc32_8h.html", "crc32_8h" ],
+    [ "dma.h", "dma_8h.html", "dma_8h" ],
     [ "endian.h", "endian_8h.html", "endian_8h" ],
     [ "env.h", "env_8h.html", "env_8h" ],
     [ "env_dpdk.h", "env__dpdk_8h.html", "env__dpdk_8h" ],
@@ -27,6 +28,8 @@ var files_dup =
     [ "gpt_spec.h", "gpt__spec_8h.html", "gpt__spec_8h" ],
     [ "histogram_data.h", "histogram__data_8h.html", "histogram__data_8h" ],
     [ "idxd.h", "idxd_8h.html", "idxd_8h" ],
+    [ "idxd_spec.h", "idxd__spec_8h.html", "idxd__spec_8h" ],
+    [ "init.h", "init_8h.html", "init_8h" ],
     [ "ioat.h", "ioat_8h.html", "ioat_8h" ],
     [ "ioat_spec.h", "ioat__spec_8h.html", "ioat__spec_8h" ],
     [ "iscsi_spec.h", "iscsi__spec_8h.html", "iscsi__spec_8h" ],
@@ -37,7 +40,6 @@ var files_dup =
     [ "lvol.h", "lvol_8h.html", "lvol_8h" ],
     [ "mmio.h", "mmio_8h.html", "mmio_8h" ],
     [ "nbd.h", "nbd_8h.html", "nbd_8h" ],
-    [ "net.h", "net_8h.html", "net_8h" ],
     [ "nvme.h", "nvme_8h.html", "nvme_8h" ],
     [ "nvme_intel.h", "nvme__intel_8h.html", "nvme__intel_8h" ],
     [ "nvme_ocssd.h", "nvme__ocssd_8h.html", "nvme__ocssd_8h" ],
@@ -57,9 +59,12 @@ var files_dup =
     [ "string.h", "string_8h.html", "string_8h" ],
     [ "thread.h", "thread_8h.html", "thread_8h" ],
     [ "trace.h", "trace_8h.html", "trace_8h" ],
+    [ "trace_parser.h", "trace__parser_8h.html", "trace__parser_8h" ],
     [ "util.h", "util_8h.html", "util_8h" ],
     [ "uuid.h", "uuid_8h.html", "uuid_8h" ],
     [ "version.h", "version_8h.html", "version_8h" ],
     [ "vhost.h", "vhost_8h.html", "vhost_8h" ],
-    [ "vmd.h", "vmd_8h.html", "vmd_8h" ]
+    [ "vmd.h", "vmd_8h.html", "vmd_8h" ],
+    [ "xor.h", "xor_8h.html", "xor_8h" ],
+    [ "zipf.h", "zipf_8h.html", "zipf_8h" ]
 ];

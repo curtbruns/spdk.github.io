@@ -30,11 +30,12 @@ SPDK CVE流程设计得简单而有效。此过程旨在确保有效处理安全
 
 CVE小组成员联系方式：
 
-* Felipe Francosi, felipe@nutanix.com
 * Jim Harris, james.r.harris@intel.com
+* John Levon, john.levon@nutanix.com
 * Changpeng Liu, changpeng.liu@intel.com
 * Paul Luse, paul.e.luse@intel.com
-* Shuhei Matsumoto, shuhei.matsumoto.xt@hitachi.com
+* Alexey Marchuk, alexeymar@nvidia.com
+* Shuhei Matsumoto, smatsumoto@nvidia.com
 * Ben Walker, benjamin.walker@intel.com
 * Anna Wan, qun.wan@intel.com
 * Tomek Zawadzki, tomasz.zawadzki@intel.com

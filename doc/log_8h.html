@@ -1,102 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.9.1" />
   <title>SPDK: log.h File Reference</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/doxyboot.js"></script>
+  <script type="text/javascript" src="./navtree.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.9.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Search');
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('log_8h.html','');});
+$(document).ready(function(){initNavTree('log_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -166,44 +110,52 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_DEBUGLOG_FLAG_ENABLED</b>(name)&#160;&#160;&#160;false</td></tr>
 <tr class="separator:a708ac484a189572de867c299fcbbe5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dcd04f102bfd52627f41e43123bc916"><td class="memItemLeft" align="right" valign="top"><a id="a4dcd04f102bfd52627f41e43123bc916"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NOTICELOG</b>(...)&#160;&#160;&#160;<a class="el" href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">spdk_log</a>(SPDK_LOG_NOTICE, __FILE__, __LINE__, __func__, __VA_ARGS__)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NOTICELOG</b>(...)&#160;&#160;&#160;	<a class="el" href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">spdk_log</a>(SPDK_LOG_NOTICE, __FILE__, __LINE__, __func__, __VA_ARGS__)</td></tr>
 <tr class="separator:a4dcd04f102bfd52627f41e43123bc916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe2c8e734e26212d5aa718ef8de9d7e1"><td class="memItemLeft" align="right" valign="top"><a id="abe2c8e734e26212d5aa718ef8de9d7e1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_WARNLOG</b>(...)&#160;&#160;&#160;<a class="el" href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">spdk_log</a>(SPDK_LOG_WARN, __FILE__, __LINE__, __func__, __VA_ARGS__)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_WARNLOG</b>(...)&#160;&#160;&#160;	<a class="el" href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">spdk_log</a>(SPDK_LOG_WARN, __FILE__, __LINE__, __func__, __VA_ARGS__)</td></tr>
 <tr class="separator:abe2c8e734e26212d5aa718ef8de9d7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b7bfeecff42b840ca5ebd25ffa84439"><td class="memItemLeft" align="right" valign="top"><a id="a6b7bfeecff42b840ca5ebd25ffa84439"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_ERRLOG</b>(...)&#160;&#160;&#160;<a class="el" href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">spdk_log</a>(SPDK_LOG_ERROR, __FILE__, __LINE__, __func__, __VA_ARGS__)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_ERRLOG</b>(...)&#160;&#160;&#160;	<a class="el" href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">spdk_log</a>(SPDK_LOG_ERROR, __FILE__, __LINE__, __func__, __VA_ARGS__)</td></tr>
 <tr class="separator:a6b7bfeecff42b840ca5ebd25ffa84439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a013363047e6662f5353b8bffe1c079e6"><td class="memItemLeft" align="right" valign="top"><a id="a013363047e6662f5353b8bffe1c079e6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_PRINTF</b>(...)&#160;&#160;&#160;<a class="el" href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">spdk_log</a>(SPDK_LOG_NOTICE, NULL, -1, NULL, __VA_ARGS__)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_PRINTF</b>(...)&#160;&#160;&#160;	<a class="el" href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">spdk_log</a>(SPDK_LOG_NOTICE, NULL, -1, NULL, __VA_ARGS__)</td></tr>
 <tr class="separator:a013363047e6662f5353b8bffe1c079e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a006f81539904967c51f6a26f93d908be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_INFOLOG</b>(FLAG, ...)</td></tr>
-<tr class="separator:a006f81539904967c51f6a26f93d908be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a136fe1debefd25c3d6bb7187574246"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_INFOLOG</b>(flag, ...)</td></tr>
+<tr class="separator:a1a136fe1debefd25c3d6bb7187574246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae38b49633346c10edf505c9ec5a11af6"><td class="memItemLeft" align="right" valign="top"><a id="ae38b49633346c10edf505c9ec5a11af6"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_DEBUGLOG</b>(...)&#160;&#160;&#160;do { } while (0)</td></tr>
 <tr class="separator:ae38b49633346c10edf505c9ec5a11af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec36027084c167aa798f9f4cb33e639a"><td class="memItemLeft" align="right" valign="top"><a id="aec36027084c167aa798f9f4cb33e639a"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_LOGDUMP</b>(...)&#160;&#160;&#160;do { } while (0)</td></tr>
 <tr class="separator:aec36027084c167aa798f9f4cb33e639a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78b00284a14bd0963fcad2585fd090b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_LOG_REGISTER_COMPONENT</b>(FLAG)</td></tr>
-<tr class="separator:a78b00284a14bd0963fcad2585fd090b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed8136c54966c7c51db4f4a23406b1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_LOG_REGISTER_COMPONENT</b>(flag)</td></tr>
+<tr class="separator:abed8136c54966c7c51db4f4a23406b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d88ec475315724fb95eebdbcf9af8be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_LOG_DEPRECATION_REGISTER</b>(tag,  desc,  release,  rate)</td></tr>
+<tr class="separator:a4d88ec475315724fb95eebdbcf9af8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4d41a3d3b3603f0f1a097272ac800c"><td class="memItemLeft" align="right" valign="top"><a id="ade4d41a3d3b3603f0f1a097272ac800c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_LOG_DEPRECATED</b>(tag)&#160;&#160;&#160;	<a class="el" href="log_8h.html#a7dabb4fb99a730367b2b3a49ca6bc2e3">spdk_log_deprecated</a>(_deprecated_##tag, __FILE__, __LINE__, __func__)</td></tr>
+<tr class="separator:ade4d41a3d3b3603f0f1a097272ac800c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a759e79a44bb8dd5733e81c7d213fd730"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a759e79a44bb8dd5733e81c7d213fd730">logfunc</a>(int level, const char *file, const int line, const char *func, const char *format, va_list args)</td></tr>
-<tr class="memdesc:a759e79a44bb8dd5733e81c7d213fd730"><td class="mdescLeft">&#160;</td><td class="mdescRight">for passing user-provided log call  <a href="#a759e79a44bb8dd5733e81c7d213fd730">More...</a><br /></td></tr>
+<tr class="memdesc:a759e79a44bb8dd5733e81c7d213fd730"><td class="mdescLeft">&#160;</td><td class="mdescRight">for passing user-provided log call  <a href="log_8h.html#a759e79a44bb8dd5733e81c7d213fd730">More...</a><br /></td></tr>
 <tr class="separator:a759e79a44bb8dd5733e81c7d213fd730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1578d0b093538b785898654350f8f63"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ac1578d0b093538b785898654350f8f63">spdk_log_for_each_deprecation_fn</a>) (void *ctx, struct spdk_deprecation *deprecation)</td></tr>
+<tr class="memdesc:ac1578d0b093538b785898654350f8f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for <a class="el" href="log_8h.html#a00b13eb13638a39aa9e67e51c0b25e0e" title="Iterate over all deprecations, calling a callback on each of them.">spdk_log_for_each_deprecation()</a>.  <a href="log_8h.html#ac1578d0b093538b785898654350f8f63">More...</a><br /></td></tr>
+<tr class="separator:ac1578d0b093538b785898654350f8f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a188d351bd05093cba1d8594ee9988efd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a> { <br />
-&#160;&#160;<a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efdaaaf05c57678e124375f03976b68940eb">SPDK_LOG_DISABLED</a> = -1, 
-<b>SPDK_LOG_ERROR</b>, 
-<b>SPDK_LOG_WARN</b>, 
-<b>SPDK_LOG_NOTICE</b>, 
-<br />
-&#160;&#160;<b>SPDK_LOG_INFO</b>, 
-<b>SPDK_LOG_DEBUG</b>
+&#160;&#160;<a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efdaaaf05c57678e124375f03976b68940eb">SPDK_LOG_DISABLED</a> = -1
+, <b>SPDK_LOG_ERROR</b>
+, <b>SPDK_LOG_WARN</b>
+, <b>SPDK_LOG_NOTICE</b>
+, <br />
+&#160;&#160;<b>SPDK_LOG_INFO</b>
+, <b>SPDK_LOG_DEBUG</b>
 <br />
  }</td></tr>
 <tr class="separator:a188d351bd05093cba1d8594ee9988efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,63 +163,87 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a07465f114306f6d593ad4d3626b44b05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a07465f114306f6d593ad4d3626b44b05">spdk_log_open</a> (<a class="el" href="log_8h.html#a759e79a44bb8dd5733e81c7d213fd730">logfunc</a> *logf)</td></tr>
-<tr class="memdesc:a07465f114306f6d593ad4d3626b44b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the logging module.  <a href="#a07465f114306f6d593ad4d3626b44b05">More...</a><br /></td></tr>
+<tr class="memdesc:a07465f114306f6d593ad4d3626b44b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the logging module.  <a href="log_8h.html#a07465f114306f6d593ad4d3626b44b05">More...</a><br /></td></tr>
 <tr class="separator:a07465f114306f6d593ad4d3626b44b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41cdc17423a58c475fa785fd491f00e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a41cdc17423a58c475fa785fd491f00e9">spdk_log_close</a> (void)</td></tr>
-<tr class="memdesc:a41cdc17423a58c475fa785fd491f00e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the currently active log.  <a href="#a41cdc17423a58c475fa785fd491f00e9">More...</a><br /></td></tr>
+<tr class="memdesc:a41cdc17423a58c475fa785fd491f00e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the currently active log.  <a href="log_8h.html#a41cdc17423a58c475fa785fd491f00e9">More...</a><br /></td></tr>
 <tr class="separator:a41cdc17423a58c475fa785fd491f00e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add982626769fe03db599037b3357f730"><td class="memItemLeft" align="right" valign="top"><a id="add982626769fe03db599037b3357f730"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#add982626769fe03db599037b3357f730">spdk_log_enable_timestamps</a> (bool value)</td></tr>
 <tr class="memdesc:add982626769fe03db599037b3357f730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable timestamps. <br /></td></tr>
 <tr class="separator:add982626769fe03db599037b3357f730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a422b7a65819b43157a4771be78f544ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a422b7a65819b43157a4771be78f544ee">spdk_log_set_level</a> (enum <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a> level)</td></tr>
-<tr class="memdesc:a422b7a65819b43157a4771be78f544ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the log level threshold to log messages.  <a href="#a422b7a65819b43157a4771be78f544ee">More...</a><br /></td></tr>
+<tr class="memdesc:a422b7a65819b43157a4771be78f544ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the log level threshold to log messages.  <a href="log_8h.html#a422b7a65819b43157a4771be78f544ee">More...</a><br /></td></tr>
 <tr class="separator:a422b7a65819b43157a4771be78f544ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af600090b2a4aa95b4e9e4dae27bf6c7e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e">spdk_log_get_level</a> (void)</td></tr>
-<tr class="memdesc:af600090b2a4aa95b4e9e4dae27bf6c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current log level threshold.  <a href="#af600090b2a4aa95b4e9e4dae27bf6c7e">More...</a><br /></td></tr>
+<tr class="memdesc:af600090b2a4aa95b4e9e4dae27bf6c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current log level threshold.  <a href="log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e">More...</a><br /></td></tr>
 <tr class="separator:af600090b2a4aa95b4e9e4dae27bf6c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcae2250cdee22db5149c55a7c9f1e89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#adcae2250cdee22db5149c55a7c9f1e89">spdk_log_to_syslog_level</a> (enum <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a> level)</td></tr>
+<tr class="memdesc:adcae2250cdee22db5149c55a7c9f1e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get syslog level based on SPDK current log level threshold.  <a href="log_8h.html#adcae2250cdee22db5149c55a7c9f1e89">More...</a><br /></td></tr>
+<tr class="separator:adcae2250cdee22db5149c55a7c9f1e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab34f1c87d98113395ab04415dbee96d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ab34f1c87d98113395ab04415dbee96d8">spdk_log_set_print_level</a> (enum <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a> level)</td></tr>
-<tr class="memdesc:ab34f1c87d98113395ab04415dbee96d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current log level threshold for printing to stderr.  <a href="#ab34f1c87d98113395ab04415dbee96d8">More...</a><br /></td></tr>
+<tr class="memdesc:ab34f1c87d98113395ab04415dbee96d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current log level threshold for printing to stderr.  <a href="log_8h.html#ab34f1c87d98113395ab04415dbee96d8">More...</a><br /></td></tr>
 <tr class="separator:ab34f1c87d98113395ab04415dbee96d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a880b1e27d71328429dbf4f65e02ff145"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a880b1e27d71328429dbf4f65e02ff145">spdk_log_get_print_level</a> (void)</td></tr>
-<tr class="memdesc:a880b1e27d71328429dbf4f65e02ff145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current log level print threshold.  <a href="#a880b1e27d71328429dbf4f65e02ff145">More...</a><br /></td></tr>
+<tr class="memdesc:a880b1e27d71328429dbf4f65e02ff145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current log level print threshold.  <a href="log_8h.html#a880b1e27d71328429dbf4f65e02ff145">More...</a><br /></td></tr>
 <tr class="separator:a880b1e27d71328429dbf4f65e02ff145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa20a1f56503b0d9f16c82b451fb338b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">spdk_log</a> (enum <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a> level, const char *file, const int line, const char *func, const char *format,...)</td></tr>
-<tr class="memdesc:aaa20a1f56503b0d9f16c82b451fb338b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write messages to the log file.  <a href="#aaa20a1f56503b0d9f16c82b451fb338b">More...</a><br /></td></tr>
+<tr class="memdesc:aaa20a1f56503b0d9f16c82b451fb338b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write messages to the log file.  <a href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">More...</a><br /></td></tr>
 <tr class="separator:aaa20a1f56503b0d9f16c82b451fb338b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7a0943ae8fc36d9749bebd96a97fc21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ae7a0943ae8fc36d9749bebd96a97fc21">spdk_vlog</a> (enum <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a> level, const char *file, const int line, const char *func, const char *format, va_list ap)</td></tr>
-<tr class="memdesc:ae7a0943ae8fc36d9749bebd96a97fc21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as spdk_log except that instead of being called with variable number of arguments it is called with an argument list as defined in stdarg.h.  <a href="#ae7a0943ae8fc36d9749bebd96a97fc21">More...</a><br /></td></tr>
+<tr class="memdesc:ae7a0943ae8fc36d9749bebd96a97fc21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as spdk_log except that instead of being called with variable number of arguments it is called with an argument list as defined in stdarg.h.  <a href="log_8h.html#ae7a0943ae8fc36d9749bebd96a97fc21">More...</a><br /></td></tr>
 <tr class="separator:ae7a0943ae8fc36d9749bebd96a97fc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad360332e6a9699cdfecdac00f768c0b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ad360332e6a9699cdfecdac00f768c0b1">spdk_log_dump</a> (FILE *fp, const char *label, const void *buf, size_t len)</td></tr>
-<tr class="memdesc:ad360332e6a9699cdfecdac00f768c0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the contents of a raw buffer to a file.  <a href="#ad360332e6a9699cdfecdac00f768c0b1">More...</a><br /></td></tr>
+<tr class="memdesc:ad360332e6a9699cdfecdac00f768c0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the contents of a raw buffer to a file.  <a href="log_8h.html#ad360332e6a9699cdfecdac00f768c0b1">More...</a><br /></td></tr>
 <tr class="separator:ad360332e6a9699cdfecdac00f768c0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50fb7357e436ac28171ba7b2f32920a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a50fb7357e436ac28171ba7b2f32920a3">spdk_log_register_flag</a> (const char *name, struct <a class="el" href="structspdk__log__flag.html">spdk_log_flag</a> *flag)</td></tr>
-<tr class="memdesc:a50fb7357e436ac28171ba7b2f32920a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a log flag.  <a href="#a50fb7357e436ac28171ba7b2f32920a3">More...</a><br /></td></tr>
+<tr class="memdesc:a50fb7357e436ac28171ba7b2f32920a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a log flag.  <a href="log_8h.html#a50fb7357e436ac28171ba7b2f32920a3">More...</a><br /></td></tr>
 <tr class="separator:a50fb7357e436ac28171ba7b2f32920a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a023176df95c75961f857891a5aa6e987"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__log__flag.html">spdk_log_flag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a023176df95c75961f857891a5aa6e987">spdk_log_get_first_flag</a> (void)</td></tr>
-<tr class="memdesc:a023176df95c75961f857891a5aa6e987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first registered log flag.  <a href="#a023176df95c75961f857891a5aa6e987">More...</a><br /></td></tr>
+<tr class="memdesc:a023176df95c75961f857891a5aa6e987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first registered log flag.  <a href="log_8h.html#a023176df95c75961f857891a5aa6e987">More...</a><br /></td></tr>
 <tr class="separator:a023176df95c75961f857891a5aa6e987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80d1557908e5d42aa110a9db432b35a0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__log__flag.html">spdk_log_flag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a80d1557908e5d42aa110a9db432b35a0">spdk_log_get_next_flag</a> (struct <a class="el" href="structspdk__log__flag.html">spdk_log_flag</a> *flag)</td></tr>
-<tr class="memdesc:a80d1557908e5d42aa110a9db432b35a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next registered log flag.  <a href="#a80d1557908e5d42aa110a9db432b35a0">More...</a><br /></td></tr>
+<tr class="memdesc:a80d1557908e5d42aa110a9db432b35a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next registered log flag.  <a href="log_8h.html#a80d1557908e5d42aa110a9db432b35a0">More...</a><br /></td></tr>
 <tr class="separator:a80d1557908e5d42aa110a9db432b35a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66ec4ca21d549ea445c7c662b3f1c637"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a66ec4ca21d549ea445c7c662b3f1c637">spdk_log_get_flag</a> (const char *flag)</td></tr>
-<tr class="memdesc:a66ec4ca21d549ea445c7c662b3f1c637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the log flag exists and is enabled.  <a href="#a66ec4ca21d549ea445c7c662b3f1c637">More...</a><br /></td></tr>
+<tr class="memdesc:a66ec4ca21d549ea445c7c662b3f1c637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the log flag exists and is enabled.  <a href="log_8h.html#a66ec4ca21d549ea445c7c662b3f1c637">More...</a><br /></td></tr>
 <tr class="separator:a66ec4ca21d549ea445c7c662b3f1c637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9419a88ede016c62feaa52fb0fed019"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#aa9419a88ede016c62feaa52fb0fed019">spdk_log_set_flag</a> (const char *flag)</td></tr>
-<tr class="memdesc:aa9419a88ede016c62feaa52fb0fed019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the log flag.  <a href="#aa9419a88ede016c62feaa52fb0fed019">More...</a><br /></td></tr>
+<tr class="memdesc:aa9419a88ede016c62feaa52fb0fed019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the log flag.  <a href="log_8h.html#aa9419a88ede016c62feaa52fb0fed019">More...</a><br /></td></tr>
 <tr class="separator:aa9419a88ede016c62feaa52fb0fed019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a253e880aa9fd469afd825d77fe9a3211"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a253e880aa9fd469afd825d77fe9a3211">spdk_log_clear_flag</a> (const char *flag)</td></tr>
-<tr class="memdesc:a253e880aa9fd469afd825d77fe9a3211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a log flag.  <a href="#a253e880aa9fd469afd825d77fe9a3211">More...</a><br /></td></tr>
+<tr class="memdesc:a253e880aa9fd469afd825d77fe9a3211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a log flag.  <a href="log_8h.html#a253e880aa9fd469afd825d77fe9a3211">More...</a><br /></td></tr>
 <tr class="separator:a253e880aa9fd469afd825d77fe9a3211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99820ac7f38f6ad187be62b3bbdb7d64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64">spdk_log_usage</a> (FILE *f, const char *log_arg)</td></tr>
-<tr class="memdesc:a99820ac7f38f6ad187be62b3bbdb7d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show all the log flags and their usage.  <a href="#a99820ac7f38f6ad187be62b3bbdb7d64">More...</a><br /></td></tr>
+<tr class="memdesc:a99820ac7f38f6ad187be62b3bbdb7d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show all the log flags and their usage.  <a href="log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64">More...</a><br /></td></tr>
 <tr class="separator:a99820ac7f38f6ad187be62b3bbdb7d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4c05a5d3c40478ff8cfc06a3acd035"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a1c4c05a5d3c40478ff8cfc06a3acd035">spdk_log_deprecation_register</a> (const char *tag, const char *description, const char *remove_release, uint32_t rate_limit_seconds, struct spdk_deprecation **reg)</td></tr>
+<tr class="memdesc:a1c4c05a5d3c40478ff8cfc06a3acd035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a deprecation.  <a href="log_8h.html#a1c4c05a5d3c40478ff8cfc06a3acd035">More...</a><br /></td></tr>
+<tr class="separator:a1c4c05a5d3c40478ff8cfc06a3acd035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dabb4fb99a730367b2b3a49ca6bc2e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a7dabb4fb99a730367b2b3a49ca6bc2e3">spdk_log_deprecated</a> (struct spdk_deprecation *deprecation, const char *file, uint32_t line, const char *func)</td></tr>
+<tr class="memdesc:a7dabb4fb99a730367b2b3a49ca6bc2e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that a deprecated feature was used.  <a href="log_8h.html#a7dabb4fb99a730367b2b3a49ca6bc2e3">More...</a><br /></td></tr>
+<tr class="separator:a7dabb4fb99a730367b2b3a49ca6bc2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b13eb13638a39aa9e67e51c0b25e0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a00b13eb13638a39aa9e67e51c0b25e0e">spdk_log_for_each_deprecation</a> (void *ctx, <a class="el" href="log_8h.html#ac1578d0b093538b785898654350f8f63">spdk_log_for_each_deprecation_fn</a> fn)</td></tr>
+<tr class="memdesc:a00b13eb13638a39aa9e67e51c0b25e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over all deprecations, calling a callback on each of them.  <a href="log_8h.html#a00b13eb13638a39aa9e67e51c0b25e0e">More...</a><br /></td></tr>
+<tr class="separator:a00b13eb13638a39aa9e67e51c0b25e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebde768fd834a3c9364b7b5a8bd479f4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#aebde768fd834a3c9364b7b5a8bd479f4">spdk_deprecation_get_tag</a> (const struct spdk_deprecation *deprecation)</td></tr>
+<tr class="memdesc:aebde768fd834a3c9364b7b5a8bd479f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a deprecation's tag.  <a href="log_8h.html#aebde768fd834a3c9364b7b5a8bd479f4">More...</a><br /></td></tr>
+<tr class="separator:aebde768fd834a3c9364b7b5a8bd479f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a203431f8adfbb3dbda3c5da21bfc9c6a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a203431f8adfbb3dbda3c5da21bfc9c6a">spdk_deprecation_get_description</a> (const struct spdk_deprecation *deprecation)</td></tr>
+<tr class="memdesc:a203431f8adfbb3dbda3c5da21bfc9c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a deprecation's description.  <a href="log_8h.html#a203431f8adfbb3dbda3c5da21bfc9c6a">More...</a><br /></td></tr>
+<tr class="separator:a203431f8adfbb3dbda3c5da21bfc9c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63883d260f21cb745432a61bfc2f5c77"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a63883d260f21cb745432a61bfc2f5c77">spdk_deprecation_get_remove_release</a> (const struct spdk_deprecation *deprecation)</td></tr>
+<tr class="memdesc:a63883d260f21cb745432a61bfc2f5c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a deprecation's planned removal release.  <a href="log_8h.html#a63883d260f21cb745432a61bfc2f5c77">More...</a><br /></td></tr>
+<tr class="separator:a63883d260f21cb745432a61bfc2f5c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc930c0e1a4696a4c489c781b1a55b02"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#afc930c0e1a4696a4c489c781b1a55b02">spdk_deprecation_get_hits</a> (const struct spdk_deprecation *deprecation)</td></tr>
+<tr class="memdesc:afc930c0e1a4696a4c489c781b1a55b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of times that a deprecation's code has been executed.  <a href="log_8h.html#afc930c0e1a4696a4c489c781b1a55b02">More...</a><br /></td></tr>
+<tr class="separator:afc930c0e1a4696a4c489c781b1a55b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logging interfaces. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a006f81539904967c51f6a26f93d908be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a006f81539904967c51f6a26f93d908be">&#9670;&nbsp;</a></span>SPDK_INFOLOG</h2>
+<a id="a1a136fe1debefd25c3d6bb7187574246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a136fe1debefd25c3d6bb7187574246">&#9670;&nbsp;</a></span>SPDK_INFOLOG</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +252,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
           <td class="memname">#define SPDK_INFOLOG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">FLAG, </td>
+          <td class="paramname">flag, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -291,12 +267,67 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                                    \</div><div class="line">                extern <span class="keyword">struct </span><a class="code" href="structspdk__log__flag.html">spdk_log_flag</a> SPDK_LOG_##FLAG;                                    \</div><div class="line">                if (SPDK_LOG_##FLAG.enabled) {                                                  \</div><div class="line">                        spdk_log(SPDK_LOG_INFO, __FILE__, __LINE__, __func__, __VA_ARGS__);     \</div><div class="line">                }                                                                               \</div><div class="line">        } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="structspdk__log__flag_html"><div class="ttname"><a href="structspdk__log__flag.html">spdk_log_flag</a></div><div class="ttdef"><b>Definition:</b> log.h:202</div></div>
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keywordflow">do</span> {                                                                                    \</div>
+<div class="line">                extern <span class="keyword">struct </span><a class="code" href="structspdk__log__flag.html">spdk_log_flag</a> SPDK_LOG_##flag;                                    \</div>
+<div class="line">                if (SPDK_LOG_##flag.enabled) {                                                  \</div>
+<div class="line">                        spdk_log(SPDK_LOG_INFO, __FILE__, __LINE__, __func__, __VA_ARGS__);     \</div>
+<div class="line">                }                                                                               \</div>
+<div class="line">        } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="astructspdk__log__flag_html"><div class="ttname"><a href="structspdk__log__flag.html">spdk_log_flag</a></div><div class="ttdef"><b>Definition:</b> log.h:183</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a78b00284a14bd0963fcad2585fd090b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78b00284a14bd0963fcad2585fd090b2">&#9670;&nbsp;</a></span>SPDK_LOG_REGISTER_COMPONENT</h2>
+<a id="a4d88ec475315724fb95eebdbcf9af8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d88ec475315724fb95eebdbcf9af8be">&#9670;&nbsp;</a></span>SPDK_LOG_DEPRECATION_REGISTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_LOG_DEPRECATION_REGISTER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tag, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">desc, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">release, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">rate&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">static</span> <span class="keyword">struct </span>spdk_deprecation *_deprecated_##tag; \</div>
+<div class="line">        static <span class="keywordtype">void</span> __attribute__((constructor)) _spdk_deprecation_register_##tag(<span class="keywordtype">void</span>) \</div>
+<div class="line">        { \</div>
+<div class="line">                int rc; \</div>
+<div class="line">                rc = <a class="code" href="log_8h.html#a1c4c05a5d3c40478ff8cfc06a3acd035">spdk_log_deprecation_register</a>(#tag, desc, release, rate, &amp;_deprecated_##tag); \</div>
+<div class="line">                (void)rc; \</div>
+<div class="line">                assert(rc == 0); \</div>
+<div class="line">        }</div>
+<div class="ttc" id="alog_8h_html_a1c4c05a5d3c40478ff8cfc06a3acd035"><div class="ttname"><a href="log_8h.html#a1c4c05a5d3c40478ff8cfc06a3acd035">spdk_log_deprecation_register</a></div><div class="ttdeci">int spdk_log_deprecation_register(const char *tag, const char *description, const char *remove_release, uint32_t rate_limit_seconds, struct spdk_deprecation **reg)</div><div class="ttdoc">Register a deprecation.</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abed8136c54966c7c51db4f4a23406b1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed8136c54966c7c51db4f4a23406b1c">&#9670;&nbsp;</a></span>SPDK_LOG_REGISTER_COMPONENT</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,12 +336,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
           <td class="memname">#define SPDK_LOG_REGISTER_COMPONENT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">FLAG</td><td>)</td>
+          <td class="paramname">flag</td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code" href="structspdk__log__flag.html">spdk_log_flag</a> SPDK_LOG_##FLAG = { \</div><div class="line">        .enabled = <span class="keyword">false</span>, \</div><div class="line">        .name = #FLAG, \</div><div class="line">}; \</div><div class="line">__attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> register_flag_##FLAG(<span class="keywordtype">void</span>) \</div><div class="line">{ \</div><div class="line">        spdk_log_register_flag(#FLAG, &amp;SPDK_LOG_##FLAG); \</div><div class="line">}</div><div class="ttc" id="structspdk__log__flag_html"><div class="ttname"><a href="structspdk__log__flag.html">spdk_log_flag</a></div><div class="ttdef"><b>Definition:</b> log.h:202</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code" href="structspdk__log__flag.html">spdk_log_flag</a> SPDK_LOG_##flag = { \</div>
+<div class="line">        .name = #flag, \</div>
+<div class="line">        .enabled = <span class="keyword">false</span>, \</div>
+<div class="line">}; \</div>
+<div class="line">__attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> register_flag_##flag(<span class="keywordtype">void</span>) \</div>
+<div class="line">{ \</div>
+<div class="line">        spdk_log_register_flag(#flag, &amp;SPDK_LOG_##flag); \</div>
+<div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -342,6 +380,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 
 </div>
 </div>
+<a id="ac1578d0b093538b785898654350f8f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1578d0b093538b785898654350f8f63">&#9670;&nbsp;</a></span>spdk_log_for_each_deprecation_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* spdk_log_for_each_deprecation_fn) (void *ctx, struct spdk_deprecation *deprecation)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function for <a class="el" href="log_8h.html#a00b13eb13638a39aa9e67e51c0b25e0e" title="Iterate over all deprecations, calling a callback on each of them.">spdk_log_for_each_deprecation()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context passed via <a class="el" href="log_8h.html#a00b13eb13638a39aa9e67e51c0b25e0e" title="Iterate over all deprecations, calling a callback on each of them.">spdk_log_for_each_deprecation()</a>. </td></tr>
+    <tr><td class="paramname">deprecation</td><td>Pointer to a deprecation structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 to continue iteration or non-zero to stop iteration. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a188d351bd05093cba1d8594ee9988efd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a188d351bd05093cba1d8594ee9988efd">&#9670;&nbsp;</a></span>spdk_log_level</h2>
@@ -362,6 +424,114 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a203431f8adfbb3dbda3c5da21bfc9c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a203431f8adfbb3dbda3c5da21bfc9c6a">&#9670;&nbsp;</a></span>spdk_deprecation_get_description()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_deprecation_get_description </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_deprecation *&#160;</td>
+          <td class="paramname"><em>deprecation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a deprecation's description. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deprecation</td><td>A pointer to an spdk_deprecation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The deprecation's description. </dd></dl>
+
+</div>
+</div>
+<a id="afc930c0e1a4696a4c489c781b1a55b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc930c0e1a4696a4c489c781b1a55b02">&#9670;&nbsp;</a></span>spdk_deprecation_get_hits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_deprecation_get_hits </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_deprecation *&#160;</td>
+          <td class="paramname"><em>deprecation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of times that a deprecation's code has been executed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deprecation</td><td>A pointer to an spdk_deprecation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The deprecation's planned removal release. </dd></dl>
+
+</div>
+</div>
+<a id="a63883d260f21cb745432a61bfc2f5c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63883d260f21cb745432a61bfc2f5c77">&#9670;&nbsp;</a></span>spdk_deprecation_get_remove_release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_deprecation_get_remove_release </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_deprecation *&#160;</td>
+          <td class="paramname"><em>deprecation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a deprecation's planned removal release. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deprecation</td><td>A pointer to an spdk_deprecation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The deprecation's planned removal release. </dd></dl>
+
+</div>
+</div>
+<a id="aebde768fd834a3c9364b7b5a8bd479f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebde768fd834a3c9364b7b5a8bd479f4">&#9670;&nbsp;</a></span>spdk_deprecation_get_tag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_deprecation_get_tag </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_deprecation *&#160;</td>
+          <td class="paramname"><em>deprecation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a deprecation's tag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deprecation</td><td>A pointer to an spdk_deprecation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The deprecation's tag. </dd></dl>
+
+</div>
+</div>
 <a id="aaa20a1f56503b0d9f16c82b451fb338b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa20a1f56503b0d9f16c82b451fb338b">&#9670;&nbsp;</a></span>spdk_log()</h2>
 
@@ -475,6 +645,118 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 
 </div>
 </div>
+<a id="a7dabb4fb99a730367b2b3a49ca6bc2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dabb4fb99a730367b2b3a49ca6bc2e3">&#9670;&nbsp;</a></span>spdk_log_deprecated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_log_deprecated </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_deprecation *&#160;</td>
+          <td class="paramname"><em>deprecation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicate that a deprecated feature was used. </p>
+<p>Most consumers will use SPDK_LOG_DEPRECATED() instead.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deprecation</td><td>The deprecated feature that was used. </td></tr>
+    <tr><td class="paramname">file</td><td>The name of the source file where the deprecated feature was used. </td></tr>
+    <tr><td class="paramname">line</td><td>The line in file where where the deprecated feature was used. </td></tr>
+    <tr><td class="paramname">func</td><td>The name of the function where where the deprecated feature was used. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1c4c05a5d3c40478ff8cfc06a3acd035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4c05a5d3c40478ff8cfc06a3acd035">&#9670;&nbsp;</a></span>spdk_log_deprecation_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_log_deprecation_register </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>remove_release</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>rate_limit_seconds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_deprecation **&#160;</td>
+          <td class="paramname"><em>reg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a deprecation. </p>
+<p>Most consumers will use SPDK_LOG_DEPRECATION_REGISTER() instead.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>A unique string that will appear in each log message and should appear in documentation. </td></tr>
+    <tr><td class="paramname">description</td><td>A descriptive string that will also be logged. </td></tr>
+    <tr><td class="paramname">rate_limit_seconds</td><td>If non-zero, log messages related to this deprecation will appear no more frequently than this interval. </td></tr>
+    <tr><td class="paramname">remove_release</td><td>The release when the deprecated support will be removed. </td></tr>
+    <tr><td class="paramname">reg</td><td>Pointer to storage for newly allocated deprecation handle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or negative errno on failure. </dd></dl>
+
+</div>
+</div>
 <a id="ad360332e6a9699cdfecdac00f768c0b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad360332e6a9699cdfecdac00f768c0b1">&#9670;&nbsp;</a></span>spdk_log_dump()</h2>
 
@@ -523,6 +805,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a00b13eb13638a39aa9e67e51c0b25e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00b13eb13638a39aa9e67e51c0b25e0e">&#9670;&nbsp;</a></span>spdk_log_for_each_deprecation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_log_for_each_deprecation </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="log_8h.html#ac1578d0b093538b785898654350f8f63">spdk_log_for_each_deprecation_fn</a>&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Iterate over all deprecations, calling a callback on each of them. </p>
+<p>Iteration will stop early if the callback function returns non-zero.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context to pass to the callback. </td></tr>
+    <tr><td class="paramname">fn</td><td>Callback function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value from the last callback called or 0 if there are no deprecations. </dd></dl>
 
 </div>
 </div>
@@ -776,6 +1097,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 
 </div>
 </div>
+<a id="adcae2250cdee22db5149c55a7c9f1e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcae2250cdee22db5149c55a7c9f1e89">&#9670;&nbsp;</a></span>spdk_log_to_syslog_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_log_to_syslog_level </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get syslog level based on SPDK current log level threshold. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>Log level threshold </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 for disable log print, otherwise is syslog level. </dd></dl>
+
+</div>
+</div>
 <a id="a99820ac7f38f6ad187be62b3bbdb7d64"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99820ac7f38f6ad187be62b3bbdb7d64">&#9670;&nbsp;</a></span>spdk_log_usage()</h2>
 
@@ -880,4 +1228,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

@@ -1,25 +1,26 @@
 /*
-@ @licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2017 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
@@ -42,10 +43,7 @@ var NAVTREE =
       [ "Capturing sufficient trace events", "nvmf_tgt_tracepoints.html#capture_trace_events", null ],
       [ "Adding New Tracepoints", "nvmf_tgt_tracepoints.html#add_tracepoints", null ]
     ] ],
-    [ "RPMs", "rpms.html", [
-      [ "In this document", "rpms.html#rpms_toc", null ],
-      [ "Building SPDK RPMs", "rpms.html#building_rpms", null ]
-    ] ],
+    [ "NVMe-oF Multipath HOWTO", "nvmf_multipath_howto.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -73,33 +71,40 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"bdev__module_8h.html#a82dd20b5702f2f97c1f8eec5cdc6d0d5",
-"changelog.html#changelog-v18-01",
-"event_8h.html#acc52e8c68c8ccec4640e14f687157afe",
-"ioat_8h.html#a8028fafacd41824b97ca6305413f16de",
-"json_8h.html#aefa0a3429cedd36596023e99801cd5c0",
-"jsonrpc_proxy.html",
-"nvme_8h.html#a9a7b5944bda3fe9ef1c83fcd2025b39a",
-"nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069",
-"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da031509ed1e58f04500dc44ca7400abb4",
-"nvme__spec_8h.html#afafa64ef6a351ad580253d99ea1b3cd0",
-"nvmf__spec_8h.html#ac41feaee8cc07a6ba31a64649274352a",
-"scsi_8h.html#ad8c6f561cb327d26f0e73a3d3c4512f5ab251db1b59b0743fb1adcc0b28814fb7",
-"scsi__spec_8h.html#aa6d2fce08711be74571bbc61f48e9cfba2d530ea8441b74a56cae1c4914bb454b",
-"structiscsi__bhs__data__out.html#aff10c2925b79ed87c160ded3b99b911b",
-"structspdk__app__opts.html#a524584177bee58d89de5808d5580d0c7",
-"structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b",
-"structspdk__ioat__pq__update__hw__desc.html#ac146197bfa1b03e2db2101769e8bbf41",
-"structspdk__nvme__ctrlr__data.html#a6edd8325d810a42cb7c8962188f3d881",
-"structspdk__nvme__ns__data.html#a0b7ddedcecbedf9c549b3bb2dc5eabd7",
-"structspdk__nvme__sanitize.html#af2c65274c5d85924c78ce5b22a3535e6",
-"structspdk__nvmf__discovery__log__page__entry.html#a46f0e3fc65ddcc162bbd6a6bc68b3183",
-"structspdk__nvmf__ns__opts.html#a4da1aada54acc633986ed373fa4a7638",
-"structspdk__opal__compacket.html#a7c92e4a560363161752a90009dab69ee",
-"structspdk__scsi__pr__in__report__capabilities__data.html#a11a0eb525a585f29b67af0e60eae9cd5",
-"thread_8h.html#a9f06d559046d570e025d6b67c7e8d507",
-"unionspdk__nvme__cmd__cdw11.html#ab9e0b50402cd5461bd71c2acd5efb4cb",
-"util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6"
+"bdev_8h.html#ad6c166f5d928c2995df57c96a2977862a5d925fc967dea1f6d58c0acf82d6ef98",
+"blob_8h.html#a9adaf62358930fae9a67fe5523d254a2",
+"env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec",
+"globals_l.html",
+"idxd__spec_8h.html#a779d8ce10ad90611e808db6366fd1a7ea4e1b235d3c4c622ff4b205ef1ab94c8e",
+"iscsi__spec_8h.html#a9cd87a034cf8d8aa42b5203460f03a12a5adc911bde4637c0962ce9b02bc637a9",
+"jsonrpc.html#rpc_bdev_nvme_set_options",
+"log_8h.html#a66ec4ca21d549ea445c7c662b3f1c637",
+"nvme_8h.html#a9d50c30580eef93831a6e473dfc00051",
+"nvme__spec_8h.html#a178a7468a0a9c3e814ca2ba80e3406e5aa4cfde69e734e39f5ab55eb04afa61cf",
+"nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20",
+"nvme__spec_8h.html#acc9a07ed2de4d98869f489f802ed9c57",
+"nvmf_8h.html#ab4e56638394d2eca067434044f61cb96",
+"nvmf_tgt_tracepoints.html#add_tracepoints",
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a6dda93786206d5b69a9b20d5b093a24b",
+"scsi__spec_8h.html#aca4b95e35566a60195e59be74e5a1218a4c626090264d533fb3b1df0f38947eaf",
+"structidxd__registers.html#aadd88a2b95feccb73286d345d965eb36",
+"structiscsi__bhs__snack__req.html#a22eb16ac816a24f65d3d0cb1ee18d82e",
+"structspdk__bdev_1_1____bdev__internal__fields.html#aac5fe7bcf1bbbf3f984874e1c75a580a",
+"structspdk__bs__dev.html#a528b038c2389cf71b6739ac37ed6e7f6",
+"structspdk__ioat__pq__hw__desc.html#affb45e4b90d28e2f07f67d037c0de5ed",
+"structspdk__nvme__cdata__oaes.html",
+"structspdk__nvme__ctrlr__opts.html#a5098ae82e7bfecd254dd31cf629ccf05",
+"structspdk__nvme__ns__cmd__ext__io__opts.html#a8737a902d42444e5d4b9117d23230ad3",
+"structspdk__nvme__reservation__notification__log.html",
+"structspdk__nvme__zns__ns__data.html#aa44e20702388419e7b0ac850259cf43f",
+"structspdk__nvmf__fc__ls__cr__conn__rqst.html",
+"structspdk__nvmf__transport__opts.html#aaf76326ff42285ca5f129d173670b9c2",
+"structspdk__reduce__backing__dev.html",
+"structspdk__sock__request_1_1____sock__request__internal.html",
+"thread_8h.html#a9df2d253885de944794d6810ff98fc4ea0008a2defd401c21f63973cacdddd73f",
+"unionidxd__wqcfg.html#a251c3a9466298e1d3295ec69d5189d63",
+"unionspdk__nvme__critical__warning__state.html#ae11d71217981c768d4d9370ad24283cd",
+"util_8h.html#a3d7841db36c180f3fcac21e2314e2ef2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

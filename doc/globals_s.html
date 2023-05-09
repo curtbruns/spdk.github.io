@@ -1,102 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.9.1" />
   <title>SPDK: Globals</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/doxyboot.js"></script>
+  <script type="text/javascript" src="./navtree.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.9.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Search');
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('globals_s.html','');});
+$(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -144,77 +88,128 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <div class="textblock">Here is a list of all documented functions, variables, defines, enums, and typedefs with links to the documentation:</div>
 
 <h3><a id="index_s"></a>- s -</h3><ul>
-<li>spdk_accel_batch_cancel()
-: <a class="el" href="accel__engine_8h.html#a0ceb1461f95fc03ed55a3029a2ec4121">accel_engine.h</a>
+<li>spdk_accel_append_copy()
+: <a class="el" href="accel_8h.html#a51ed9c807379914cef1c5eaf05a3b9f7">accel.h</a>
 </li>
-<li>spdk_accel_batch_create()
-: <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e">accel_engine.h</a>
+<li>spdk_accel_append_crc32c()
+: <a class="el" href="accel_8h.html#a378b527c7ee062af40c4aef4ea2f4cbc">accel.h</a>
 </li>
-<li>spdk_accel_batch_get_max()
-: <a class="el" href="accel__engine_8h.html#a8277ce869732641070df3fefac5e77b7">accel_engine.h</a>
+<li>spdk_accel_append_decompress()
+: <a class="el" href="accel_8h.html#af28cbbf84a76a09ad52af0f679f923c4">accel.h</a>
 </li>
-<li>spdk_accel_batch_prep_compare()
-: <a class="el" href="accel__engine_8h.html#af5363d4aaa841c2da04b7ddc3378552e">accel_engine.h</a>
+<li>spdk_accel_append_decrypt()
+: <a class="el" href="accel_8h.html#a12a6e4ce53656017f3b01f8cf98fd931">accel.h</a>
 </li>
-<li>spdk_accel_batch_prep_copy()
-: <a class="el" href="accel__engine_8h.html#a67918379417286dd1d64703c38362d0f">accel_engine.h</a>
+<li>spdk_accel_append_encrypt()
+: <a class="el" href="accel_8h.html#a009120c1e212f13b51b808e07d391bc8">accel.h</a>
 </li>
-<li>spdk_accel_batch_prep_crc32c()
-: <a class="el" href="accel__engine_8h.html#a66de1247146b452361786c91a1391c07">accel_engine.h</a>
+<li>spdk_accel_append_fill()
+: <a class="el" href="accel_8h.html#a3c286561aa9cbb54d60993fad7b5d98d">accel.h</a>
 </li>
-<li>spdk_accel_batch_prep_crc32cv()
-: <a class="el" href="accel__engine_8h.html#a7a96251cf8f864178482dd5ab2c8a45f">accel_engine.h</a>
-</li>
-<li>spdk_accel_batch_prep_dualcast()
-: <a class="el" href="accel__engine_8h.html#acc4985a99f3530a6086324e02c1062bd">accel_engine.h</a>
-</li>
-<li>spdk_accel_batch_prep_fill()
-: <a class="el" href="accel__engine_8h.html#aa32805adbe8590f186595f9c66fa87e7">accel_engine.h</a>
-</li>
-<li>spdk_accel_batch_submit()
-: <a class="el" href="accel__engine_8h.html#afc0003901c7e38a40892a64f829aee86">accel_engine.h</a>
+<li>spdk_accel_assign_opc()
+: <a class="el" href="accel_8h.html#a4d8b25b197af0a838d38e2f12151dcc8">accel.h</a>
 </li>
 <li>spdk_accel_completion_cb
-: <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">accel_engine.h</a>
+: <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">accel.h</a>
 </li>
-<li>spdk_accel_engine_finish()
-: <a class="el" href="accel__engine_8h.html#a6bf01a71e66d69942c8d22d11de7d359">accel_engine.h</a>
+<li>spdk_accel_crypto_key_create()
+: <a class="el" href="accel_8h.html#a32a6e52025120ee79e195d39d83e9147">accel.h</a>
 </li>
-<li>spdk_accel_engine_get_io_channel()
-: <a class="el" href="accel__engine_8h.html#aedef5318137c2b093932164e23c93f0c">accel_engine.h</a>
+<li>spdk_accel_crypto_key_destroy()
+: <a class="el" href="accel_8h.html#a74073c4f0af656c37f348aa3f7ee61d4">accel.h</a>
 </li>
-<li>spdk_accel_engine_initialize()
-: <a class="el" href="accel__engine_8h.html#af0ba5139fd29c095256d77f29b65a205">accel_engine.h</a>
-</li>
-<li>spdk_accel_engine_module_finish()
-: <a class="el" href="accel__engine_8h.html#a8505077f98b662aa948eef070c4be155">accel_engine.h</a>
+<li>spdk_accel_crypto_key_get()
+: <a class="el" href="accel_8h.html#a9fc519ee5307d8ed70bf909f592b1c9d">accel.h</a>
 </li>
 <li>spdk_accel_fini_cb
-: <a class="el" href="accel__engine_8h.html#a545ea1cc4167924acee2803aed824877">accel_engine.h</a>
+: <a class="el" href="accel_8h.html#a545ea1cc4167924acee2803aed824877">accel.h</a>
 </li>
-<li>spdk_accel_get_capabilities()
-: <a class="el" href="accel__engine_8h.html#a88cc170fc07d06224a37cd00d04bd2e9">accel_engine.h</a>
+<li>spdk_accel_finish()
+: <a class="el" href="accel_8h.html#a7a75cbac98c1ed584e82d0172aa0bb81">accel.h</a>
+</li>
+<li>spdk_accel_get_buf()
+: <a class="el" href="accel_8h.html#acde5803c2c3fd5f4404ab171d6820b03">accel.h</a>
+</li>
+<li>spdk_accel_get_io_channel()
+: <a class="el" href="accel_8h.html#a947dd411da094c21407afebfa6a38cdb">accel.h</a>
+</li>
+<li>spdk_accel_get_memory_domain()
+: <a class="el" href="accel_8h.html#a8c710a5549f185939caac04cb8d33bc2">accel.h</a>
+</li>
+<li>spdk_accel_get_opc_module_name()
+: <a class="el" href="accel_8h.html#ab843fd7c6bfd2db2f2997fad376f687f">accel.h</a>
+</li>
+<li>spdk_accel_get_opcode_stats()
+: <a class="el" href="accel_8h.html#ac3888c0625f9abaffa8c4f08a74dfc87">accel.h</a>
+</li>
+<li>spdk_accel_get_opts()
+: <a class="el" href="accel_8h.html#a2c90f127e644795f2d7bcf5ac8b3911a">accel.h</a>
+</li>
+<li>spdk_accel_initialize()
+: <a class="el" href="accel_8h.html#acbc9decf84ab594e9e04edac14e1b91b">accel.h</a>
+</li>
+<li>spdk_accel_put_buf()
+: <a class="el" href="accel_8h.html#a84d7b247e6eb234e84aa4d856da098fa">accel.h</a>
+</li>
+<li>spdk_accel_sequence_abort()
+: <a class="el" href="accel_8h.html#a4bead81df6ccd705747dcdbfe9ffa6d9">accel.h</a>
+</li>
+<li>spdk_accel_sequence_finish()
+: <a class="el" href="accel_8h.html#ad1f3cacbac00f08f92f094243c17ad04">accel.h</a>
+</li>
+<li>spdk_accel_sequence_reverse()
+: <a class="el" href="accel_8h.html#a543390f0413ec678c76ea7f39fc5f27d">accel.h</a>
+</li>
+<li>spdk_accel_set_driver()
+: <a class="el" href="accel_8h.html#a142328e0ffe6cf8299dcee984012b660">accel.h</a>
+</li>
+<li>spdk_accel_set_opts()
+: <a class="el" href="accel_8h.html#ab32f6cbeb2aeee0a64a268c63a951ec9">accel.h</a>
+</li>
+<li>spdk_accel_step_cb
+: <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">accel.h</a>
 </li>
 <li>spdk_accel_submit_compare()
-: <a class="el" href="accel__engine_8h.html#a7ba82c135282c35831243dd787fbe907">accel_engine.h</a>
+: <a class="el" href="accel_8h.html#a7ba82c135282c35831243dd787fbe907">accel.h</a>
+</li>
+<li>spdk_accel_submit_compress()
+: <a class="el" href="accel_8h.html#a7c7ed1bfb32c852ce8a8ebf67f0ac0ed">accel.h</a>
 </li>
 <li>spdk_accel_submit_copy()
-: <a class="el" href="accel__engine_8h.html#ac0f663883c7d8087f9b1ca948b3aefc9">accel_engine.h</a>
+: <a class="el" href="accel_8h.html#a8414580180688f9334f9a8e3103a6e28">accel.h</a>
+</li>
+<li>spdk_accel_submit_copy_crc32c()
+: <a class="el" href="accel_8h.html#a6e173da38e9c798f949a07149b9bf409">accel.h</a>
+</li>
+<li>spdk_accel_submit_copy_crc32cv()
+: <a class="el" href="accel_8h.html#ad07e15079ef496a54d88a90ef65ab3c6">accel.h</a>
 </li>
 <li>spdk_accel_submit_crc32c()
-: <a class="el" href="accel__engine_8h.html#a65c5cfc170a655a791b3ff29cb7f1f1b">accel_engine.h</a>
+: <a class="el" href="accel_8h.html#ac4d750dd429c533295e9e73a864eae68">accel.h</a>
 </li>
 <li>spdk_accel_submit_crc32cv()
-: <a class="el" href="accel__engine_8h.html#ada6d09a870c29388eeed6746359413c9">accel_engine.h</a>
+: <a class="el" href="accel_8h.html#a6273dec7ea700cd19ab055ac08a5a97c">accel.h</a>
+</li>
+<li>spdk_accel_submit_decompress()
+: <a class="el" href="accel_8h.html#ad6de8b2f54bfd1a60203cc845eb01f93">accel.h</a>
+</li>
+<li>spdk_accel_submit_decrypt()
+: <a class="el" href="accel_8h.html#adad68f6857a598ec184c58ace776b05e">accel.h</a>
 </li>
 <li>spdk_accel_submit_dualcast()
-: <a class="el" href="accel__engine_8h.html#a402f5ed0f1fac5c37f965a55f0d0bf55">accel_engine.h</a>
+: <a class="el" href="accel_8h.html#aad9824886c1379235c90674e3a932483">accel.h</a>
+</li>
+<li>spdk_accel_submit_encrypt()
+: <a class="el" href="accel_8h.html#afa481210cd4541e79ae4d304f119709e">accel.h</a>
 </li>
 <li>spdk_accel_submit_fill()
-: <a class="el" href="accel__engine_8h.html#adb62b1e99d9a010c140987eea57f5dc4">accel_engine.h</a>
+: <a class="el" href="accel_8h.html#ad5529e871a11d307e5aba2e21abeaa29">accel.h</a>
+</li>
+<li>spdk_accel_submit_xor()
+: <a class="el" href="accel_8h.html#aed96871d0496c7f6e3549999bbb6ea84">accel.h</a>
 </li>
 <li>spdk_accel_write_config_json()
-: <a class="el" href="accel__engine_8h.html#a308671b4f55c2adc9469e59b941a6dcc">accel_engine.h</a>
+: <a class="el" href="accel_8h.html#a308671b4f55c2adc9469e59b941a6dcc">accel.h</a>
 </li>
 <li>SPDK_ALIGN_CEIL
 : <a class="el" href="util_8h.html#a61bd4178f177cf2265279944b0184fcd">util.h</a>
@@ -235,7 +230,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="event_8h.html#a65555def11b52c0b7bea010ab24e25d8">event.h</a>
 </li>
 <li>spdk_app_parse_args()
-: <a class="el" href="event_8h.html#acc52e8c68c8ccec4640e14f687157afe">event.h</a>
+: <a class="el" href="event_8h.html#a85c562c0e4c4c8dac2f655bc279bc1a0">event.h</a>
 </li>
 <li>spdk_app_parse_core_mask()
 : <a class="el" href="event_8h.html#a60385eedfe76a33a690741d2693414a3">event.h</a>
@@ -276,6 +271,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_abort()
 : <a class="el" href="bdev_8h.html#a841dcef50460f33c8b5e321e187dc3dd">bdev.h</a>
 </li>
+<li>spdk_bdev_add_io_stat()
+: <a class="el" href="bdev__module_8h.html#ac58f4c0adedcb11e532740b5ed339dac">bdev_module.h</a>
+</li>
 <li>spdk_bdev_alias_add()
 : <a class="el" href="bdev__module_8h.html#af1079eae68fac856b56863f26bc5310f">bdev_module.h</a>
 </li>
@@ -284,6 +282,30 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_alias_del_all()
 : <a class="el" href="bdev__module_8h.html#ae62dae3c4a41154aca74f37864ae82f9">bdev_module.h</a>
+</li>
+<li>spdk_bdev_channel_get_histogram()
+: <a class="el" href="bdev_8h.html#a83092483a9de9f7d736ef4ceaaf0d26c">bdev.h</a>
+</li>
+<li>SPDK_BDEV_CLAIM_EXCL_WRITE
+: <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919a57e1235cb4553faad33f9b8389881f4b">bdev_module.h</a>
+</li>
+<li>spdk_bdev_claim_get_name()
+: <a class="el" href="bdev__module_8h.html#a7b7003c4aab0f84e7309df6c8eb04ed5">bdev_module.h</a>
+</li>
+<li>spdk_bdev_claim_opts_init()
+: <a class="el" href="bdev__module_8h.html#af7d6da3b0c04b90de63ddd55fd668327">bdev_module.h</a>
+</li>
+<li>SPDK_BDEV_CLAIM_READ_MANY_WRITE_NONE
+: <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919a9abbfbe6d44e3310f0108b3b85c64178">bdev_module.h</a>
+</li>
+<li>SPDK_BDEV_CLAIM_READ_MANY_WRITE_ONE
+: <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919ac66d93661ccaf703ef942ab82caa7af8">bdev_module.h</a>
+</li>
+<li>SPDK_BDEV_CLAIM_READ_MANY_WRITE_SHARED
+: <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919a476c43608edcb992be80419d92f3f52e">bdev_module.h</a>
+</li>
+<li>spdk_bdev_claim_type
+: <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919">bdev_module.h</a>
 </li>
 <li>spdk_bdev_close()
 : <a class="el" href="bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6">bdev.h</a>
@@ -303,6 +325,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_comparev_blocks_with_md()
 : <a class="el" href="group__bdev__io__submit__functions.html#ga323ccdb094b61f56840f29745339ceb3">bdev.h</a>
 </li>
+<li>spdk_bdev_copy_blocks()
+: <a class="el" href="group__bdev__io__submit__functions.html#gaea6141ec0cb4090741c6be7ae6927dae">bdev.h</a>
+</li>
+<li>spdk_bdev_create_bs_dev()
+: <a class="el" href="blob__bdev_8h.html#a2a6d877fd0b0eaea06c55c972fa54497">blob_bdev.h</a>
+</li>
 <li>spdk_bdev_create_bs_dev_ext()
 : <a class="el" href="blob__bdev_8h.html#af2318a373aae926c6ce9300e06e8bb81">blob_bdev.h</a>
 </li>
@@ -314,6 +342,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_dump_info_json()
 : <a class="el" href="bdev_8h.html#a3ef2e861ccd2d6135bfe13257f047fb9">bdev.h</a>
+</li>
+<li>spdk_bdev_dump_io_stat_json()
+: <a class="el" href="bdev__module_8h.html#a7a5cd65df968e2f5be1b2311af3c69ea">bdev_module.h</a>
 </li>
 <li>spdk_bdev_event_cb_t
 : <a class="el" href="bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08">bdev.h</a>
@@ -342,6 +373,21 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_flush_blocks()
 : <a class="el" href="group__bdev__io__submit__functions.html#ga9d84cd937e760cf32756654dc9720ed4">bdev.h</a>
 </li>
+<li>spdk_bdev_for_each_bdev_io()
+: <a class="el" href="bdev__module_8h.html#a5326cf21d1612a39bb3ba660790a8ec6">bdev_module.h</a>
+</li>
+<li>spdk_bdev_for_each_channel()
+: <a class="el" href="bdev_8h.html#a1b51dde3495e6b37f172e172cca3cfd2">bdev.h</a>
+</li>
+<li>spdk_bdev_for_each_channel_continue()
+: <a class="el" href="bdev_8h.html#a576acbae728d3d4ecc83ea5603cdd3f9">bdev.h</a>
+</li>
+<li>spdk_bdev_for_each_channel_done
+: <a class="el" href="bdev_8h.html#a16f406e9a97a6ac7072867bdcc7c1df1">bdev.h</a>
+</li>
+<li>spdk_bdev_for_each_channel_msg
+: <a class="el" href="bdev_8h.html#a4ac2a1bd295f6c71dbe706e61f5f6ac4">bdev.h</a>
+</li>
 <li>spdk_bdev_free_io()
 : <a class="el" href="bdev_8h.html#a9ac23d38eb3b56b58197e0111ef68c6b">bdev.h</a>
 </li>
@@ -359,6 +405,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_get_by_name()
 : <a class="el" href="bdev_8h.html#a89c759c53d028e3e408d19156f0e1eb1">bdev.h</a>
+</li>
+<li>spdk_bdev_get_current_qd()
+: <a class="el" href="bdev__module_8h.html#a35d1bb3f7b96e2e0d90e42f11f8f402d">bdev_module.h</a>
 </li>
 <li>spdk_bdev_get_data_block_size()
 : <a class="el" href="bdev_8h.html#a84041f3948f91dc0dd0656895970061a">bdev.h</a>
@@ -381,6 +430,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_get_max_active_zones()
 : <a class="el" href="bdev__zone_8h.html#a4b1a401f0d6131597efd6cfad7ccfe8a">bdev_zone.h</a>
 </li>
+<li>spdk_bdev_get_max_copy()
+: <a class="el" href="bdev_8h.html#a8b542430078d502325f37b92fc3d15ca">bdev.h</a>
+</li>
 <li>spdk_bdev_get_max_open_zones()
 : <a class="el" href="bdev__zone_8h.html#a7739e6335f06de1565e50d3afc247aa0">bdev_zone.h</a>
 </li>
@@ -392,6 +444,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_get_media_events()
 : <a class="el" href="bdev_8h.html#af359a282820d73a253ffbbe127a30b96">bdev.h</a>
+</li>
+<li>spdk_bdev_get_memory_domains()
+: <a class="el" href="bdev_8h.html#a2643db603c5c9762d839036c1658bf1b">bdev.h</a>
 </li>
 <li>spdk_bdev_get_module_ctx()
 : <a class="el" href="bdev_8h.html#a833f281dc52c09e6491ae9415cdb9980">bdev.h</a>
@@ -417,6 +472,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_get_opts()
 : <a class="el" href="bdev_8h.html#ab0c4412ed5d0e1869620965304d36b7f">bdev.h</a>
 </li>
+<li>spdk_bdev_get_physical_block_size()
+: <a class="el" href="bdev_8h.html#a2c895e82c51c654a5b3f838f7254d690">bdev.h</a>
+</li>
 <li>spdk_bdev_get_product_name()
 : <a class="el" href="bdev_8h.html#a1cb4d1f8822c30be8c5d9c5dc3e62483">bdev.h</a>
 </li>
@@ -440,6 +498,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_get_write_unit_size()
 : <a class="el" href="bdev_8h.html#ab5775a23cadb2eb1d5381dc105577a37">bdev.h</a>
+</li>
+<li>spdk_bdev_get_zone_id()
+: <a class="el" href="bdev__zone_8h.html#a9d49096d8ad1681eb09b0f5be490356e">bdev_zone.h</a>
 </li>
 <li>spdk_bdev_get_zone_info()
 : <a class="el" href="group__bdev__io__submit__functions.html#ga01f2a4fd5da187f568381fa3c55f603c">bdev_zone.h</a>
@@ -516,6 +577,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_io_get_scsi_status()
 : <a class="el" href="bdev_8h.html#ac3c213b4317d5077197950253af1ac50">bdev.h</a>
 </li>
+<li>spdk_bdev_io_get_seek_offset()
+: <a class="el" href="bdev_8h.html#a03943b94f83f3402fb8da4093985a829">bdev.h</a>
+</li>
+<li>spdk_bdev_io_get_submit_tsc()
+: <a class="el" href="bdev__module_8h.html#aa1338f8303e09792634142f63be39b93">bdev_module.h</a>
+</li>
 <li>spdk_bdev_io_get_thread()
 : <a class="el" href="bdev__module_8h.html#ac5d86d9c4c086b2909207e6b7192caae">bdev_module.h</a>
 </li>
@@ -561,11 +628,17 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_module_claim_bdev()
 : <a class="el" href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94">bdev_module.h</a>
 </li>
+<li>spdk_bdev_module_claim_bdev_desc()
+: <a class="el" href="bdev__module_8h.html#a8936a9564edfe44f16ba39e4b859ff36">bdev_module.h</a>
+</li>
 <li>spdk_bdev_module_examine_done()
 : <a class="el" href="bdev__module_8h.html#ad6ae712eb81a37a739cb82ca474e793b">bdev_module.h</a>
 </li>
-<li>spdk_bdev_module_finish_done()
-: <a class="el" href="bdev__module_8h.html#acc0701f07d82bbb8f0f3e57c81349574">bdev_module.h</a>
+<li>spdk_bdev_module_fini_done()
+: <a class="el" href="bdev__module_8h.html#a13dae91c3223ea829a78b979d34018c0">bdev_module.h</a>
+</li>
+<li>spdk_bdev_module_fini_start_done()
+: <a class="el" href="bdev__module_8h.html#ac1f7fb72f765ee69d36569ecd5c1420d">bdev_module.h</a>
 </li>
 <li>spdk_bdev_module_init_done()
 : <a class="el" href="bdev__module_8h.html#a3a32d238f1617d87d407451e3874f1d1">bdev_module.h</a>
@@ -630,6 +703,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_part_construct()
 : <a class="el" href="bdev__module_8h.html#a24c1e59da114916f39354813c0e761ee">bdev_module.h</a>
 </li>
+<li>spdk_bdev_part_construct_ext()
+: <a class="el" href="bdev__module_8h.html#a8f554e96f504664d10b98b6991bf7e83">bdev_module.h</a>
+</li>
+<li>spdk_bdev_part_construct_opts_init()
+: <a class="el" href="bdev__module_8h.html#a1e8c713772d483c3e690f97480d51d12">bdev_module.h</a>
+</li>
 <li>spdk_bdev_part_free()
 : <a class="el" href="bdev__module_8h.html#a340bfaab0ee5b3fd754759ad10f2dd4b">bdev_module.h</a>
 </li>
@@ -647,6 +726,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_part_submit_request()
 : <a class="el" href="bdev__module_8h.html#a099c43cf183a48d23ec7ddad683da1ae">bdev_module.h</a>
+</li>
+<li>spdk_bdev_part_submit_request_ext()
+: <a class="el" href="bdev__module_8h.html#a99132dbf758377bdfcc47140d35c065c">bdev_module.h</a>
 </li>
 <li>spdk_bdev_push_media_events()
 : <a class="el" href="bdev__module_8h.html#ae45503dc9070d0d9939eed65447deef3">bdev_module.h</a>
@@ -679,13 +761,16 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group__bdev__io__submit__functions.html#gaeec9efd151e2fb34ee3d22a1edbbb53f">bdev.h</a>
 </li>
 <li>spdk_bdev_read_blocks_with_md()
-: <a class="el" href="group__bdev__io__submit__functions.html#gaeb22cbe62f8ae153ab96318b9761f9e4">bdev.h</a>
+: <a class="el" href="group__bdev__io__submit__functions.html#gadc8784109649bebb80df9f9535467b85">bdev.h</a>
 </li>
 <li>spdk_bdev_readv()
 : <a class="el" href="group__bdev__io__submit__functions.html#ga9ac9efa882e87909acfd4bccaddb1778">bdev.h</a>
 </li>
 <li>spdk_bdev_readv_blocks()
 : <a class="el" href="group__bdev__io__submit__functions.html#ga55483d5ae010c514b37b976ad803b4b2">bdev.h</a>
+</li>
+<li>spdk_bdev_readv_blocks_ext()
+: <a class="el" href="group__bdev__io__submit__functions.html#ga8125396dbfee45c78c73534c6e7f22f3">bdev.h</a>
 </li>
 <li>spdk_bdev_readv_blocks_with_md()
 : <a class="el" href="group__bdev__io__submit__functions.html#ga80f72a0b5b1e02a667ce15cc17ceefeb">bdev.h</a>
@@ -698,6 +783,15 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_reset()
 : <a class="el" href="group__bdev__io__submit__functions.html#gaca574d3e94be6150343823dd2e7ecf46">bdev.h</a>
+</li>
+<li>spdk_bdev_reset_io_stat()
+: <a class="el" href="bdev__module_8h.html#af7e0a5a50a01fee8785af7d00b4780aa">bdev_module.h</a>
+</li>
+<li>spdk_bdev_seek_data()
+: <a class="el" href="group__bdev__io__submit__functions.html#ga368a41ccc1395faeaddc853a6f7f81d0">bdev.h</a>
+</li>
+<li>spdk_bdev_seek_hole()
+: <a class="el" href="group__bdev__io__submit__functions.html#ga41233f5dd570c8ae72ea4749786a8172">bdev.h</a>
 </li>
 <li>spdk_bdev_set_qd_sampling_period()
 : <a class="el" href="bdev_8h.html#a9d37ad1d4da0bcb51ada76dbe4f4ce15">bdev.h</a>
@@ -723,6 +817,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_unregister()
 : <a class="el" href="bdev__module_8h.html#a3d1fd8c9ecf144593313ea08cdeb8ca2">bdev_module.h</a>
 </li>
+<li>spdk_bdev_unregister_by_name()
+: <a class="el" href="bdev__module_8h.html#a1135837fca4f720aa12e09daf04a90eb">bdev_module.h</a>
+</li>
 <li>spdk_bdev_wait_for_examine()
 : <a class="el" href="bdev_8h.html#a4e34f9d44b0d59b4e1d88967e77d9675">bdev.h</a>
 </li>
@@ -747,6 +844,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_writev_blocks()
 : <a class="el" href="group__bdev__io__submit__functions.html#gaf5849064d12de9f140a41522d1f7c95b">bdev.h</a>
 </li>
+<li>spdk_bdev_writev_blocks_ext()
+: <a class="el" href="group__bdev__io__submit__functions.html#ga418f6f4ab853a3152a7f7ba256894a3f">bdev.h</a>
+</li>
 <li>spdk_bdev_writev_blocks_with_md()
 : <a class="el" href="group__bdev__io__submit__functions.html#ga635944e7a651c01ecf5d808f988d138d">bdev.h</a>
 </li>
@@ -754,7 +854,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="bdev_8h.html#ac432e059187b2dee62418354664e87c2">bdev.h</a>
 </li>
 <li>spdk_bdev_zcopy_start()
-: <a class="el" href="bdev_8h.html#a917e305a98e4545096ae025be764177c">bdev.h</a>
+: <a class="el" href="bdev_8h.html#a0ae02ac58ed10886d4a00ba3d94af4ce">bdev.h</a>
 </li>
 <li>spdk_bdev_zone_append()
 : <a class="el" href="group__bdev__io__submit__functions.html#ga17d6c2c7f25d21c5d2cdfb6e187e2033">bdev_zone.h</a>
@@ -858,8 +958,20 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_blob_get_clones()
 : <a class="el" href="blob_8h.html#a1482c72fb9cb040999a376096d3e7caf">blob.h</a>
 </li>
+<li>spdk_blob_get_esnap_bs_dev()
+: <a class="el" href="blob_8h.html#ad5d4220c9c92b1aa5573e1340fbaac24">blob.h</a>
+</li>
+<li>spdk_blob_get_esnap_id()
+: <a class="el" href="blob_8h.html#aa1133bfe5ef2517860e51e1a58220848">blob.h</a>
+</li>
 <li>spdk_blob_get_id()
 : <a class="el" href="blob_8h.html#a40ed8868e620ad0e15e2bc4b923ccff0">blob.h</a>
+</li>
+<li>spdk_blob_get_next_allocated_io_unit()
+: <a class="el" href="blob_8h.html#a1f1801ea07e30f5a56ecd043a7b4b55f">blob.h</a>
+</li>
+<li>spdk_blob_get_next_unallocated_io_unit()
+: <a class="el" href="blob_8h.html#a17bd599919d75e0f32bbd79edb2c062c">blob.h</a>
 </li>
 <li>spdk_blob_get_num_clusters()
 : <a class="el" href="blob_8h.html#a2484b76dc748921d2596a4e207b6a5a2">blob.h</a>
@@ -885,6 +997,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_blob_io_readv()
 : <a class="el" href="blob_8h.html#ade242e483bcb3a50bb987acf2e0dfd4e">blob.h</a>
 </li>
+<li>spdk_blob_io_readv_ext()
+: <a class="el" href="blob_8h.html#a3f13ed71f6a04b33ef902ca0e320015f">blob.h</a>
+</li>
 <li>spdk_blob_io_unmap()
 : <a class="el" href="blob_8h.html#a2dea7bc3f6cc4dcd2b5d039b14b8640a">blob.h</a>
 </li>
@@ -897,8 +1012,17 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_blob_io_writev()
 : <a class="el" href="blob_8h.html#afa2fed3283426fb3ddf6abc61a44266b">blob.h</a>
 </li>
+<li>spdk_blob_io_writev_ext()
+: <a class="el" href="blob_8h.html#a6e6bb00cd582a2178f5f97479e67e9c3">blob.h</a>
+</li>
 <li>spdk_blob_is_clone()
 : <a class="el" href="blob_8h.html#a4f057419129eae779eca2774f135718e">blob.h</a>
+</li>
+<li>spdk_blob_is_degraded()
+: <a class="el" href="blob_8h.html#a74cc668dae1192d41904d79709da0374">blob.h</a>
+</li>
+<li>spdk_blob_is_esnap_clone()
+: <a class="el" href="blob_8h.html#a0d7abdf15a8f538dea1f91a532301081">blob.h</a>
 </li>
 <li>spdk_blob_is_read_only()
 : <a class="el" href="blob_8h.html#aee905d8842cf578dabd897ae68acc142">blob.h</a>
@@ -911,6 +1035,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_blob_op_complete
 : <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">blob.h</a>
+</li>
+<li>spdk_blob_op_with_bs_dev
+: <a class="el" href="blob_8h.html#a674db2e2ce68c181b11ffd676b8cc51b">blob.h</a>
 </li>
 <li>spdk_blob_op_with_handle_complete
 : <a class="el" href="blob_8h.html#aab6d19ccc3c952877c355030e2a286c1">blob.h</a>
@@ -930,6 +1057,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_blob_resize()
 : <a class="el" href="blob_8h.html#a70993dda1206b4c0aaa76deb2b6fd13c">blob.h</a>
 </li>
+<li>spdk_blob_set_esnap_bs_dev()
+: <a class="el" href="blob_8h.html#a66b5b8159c242a0006b858ee8e4ddc69">blob.h</a>
+</li>
 <li>spdk_blob_set_read_only()
 : <a class="el" href="blob_8h.html#a1ea6db893423c045b8a40d1f0d0bd128">blob.h</a>
 </li>
@@ -944,6 +1074,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_blobfs_bdev_detect()
 : <a class="el" href="blobfs__bdev_8h.html#a3adb6a7fa37fd5b762fa4d435b7c20e4">blobfs_bdev.h</a>
+</li>
+<li>spdk_blobfs_bdev_mount()
+: <a class="el" href="blobfs__bdev_8h.html#a700647b9057a0e3352d3a6bcdb363a44">blobfs_bdev.h</a>
 </li>
 <li>spdk_blobfs_bdev_op_complete
 : <a class="el" href="blobfs__bdev_8h.html#aeba9eac67ee1c9c401df29609c8b917b">blobfs_bdev.h</a>
@@ -981,6 +1114,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bs_dump()
 : <a class="el" href="blob_8h.html#aa75072ce1a5a9559fe2db0da30363ad4">blob.h</a>
 </li>
+<li>spdk_bs_esnap_dev_create
+: <a class="el" href="blob_8h.html#aa9de71c711c86a2fb7b9a7d967ebede4">blob.h</a>
+</li>
 <li>spdk_bs_free_cluster_count()
 : <a class="el" href="blob_8h.html#a8d03f0499e552b6e858b7c52abcc0820">blob.h</a>
 </li>
@@ -1001,6 +1137,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bs_get_super()
 : <a class="el" href="blob_8h.html#adb47e7a73e595499ea23b2415a6176f8">blob.h</a>
+</li>
+<li>spdk_bs_grow()
+: <a class="el" href="blob_8h.html#a0fc717fee381a5dd5c6e1e6f979f1202">blob.h</a>
 </li>
 <li>spdk_bs_inflate_blob()
 : <a class="el" href="blob_8h.html#a3d1f1b56d9782997ef3e338879a2fa28">blob.h</a>
@@ -1107,6 +1246,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_conf_set_as_default()
 : <a class="el" href="conf_8h.html#a2c19833437dd2be7bafc4d7ca07668d8">conf.h</a>
 </li>
+<li>spdk_copy_buf_to_iovs()
+: <a class="el" href="util_8h.html#a50613a64c93f060a3a9f6293d64da50d">util.h</a>
+</li>
+<li>spdk_copy_iovs_to_buf()
+: <a class="el" href="util_8h.html#a260b1024edd3144707a2286ebf50839e">util.h</a>
+</li>
 <li>spdk_cpuset_alloc()
 : <a class="el" href="cpuset_8h.html#aff3a197116d2a61effd73795b40a6c95">cpuset.h</a>
 </li>
@@ -1158,11 +1303,44 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_crc32_ieee_update()
 : <a class="el" href="crc32_8h.html#a5320d8945f28627a2c5e5b15f1a997ee">crc32.h</a>
 </li>
+<li>spdk_crc32c_iov_update()
+: <a class="el" href="crc32_8h.html#a795c03f1c01247672682572a79ef3c1a">crc32.h</a>
+</li>
 <li>spdk_crc32c_update()
 : <a class="el" href="crc32_8h.html#a51fc46bdf29f35610a0c99ae6ad0e009">crc32.h</a>
 </li>
 <li>spdk_delay_us()
 : <a class="el" href="env_8h.html#ab2e338ce2d6510489ae83bfff226b8b1">env.h</a>
+</li>
+<li>spdk_deprecation_get_description()
+: <a class="el" href="log_8h.html#a203431f8adfbb3dbda3c5da21bfc9c6a">log.h</a>
+</li>
+<li>spdk_deprecation_get_hits()
+: <a class="el" href="log_8h.html#afc930c0e1a4696a4c489c781b1a55b02">log.h</a>
+</li>
+<li>spdk_deprecation_get_remove_release()
+: <a class="el" href="log_8h.html#a63883d260f21cb745432a61bfc2f5c77">log.h</a>
+</li>
+<li>spdk_deprecation_get_tag()
+: <a class="el" href="log_8h.html#aebde768fd834a3c9364b7b5a8bd479f4">log.h</a>
+</li>
+<li>spdk_dma_device_type
+: <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586">dma.h</a>
+</li>
+<li>SPDK_DMA_DEVICE_TYPE_ACCEL
+: <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a065a87ed31fe120b25d6811ce9b37ba8">dma.h</a>
+</li>
+<li>SPDK_DMA_DEVICE_TYPE_DMA
+: <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586ae488329b2d5cebe0bc130e0803c4fefc">dma.h</a>
+</li>
+<li>SPDK_DMA_DEVICE_TYPE_RDMA
+: <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a00353a6b099210ed1c52cb9582f1ae01">dma.h</a>
+</li>
+<li>SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_END
+: <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a51d3c59fcd56fc712b1943b5a08dead2">dma.h</a>
+</li>
+<li>SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_START
+: <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a1201e15e1a81553cb3ac297e7f5648be">dma.h</a>
 </li>
 <li>spdk_dma_free()
 : <a class="el" href="env_8h.html#acd01324e661a5d6deb59bd2bc6230de3">env.h</a>
@@ -1209,6 +1387,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_env_get_last_core()
 : <a class="el" href="env_8h.html#ad66fc19d0c23cb21ff456581f0385a2b">env.h</a>
 </li>
+<li>spdk_env_get_main_core()
+: <a class="el" href="env_8h.html#aec8cb2ee2493457ecf9d5e4d1cded32f">env.h</a>
+</li>
 <li>spdk_env_get_next_core()
 : <a class="el" href="env_8h.html#ab480f817ecdd801a0e53a4d8494ffc67">env.h</a>
 </li>
@@ -1246,7 +1427,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="fd_8h.html#aea888b14525013b904e80542fb360a80">fd.h</a>
 </li>
 <li>spdk_fd_group_add()
-: <a class="el" href="fd__group_8h.html#a8a292c2497e0ee9a4168c3ebb35d0afc">fd_group.h</a>
+: <a class="el" href="fd__group_8h.html#a45e4bfc7b314944bc1b894a80c176e23">fd_group.h</a>
 </li>
 <li>spdk_fd_group_create()
 : <a class="el" href="fd__group_8h.html#ad89615da09728bed934cd4e74dee0972">fd_group.h</a>
@@ -1257,11 +1438,20 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_fd_group_event_modify()
 : <a class="el" href="fd__group_8h.html#aa9202f833c0b499860baf4d1ae6318ab">fd_group.h</a>
 </li>
+<li>spdk_fd_group_get_epoll_event()
+: <a class="el" href="fd__group_8h.html#acd63f6ecc32f0ddef82a188d19824f56">fd_group.h</a>
+</li>
 <li>spdk_fd_group_get_fd()
 : <a class="el" href="fd__group_8h.html#a7956923fc280cf4f3a024ef837a634cf">fd_group.h</a>
 </li>
+<li>spdk_fd_group_nest()
+: <a class="el" href="fd__group_8h.html#aa827198ccace95dab3b0cb74376b97ae">fd_group.h</a>
+</li>
 <li>spdk_fd_group_remove()
 : <a class="el" href="fd__group_8h.html#add1e704767a6e1f5b88f00e477e2b003">fd_group.h</a>
+</li>
+<li>spdk_fd_group_unnest()
+: <a class="el" href="fd__group_8h.html#abb306bb67c3bfae868f357fc88fcfbd3">fd_group.h</a>
 </li>
 <li>spdk_fd_group_wait()
 : <a class="el" href="fd__group_8h.html#a5855fa2ed6454dcbb48c7fdc834573c0">fd_group.h</a>
@@ -1322,6 +1512,15 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_file_writev_async()
 : <a class="el" href="blobfs_8h.html#af6ee5c4b8d64f5e6e0cf7e6b227aa28c">blobfs.h</a>
+</li>
+<li>spdk_for_each_bdev()
+: <a class="el" href="bdev_8h.html#ac93dda3868b191be70ac7e1517422c1f">bdev.h</a>
+</li>
+<li>spdk_for_each_bdev_fn
+: <a class="el" href="bdev_8h.html#a4163854db79e0e3b211dd72ca031fbb0">bdev.h</a>
+</li>
+<li>spdk_for_each_bdev_leaf()
+: <a class="el" href="bdev_8h.html#aeb680eb5205197872738e482204ab441">bdev.h</a>
 </li>
 <li>spdk_for_each_channel()
 : <a class="el" href="thread_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1">thread.h</a>
@@ -1423,88 +1622,61 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="env_8h.html#a0e7d0eb3000d71b588486cf9903cd434">env.h</a>
 </li>
 <li>spdk_idxd_attach_cb
-: <a class="el" href="idxd_8h.html#a73cec9547e6aac6d71a033c27f3de188">idxd.h</a>
-</li>
-<li>spdk_idxd_batch_cancel()
-: <a class="el" href="idxd_8h.html#a257b49d3c7123f3b6dbafe43353e3b39">idxd.h</a>
-</li>
-<li>spdk_idxd_batch_create()
-: <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0">idxd.h</a>
-</li>
-<li>spdk_idxd_batch_get_max()
-: <a class="el" href="idxd_8h.html#ab78b75ce7715fb720c0883f0851d9aae">idxd.h</a>
-</li>
-<li>spdk_idxd_batch_prep_compare()
-: <a class="el" href="idxd_8h.html#a29321770dd18270ac63feaf7ed1624ae">idxd.h</a>
-</li>
-<li>spdk_idxd_batch_prep_copy()
-: <a class="el" href="idxd_8h.html#a00a2b8ec301e7c8a89532e3198b8d6d9">idxd.h</a>
-</li>
-<li>spdk_idxd_batch_prep_crc32c()
-: <a class="el" href="idxd_8h.html#a70d818022010bca83142dd77f8d24303">idxd.h</a>
-</li>
-<li>spdk_idxd_batch_prep_dualcast()
-: <a class="el" href="idxd_8h.html#ac01301f26f9fb1ac4606b934fe3df9f4">idxd.h</a>
-</li>
-<li>spdk_idxd_batch_prep_fill()
-: <a class="el" href="idxd_8h.html#aa806021f07d866c4551698cc7ded62d4">idxd.h</a>
-</li>
-<li>spdk_idxd_batch_submit()
-: <a class="el" href="idxd_8h.html#aed7821b612c995cd3c97faab55379418">idxd.h</a>
-</li>
-<li>spdk_idxd_configure_chan()
-: <a class="el" href="idxd_8h.html#a4c60a627d58056083567495f0e7cb19e">idxd.h</a>
+: <a class="el" href="idxd_8h.html#a4d941aea0b11a77815cfdd10b1c3c22b">idxd.h</a>
 </li>
 <li>spdk_idxd_detach()
 : <a class="el" href="idxd_8h.html#aa6e6f3dcce485f4b3b8ba36fe4c03f93">idxd.h</a>
 </li>
-<li>spdk_idxd_device_needs_rebalance()
-: <a class="el" href="idxd_8h.html#aa63a7844507971ab2973fabbd1df2d46">idxd.h</a>
-</li>
 <li>spdk_idxd_get_channel()
 : <a class="el" href="idxd_8h.html#ae8fa809d994d290b255dd3dab1f1903b">idxd.h</a>
 </li>
+<li>spdk_idxd_get_socket()
+: <a class="el" href="idxd_8h.html#a627f2731d0965d9b6a7c8bc317af71eb">idxd.h</a>
+</li>
 <li>spdk_idxd_probe()
-: <a class="el" href="idxd_8h.html#a24d52afbaccee42acaf9663d41eddcc7">idxd.h</a>
+: <a class="el" href="idxd_8h.html#a9d1c79e79e6238cbfe5e3202850cce51">idxd.h</a>
 </li>
 <li>spdk_idxd_probe_cb
-: <a class="el" href="idxd_8h.html#a1b1789a24972053221a9df6a9a9029f2">idxd.h</a>
+: <a class="el" href="idxd_8h.html#a9e646b0325aa65b2a5b9519c204a724a">idxd.h</a>
 </li>
 <li>spdk_idxd_process_events()
 : <a class="el" href="idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3">idxd.h</a>
 </li>
 <li>spdk_idxd_put_channel()
-: <a class="el" href="idxd_8h.html#a5d1dc2a87145f5b932a22db3e41f39d6">idxd.h</a>
-</li>
-<li>spdk_idxd_reconfigure_chan()
-: <a class="el" href="idxd_8h.html#af21b012ab31e8c129f79e622bc1464ff">idxd.h</a>
+: <a class="el" href="idxd_8h.html#a0de9abe0697950149cd1fe830717be90">idxd.h</a>
 </li>
 <li>spdk_idxd_req_cb
 : <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">idxd.h</a>
 </li>
 <li>spdk_idxd_set_config()
-: <a class="el" href="idxd_8h.html#acda8cf00ce61e00149a51bba5d8d2ec9">idxd.h</a>
+: <a class="el" href="idxd_8h.html#adc21f8258d04ffa6a365a54ff8173159">idxd.h</a>
 </li>
 <li>spdk_idxd_submit_compare()
-: <a class="el" href="idxd_8h.html#a13e5209991017f518cfcc95e7d978aff">idxd.h</a>
+: <a class="el" href="idxd_8h.html#a163ea97cda6e3eaf879860ef45f85e5e">idxd.h</a>
+</li>
+<li>spdk_idxd_submit_compress()
+: <a class="el" href="idxd_8h.html#aa81b1c1358f0ace80c6552e41963cdcd">idxd.h</a>
 </li>
 <li>spdk_idxd_submit_copy()
-: <a class="el" href="idxd_8h.html#ac4e441dcb5b00b9f97835c07017f32ed">idxd.h</a>
+: <a class="el" href="idxd_8h.html#ae52d7631d29803ad79831a18f731df6f">idxd.h</a>
+</li>
+<li>spdk_idxd_submit_copy_crc32c()
+: <a class="el" href="idxd_8h.html#a632b300672a61fbc53c19e190d9e3f40">idxd.h</a>
 </li>
 <li>spdk_idxd_submit_crc32c()
-: <a class="el" href="idxd_8h.html#abf5fb2b8e9bd7b8b2e01a665f7a0f16a">idxd.h</a>
+: <a class="el" href="idxd_8h.html#ab45fa3fdcbe21d2771b0a70f4831336e">idxd.h</a>
+</li>
+<li>spdk_idxd_submit_decompress()
+: <a class="el" href="idxd_8h.html#a152627581b35ac9cec6ef4eb8e36a4e3">idxd.h</a>
 </li>
 <li>spdk_idxd_submit_dualcast()
-: <a class="el" href="idxd_8h.html#aef2f83b678ea127b1818f759a615bdef">idxd.h</a>
+: <a class="el" href="idxd_8h.html#ac18651e41ad36f5c0805959d11698b5e">idxd.h</a>
 </li>
 <li>spdk_idxd_submit_fill()
-: <a class="el" href="idxd_8h.html#ac469f33c1519f5454b2dad56686a5d2f">idxd.h</a>
+: <a class="el" href="idxd_8h.html#a31ff86efdf40d3af8c4b0362caa519b5">idxd.h</a>
 </li>
-<li>spdk_interface_destroy()
-: <a class="el" href="net_8h.html#af43d41aa26eb866db7cdb63b69eb7bb5">net.h</a>
-</li>
-<li>spdk_interface_init()
-: <a class="el" href="net_8h.html#a8ddcb56f1e677b845c5ebd5363002fb5">net.h</a>
+<li>spdk_idxd_submit_raw_desc()
+: <a class="el" href="idxd_8h.html#a9d3c2666201ade973ac2fe89a6346139">idxd.h</a>
 </li>
 <li>spdk_interrupt_fn
 : <a class="el" href="thread_8h.html#a61cfdc77d10970d7f3a8631df71e9588">thread.h</a>
@@ -1608,11 +1780,68 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_ioat_submit_fill()
 : <a class="el" href="ioat_8h.html#a6025f251c715e93ea27ee03b5ab9557c">ioat.h</a>
 </li>
+<li>spdk_iobuf_channel_fini()
+: <a class="el" href="thread_8h.html#a3a69dd994350e50395605e9b394b02fe">thread.h</a>
+</li>
+<li>spdk_iobuf_channel_init()
+: <a class="el" href="thread_8h.html#ad4e3d5418d2219ba6bd603304c3473de">thread.h</a>
+</li>
+<li>spdk_iobuf_entry_abort()
+: <a class="el" href="thread_8h.html#ad192ca271f84d76cca2a2ff6403b534a">thread.h</a>
+</li>
+<li>spdk_iobuf_finish()
+: <a class="el" href="thread_8h.html#acf8009c7842c30586bd815eaee9b7a91">thread.h</a>
+</li>
+<li>spdk_iobuf_for_each_entry()
+: <a class="el" href="thread_8h.html#aa57f01f992d8ebe9e30c5b6c21edf2a5">thread.h</a>
+</li>
+<li>spdk_iobuf_get()
+: <a class="el" href="thread_8h.html#a861f8067dad2dad16aa5a7f11e2221fc">thread.h</a>
+</li>
+<li>spdk_iobuf_get_opts()
+: <a class="el" href="thread_8h.html#a1e97f3caeb779908350fd5176c98ba4a">thread.h</a>
+</li>
+<li>spdk_iobuf_initialize()
+: <a class="el" href="thread_8h.html#a2c37e9172bb09d20cfa353dbd92b0a95">thread.h</a>
+</li>
+<li>spdk_iobuf_put()
+: <a class="el" href="thread_8h.html#aca828f485050a8d77d0a0b4182c632cc">thread.h</a>
+</li>
+<li>spdk_iobuf_set_opts()
+: <a class="el" href="thread_8h.html#ac64427a246442e52b60271127bf363d4">thread.h</a>
+</li>
 <li>spdk_iommu_is_enabled()
 : <a class="el" href="env_8h.html#ab7e36d9cc7a1aa8ae701bec368502273">env.h</a>
 </li>
+<li>spdk_iov_memset()
+: <a class="el" href="util_8h.html#a87d0db9f66fa3fc6763dbbe238c3c179">util.h</a>
+</li>
+<li>spdk_iov_one()
+: <a class="el" href="util_8h.html#ae5b9fcc21fe47320520c6d43983ad55f">util.h</a>
+</li>
+<li>spdk_iov_xfer_from_buf()
+: <a class="el" href="util_8h.html#aa6ce82e1521dc2592d35403edc48a35c">util.h</a>
+</li>
+<li>spdk_iov_xfer_init()
+: <a class="el" href="util_8h.html#a5761baf18d549561bfeb58990531bbcd">util.h</a>
+</li>
+<li>spdk_iov_xfer_to_buf()
+: <a class="el" href="util_8h.html#a1082d39cc6e9b1fb657f3b31ba430454">util.h</a>
+</li>
 <li>spdk_iovcpy()
 : <a class="el" href="util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565">util.h</a>
+</li>
+<li>spdk_ioviter_first()
+: <a class="el" href="util_8h.html#ac49e02ee794f8dc5048934504023d6d5">util.h</a>
+</li>
+<li>spdk_ioviter_next()
+: <a class="el" href="util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90">util.h</a>
+</li>
+<li>spdk_iovmove()
+: <a class="el" href="util_8h.html#af4c8af78fb85f76425e5472e742921e6">util.h</a>
+</li>
+<li>spdk_ivdt_dcache
+: <a class="el" href="barrier_8h.html#ad08229e302bb629c373321c8277c7f36">barrier.h</a>
 </li>
 <li>spdk_json_array_first()
 : <a class="el" href="json_8h.html#aabfcbb30424e30c50ab85aae544a73da">json.h</a>
@@ -1737,6 +1966,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_log_close()
 : <a class="el" href="log_8h.html#a41cdc17423a58c475fa785fd491f00e9">log.h</a>
 </li>
+<li>spdk_log_deprecated()
+: <a class="el" href="log_8h.html#a7dabb4fb99a730367b2b3a49ca6bc2e3">log.h</a>
+</li>
+<li>spdk_log_deprecation_register()
+: <a class="el" href="log_8h.html#a1c4c05a5d3c40478ff8cfc06a3acd035">log.h</a>
+</li>
 <li>SPDK_LOG_DISABLED
 : <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efdaaaf05c57678e124375f03976b68940eb">log.h</a>
 </li>
@@ -1745,6 +1980,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_log_enable_timestamps()
 : <a class="el" href="log_8h.html#add982626769fe03db599037b3357f730">log.h</a>
+</li>
+<li>spdk_log_for_each_deprecation()
+: <a class="el" href="log_8h.html#a00b13eb13638a39aa9e67e51c0b25e0e">log.h</a>
+</li>
+<li>spdk_log_for_each_deprecation_fn
+: <a class="el" href="log_8h.html#ac1578d0b093538b785898654350f8f63">log.h</a>
 </li>
 <li>spdk_log_get_first_flag()
 : <a class="el" href="log_8h.html#a023176df95c75961f857891a5aa6e987">log.h</a>
@@ -1779,6 +2020,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_log_set_print_level()
 : <a class="el" href="log_8h.html#ab34f1c87d98113395ab04415dbee96d8">log.h</a>
 </li>
+<li>spdk_log_to_syslog_level()
+: <a class="el" href="log_8h.html#adcae2250cdee22db5149c55a7c9f1e89">log.h</a>
+</li>
 <li>spdk_log_usage()
 : <a class="el" href="log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64">log.h</a>
 </li>
@@ -1803,11 +2047,26 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_lvol_destroy()
 : <a class="el" href="lvol_8h.html#a87c4dadc88c211fb4e8ba0cddc474032">lvol.h</a>
 </li>
+<li>spdk_lvol_get_by_names()
+: <a class="el" href="lvol_8h.html#acdde6d39076c361d17f4bd45b3201f70">lvol.h</a>
+</li>
+<li>spdk_lvol_get_by_uuid()
+: <a class="el" href="lvol_8h.html#a1009dc7a2afd6915a5e434d11e0ef41b">lvol.h</a>
+</li>
 <li>spdk_lvol_get_io_channel()
 : <a class="el" href="lvol_8h.html#a3e1700585830ce465b5a1479774c1f44">lvol.h</a>
 </li>
 <li>spdk_lvol_inflate()
 : <a class="el" href="lvol_8h.html#a795f3fe355907d744d019d2b01f0aee9">lvol.h</a>
+</li>
+<li>spdk_lvol_is_degraded()
+: <a class="el" href="lvol_8h.html#a1093dae877481711227c7b2f3aa9d879">lvol.h</a>
+</li>
+<li>spdk_lvol_iter_cb
+: <a class="el" href="lvol_8h.html#a48870c84403ddd07c81a78f8771eca44">lvol.h</a>
+</li>
+<li>spdk_lvol_iter_immediate_clones()
+: <a class="el" href="lvol_8h.html#a6d43e92544d79d7e048be0e9ac794271">lvol.h</a>
 </li>
 <li>spdk_lvol_op_complete
 : <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">lvol.h</a>
@@ -1824,11 +2083,17 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_lvs_destroy()
 : <a class="el" href="lvol_8h.html#ac2c5d67c2711ee149784f5e5e5be0b7a">lvol.h</a>
 </li>
+<li>spdk_lvs_grow()
+: <a class="el" href="lvol_8h.html#a46ad389863de4d9fdf4284a0cd3d5f6c">lvol.h</a>
+</li>
 <li>spdk_lvs_init()
 : <a class="el" href="lvol_8h.html#ae12b16b8565ab63a3c9b919ab9664c0f">lvol.h</a>
 </li>
 <li>spdk_lvs_load()
 : <a class="el" href="lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2">lvol.h</a>
+</li>
+<li>spdk_lvs_load_ext()
+: <a class="el" href="lvol_8h.html#a22e4f8c723692f69664fd91760cd30d3">lvol.h</a>
 </li>
 <li>spdk_lvs_op_complete
 : <a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">lvol.h</a>
@@ -1887,6 +2152,66 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_mem_unregister()
 : <a class="el" href="env_8h.html#a3ffa0c74e2d73703266cad2d5d103f09">env.h</a>
 </li>
+<li>spdk_memory_domain_create()
+: <a class="el" href="dma_8h.html#a6ddda62cbca17c587a2c6d201b4e6dff">dma.h</a>
+</li>
+<li>spdk_memory_domain_data_cpl_cb
+: <a class="el" href="dma_8h.html#a8d7a0eee8d944cf100d3006b3f3f1774">dma.h</a>
+</li>
+<li>spdk_memory_domain_destroy()
+: <a class="el" href="dma_8h.html#ad908aa65943565af3128e340c8c5e285">dma.h</a>
+</li>
+<li>spdk_memory_domain_get_context()
+: <a class="el" href="dma_8h.html#ac0277d9f5317fb5ae789c3394ba933b2">dma.h</a>
+</li>
+<li>spdk_memory_domain_get_dma_device_id()
+: <a class="el" href="dma_8h.html#a8ce978da1ab1cff0e08f5edfd50a4a88">dma.h</a>
+</li>
+<li>spdk_memory_domain_get_dma_device_type()
+: <a class="el" href="dma_8h.html#aa2dd7b82d1f0afe434c0ca92fce6fc66">dma.h</a>
+</li>
+<li>spdk_memory_domain_get_first()
+: <a class="el" href="dma_8h.html#a76bda4c46e09079dd85d3ea2facdb39a">dma.h</a>
+</li>
+<li>spdk_memory_domain_get_next()
+: <a class="el" href="dma_8h.html#aa7fd20c6b213156ac21f95bb19bc83d1">dma.h</a>
+</li>
+<li>spdk_memory_domain_memzero()
+: <a class="el" href="dma_8h.html#ae4e0567f3920f46cb3644ced997573c7">dma.h</a>
+</li>
+<li>spdk_memory_domain_memzero_cb
+: <a class="el" href="dma_8h.html#a22484d6db47a04c8a41a84e67cdb4613">dma.h</a>
+</li>
+<li>spdk_memory_domain_pull_data()
+: <a class="el" href="dma_8h.html#ab766b91733e0939cdea6d13e77572d40">dma.h</a>
+</li>
+<li>spdk_memory_domain_pull_data_cb
+: <a class="el" href="dma_8h.html#abf5cd879a09a8f23a30b45e94574e893">dma.h</a>
+</li>
+<li>spdk_memory_domain_push_data()
+: <a class="el" href="dma_8h.html#a9e494849a34eeab88b96f44e79862eb8">dma.h</a>
+</li>
+<li>spdk_memory_domain_push_data_cb
+: <a class="el" href="dma_8h.html#a2f4b39300fc63eb3fe95530ca4c87305">dma.h</a>
+</li>
+<li>spdk_memory_domain_set_memzero()
+: <a class="el" href="dma_8h.html#abafa95a5bedcc6c320d09a2ccbbeedfc">dma.h</a>
+</li>
+<li>spdk_memory_domain_set_pull()
+: <a class="el" href="dma_8h.html#a6c443f5b67500578f056e9fe9039bf76">dma.h</a>
+</li>
+<li>spdk_memory_domain_set_push()
+: <a class="el" href="dma_8h.html#a87db0ff92404fc6cb110e8fa98cce0dd">dma.h</a>
+</li>
+<li>spdk_memory_domain_set_translation()
+: <a class="el" href="dma_8h.html#ab4777ac664899af134eaa6c93de05d6d">dma.h</a>
+</li>
+<li>spdk_memory_domain_translate_data()
+: <a class="el" href="dma_8h.html#a05ad1c0fc1a4fa74ede9b48181e044b1">dma.h</a>
+</li>
+<li>spdk_memory_domain_translate_memory_cb
+: <a class="el" href="dma_8h.html#a80080465d2736a76d0ddf95d67c701bb">dma.h</a>
+</li>
 <li>spdk_mempool_count()
 : <a class="el" href="env_8h.html#a434cdf73691c745e717b8b794b2acb52">env.h</a>
 </li>
@@ -1911,6 +2236,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_mempool_lookup()
 : <a class="el" href="env_8h.html#a397f334df8126cae08a8499688e1601f">env.h</a>
 </li>
+<li>spdk_mempool_mem_cb_t
+: <a class="el" href="env_8h.html#ae529cf9f5041c8014839d9ecfe5750a4">env.h</a>
+</li>
+<li>spdk_mempool_mem_iter()
+: <a class="el" href="env_8h.html#aa63d48e98e2dc3b0fdc9ad75905fc379">env.h</a>
+</li>
 <li>spdk_mempool_obj_cb_t
 : <a class="el" href="env_8h.html#a039d3ef1514e326b6c2d8a527f6a6aaa">env.h</a>
 </li>
@@ -1922,6 +2253,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_mempool_put_bulk()
 : <a class="el" href="env_8h.html#a02f2b221ab82ba09c51013291313fe2e">env.h</a>
+</li>
+<li>spdk_memset_s()
+: <a class="el" href="util_8h.html#ad7ddd177340554080af356c7d1e57d00">util.h</a>
 </li>
 <li>spdk_memzone_dump()
 : <a class="el" href="env_8h.html#a8b47302a948b71f493ae775b53f162e2">env.h</a>
@@ -1943,6 +2277,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_msg_fn
 : <a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">thread.h</a>
+</li>
+<li>SPDK_MSG_MEMPOOL_CACHE_SIZE
+: <a class="el" href="thread_8h.html#a7c73c77029e1c65abe51ed347a762328">thread.h</a>
 </li>
 <li>spdk_nbd_fini()
 : <a class="el" href="nbd_8h.html#a029f02e6d83c1c754d19d0e77ba1987c">nbd.h</a>
@@ -1997,6 +2334,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_nvme_attach_cb
 : <a class="el" href="nvme_8h.html#ac1eaa795f075495337b270667661ce5d">nvme.h</a>
+</li>
+<li>spdk_nvme_brs_value
+: <a class="el" href="nvme__spec_8h.html#a24df614b7b914804dfa719dc03dfbc4f">nvme_spec.h</a>
 </li>
 <li>spdk_nvme_cap_ams
 : <a class="el" href="nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6">nvme_spec.h</a>
@@ -2069,6 +2409,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_nvme_cpl_get_status_string()
 : <a class="el" href="nvme_8h.html#a5f179ad680512c168148e13aa74b3f4b">nvme.h</a>
+</li>
+<li>spdk_nvme_cpl_get_status_type_string()
+: <a class="el" href="nvme_8h.html#a14f2ca4a3d3d7ae892943410ca1a07e0">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_alloc_io_qpair()
 : <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2">nvme.h</a>
@@ -2145,6 +2488,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_ctrlr_disable_pmr()
 : <a class="el" href="nvme_8h.html#af8a3c1f4f6b5595426fb9bd8974a85fe">nvme.h</a>
 </li>
+<li>spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page()
+: <a class="el" href="nvme_8h.html#a7708f291658bf471e399354d1247fabf">nvme.h</a>
+</li>
+<li>spdk_nvme_ctrlr_disconnect()
+: <a class="el" href="nvme_8h.html#a458a65224a0f20c73d0acb44715d86dc">nvme.h</a>
+</li>
 <li>spdk_nvme_ctrlr_disconnect_io_qpair()
 : <a class="el" href="nvme_8h.html#a2ba2d2f9571a62a47e04ef16e65f9e7b">nvme.h</a>
 </li>
@@ -2178,6 +2527,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_ctrlr_get_default_io_qpair_opts()
 : <a class="el" href="nvme_8h.html#a6964d09dc51882fae6f2a7cf94afc741">nvme.h</a>
 </li>
+<li>spdk_nvme_ctrlr_get_discovery_log_page()
+: <a class="el" href="nvme_8h.html#a87a228bf5b96e89305e52721d81920d7">nvme.h</a>
+</li>
 <li>spdk_nvme_ctrlr_get_first_active_ns()
 : <a class="el" href="nvme_8h.html#a59e69f39c7cb8a9e1c3e00af7804c8bd">nvme.h</a>
 </li>
@@ -2186,6 +2538,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_nvme_ctrlr_get_max_xfer_size()
 : <a class="el" href="nvme_8h.html#ac750410c9b53a0435d0111ae1e98913e">nvme.h</a>
+</li>
+<li>spdk_nvme_ctrlr_get_memory_domains()
+: <a class="el" href="nvme_8h.html#a6647280570446fbde28b92332be1108d">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_get_next_active_ns()
 : <a class="el" href="nvme_8h.html#abcd528b0df0a564c218dc2745c3af159">nvme.h</a>
@@ -2205,8 +2560,14 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_ctrlr_get_registers()
 : <a class="el" href="nvme_8h.html#a887db5ce5c84eba37a4d82f5d180d020">nvme.h</a>
 </li>
+<li>spdk_nvme_ctrlr_get_regs_bpinfo()
+: <a class="el" href="nvme_8h.html#ad9f87fef46a6101cc2e9b594d448cb37">nvme.h</a>
+</li>
 <li>spdk_nvme_ctrlr_get_regs_cap()
 : <a class="el" href="nvme_8h.html#a6943191f9c88c3cec504f87672b9acf8">nvme.h</a>
+</li>
+<li>spdk_nvme_ctrlr_get_regs_cc()
+: <a class="el" href="nvme_8h.html#a7312bd0bc396b6c714b6cca7073d3f6d">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_get_regs_cmbsz()
 : <a class="el" href="nvme_8h.html#a260b335960b9d81ac1a2601b003b99cd">nvme.h</a>
@@ -2232,6 +2593,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_ctrlr_is_discovery()
 : <a class="el" href="nvme_8h.html#a39c91e2e6ae899f37b5a89c28a2207cf">nvme.h</a>
 </li>
+<li>spdk_nvme_ctrlr_is_fabrics()
+: <a class="el" href="nvme_8h.html#ace8a76223de34edcae773a19a2a7263a">nvme.h</a>
+</li>
 <li>spdk_nvme_ctrlr_is_failed()
 : <a class="el" href="nvme_8h.html#a1cdd28db5de54dfee308ea0a3c4f1442">nvme.h</a>
 </li>
@@ -2253,14 +2617,26 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_ctrlr_process_admin_completions()
 : <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e">nvme.h</a>
 </li>
+<li>spdk_nvme_ctrlr_read_boot_partition_poll()
+: <a class="el" href="nvme_8h.html#a9439b3f5985d8597ea9c8a41b92edb9f">nvme.h</a>
+</li>
+<li>spdk_nvme_ctrlr_read_boot_partition_start()
+: <a class="el" href="nvme_8h.html#aa6b6a2ec4fdc37279739c31bde8ff1f7">nvme.h</a>
+</li>
+<li>spdk_nvme_ctrlr_reconnect_async()
+: <a class="el" href="nvme_8h.html#ad26e52f0881a802f40c5f7d1f19e19e3">nvme.h</a>
+</li>
 <li>spdk_nvme_ctrlr_reconnect_io_qpair()
 : <a class="el" href="nvme_8h.html#a1e04d50b1f27f6cd163a4ea2024a6fbb">nvme.h</a>
+</li>
+<li>spdk_nvme_ctrlr_reconnect_poll_async()
+: <a class="el" href="nvme_8h.html#acd56920dfc24752852b2c63fa5e4fd46">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_register_aer_callback()
 : <a class="el" href="nvme_8h.html#a1505fc1ef6e8ccb00134c1fa15e0368b">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_register_timeout_callback()
-: <a class="el" href="nvme_8h.html#aecec86e033e0d13e6fc67ead61a7028d">nvme.h</a>
+: <a class="el" href="nvme_8h.html#ae2957853179526e6176cf7623b19552b">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_reserve_cmb()
 : <a class="el" href="nvme_8h.html#a7a3ac9bb888c2b660191f94d208caaf1">nvme.h</a>
@@ -2300,6 +2676,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_nvme_ctrlr_update_firmware()
 : <a class="el" href="nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2">nvme.h</a>
+</li>
+<li>spdk_nvme_ctrlr_write_boot_partition()
+: <a class="el" href="nvme_8h.html#a3e5da9877e5b3a256478f6dc698fbb0c">nvme.h</a>
 </li>
 <li>SPDK_NVME_CTRLR_WRR_SUPPORTED
 : <a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818ab7e2345d658ff0069c99427a5e0177d3">nvme.h</a>
@@ -2361,14 +2740,26 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_detach_async()
 : <a class="el" href="nvme_8h.html#a30f8edb4791c426ccec2b815ca0ed791">nvme.h</a>
 </li>
+<li>spdk_nvme_detach_poll()
+: <a class="el" href="nvme_8h.html#a053bcfa48d3c4b20ac4a408fa5e61418">nvme.h</a>
+</li>
 <li>spdk_nvme_detach_poll_async()
 : <a class="el" href="nvme_8h.html#a19178860f90bdd522eaa329d0ff837fe">nvme.h</a>
 </li>
 <li>spdk_nvme_disconnected_qpair_cb
 : <a class="el" href="nvme_8h.html#add892b5eaa7208ca3b08382431713390">nvme.h</a>
 </li>
+<li>spdk_nvme_discovery_cb
+: <a class="el" href="nvme_8h.html#a4e4bc7c0002363701bc9363ab2291e6e">nvme.h</a>
+</li>
 <li>spdk_nvme_dsm_attribute
 : <a class="el" href="nvme__spec_8h.html#a553aa11d679deea767299b75e8ff5fca">nvme_spec.h</a>
+</li>
+<li>spdk_nvme_fdp_mgmt_recv_mo
+: <a class="el" href="nvme__spec_8h.html#a3589e34c8732d64e6c6e60d10592acc9">nvme_spec.h</a>
+</li>
+<li>spdk_nvme_fdp_mgmt_send_mo
+: <a class="el" href="nvme__spec_8h.html#af2e770be08da5a2649ea559d1e901b62">nvme_spec.h</a>
 </li>
 <li>spdk_nvme_feat
 : <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25">nvme_spec.h</a>
@@ -2384,6 +2775,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SPDK_NVME_FEAT_ERROR_RECOVERY
 : <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a057a6c718d973bf92bf4088c974fae0b">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_FEAT_FDP
+: <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25aa93d62eecf4ceba4c051eb8e3266be8c">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_FEAT_FDP_EVENTS
+: <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a4dee488f3e9c1ec877277be2f5a4d28b">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_FEAT_HOST_BEHAVIOR_SUPPORT
 : <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a1749c79457b5e762df54ee01a773a8bd">nvme_spec.h</a>
@@ -2451,11 +2848,17 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_fw_commit_action
 : <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_FW_COMMIT_ACTIVATE_BOOT_PARTITION
+: <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea63a926a94e918914066d2c5a49ec00d8">nvme_spec.h</a>
+</li>
 <li>SPDK_NVME_FW_COMMIT_ENABLE_IMG
 : <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eab533ab92baec629b3cbeed4b81885c13">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_FW_COMMIT_REPLACE_AND_ENABLE_IMG
 : <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea85655a09e0cae5f157d3b005ba1f4b6f">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_FW_COMMIT_REPLACE_BOOT_PARTITION
+: <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea8fdb4354da92942c3c324d6690f99f0c">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_FW_COMMIT_REPLACE_IMG
 : <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eaf8349fa33534c363595859493747e93f">nvme_spec.h</a>
@@ -2483,6 +2886,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SPDK_NVME_IDENTIFY_ALLOCATED_NS_LIST_IOCS
 : <a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a7ae6f5b09916be6e6700fbb390158f3f">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_IDENTIFY_BUFLEN
+: <a class="el" href="nvme__spec_8h.html#a97a995aea41807a41ee7a2670dc33114">nvme_spec.h</a>
 </li>
 <li>spdk_nvme_identify_cns
 : <a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6">nvme_spec.h</a>
@@ -2523,6 +2929,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPDK_NVME_IDENTIFY_SECONDARY_CTRLR_LIST
 : <a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6acf0506a0b05a13ae3cd613dc3caf365b">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_IO_FLAGS_DATA_PLACEMENT_DIRECTIVE
+: <a class="el" href="nvme__spec_8h.html#a06bec328f0ac84ee37f04395824fa26b">nvme_spec.h</a>
+</li>
 <li>SPDK_NVME_IO_FLAGS_FUSE_FIRST
 : <a class="el" href="nvme__spec_8h.html#aa12837c61bff3188e1f92d001506e5a0">nvme_spec.h</a>
 </li>
@@ -2550,11 +2959,23 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPDK_NVME_LOG_ASYMMETRIC_NAMESPACE_ACCESS
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a61628a94b6b41cd37e2b631ef551fc15">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_LOG_BOOT_PARTITION
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a2bbffe1e18289e3eff1e8ceea26d8489">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_CAPACITY_CONFIGURATION_LIST
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a631a622ee6e4324646f4d0b13bd738d8">nvme_spec.h</a>
+</li>
 <li>SPDK_NVME_LOG_CHANGED_NS_LIST
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aaa4a483997b6fa41a9e73755441d2186">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_LOG_CHANGED_ZONE_LIST
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a76dc06b40721e7750a3e65d4386e197f">nvme_spec.h</a>
+</li>
 <li>SPDK_NVME_LOG_COMMAND_EFFECTS_LOG
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aab219389150398bc1b23da1df91e634c">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_COMMAND_FEATURE_LOCKDOWN
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ac73c0d2babb8069cd86e31baf7ba1a24">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_LOG_DEVICE_SELF_TEST
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa41fe741a7a29377a4cfa29717aa94c0">nvme_spec.h</a>
@@ -2562,8 +2983,26 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPDK_NVME_LOG_DISCOVERY
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a373acc5fc6392f4af3cfd5c6123bb600">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_LOG_ENDURANCE_GROUP_EVENT
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ab64184e161e0d4e277993248aa7c750c">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_ENDURANCE_GROUP_INFORMATION
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ac3009a19fce8ef1ccf125ebca249d9b3">nvme_spec.h</a>
+</li>
 <li>SPDK_NVME_LOG_ERROR
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ad05013a36512c9cd6ad0249263a3f583">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_FDP_CONFIGURATIONS
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a3354a57a7020afe9749f4a3589b66e5f">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_FDP_EVENTS
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa1c2fd427c0e83dbb2121ec261794746">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_FDP_STATISTICS
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ae1b6fb3241903734f1c39e6a21e89900">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_FEATURE_IDS_EFFECTS
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ac9c14fba2a682e9b7998d40607215529">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_LOG_FIRMWARE_SLOT
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a898706714ccdcd0c5b2fee0170beecbb">nvme_spec.h</a>
@@ -2571,14 +3010,38 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPDK_NVME_LOG_HEALTH_INFORMATION
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a8c4e97d27e08924e29d76ea66780a886">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_LOG_MEDIA_UNIT_STATUS
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aaee8b290cff1d9a976c0ebebed994aa8">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_NVME_MI_COMMANDS_EFFECTS
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a2dd8a9225fca82648e22ec65f82f6c65">nvme_spec.h</a>
+</li>
 <li>spdk_nvme_log_page
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_PERSISTENT_EVENT_LOG
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ab9c629e4685fc12333c98d8a9df28cc8">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_PREDICATBLE_LATENCY
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4adfadc15124f7118df41c99199da112fe">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_PREDICTABLE_LATENCY_EVENT
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a992e7edc18ba7496dd1daeed4e1cc85d">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_RECLAIM_UNIT_HANDLE_USAGE
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a52a6b512ee1fa6f2700dda29201a8fde">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_LOG_RESERVATION_NOTIFICATION
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a37f2ea0a63737907265ff3ed35088a09">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_LOG_ROTATIONAL_MEDIA_INFORMATION
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ae06fdca2b229e20571c25d9d01db540e">nvme_spec.h</a>
+</li>
 <li>SPDK_NVME_LOG_SANITIZE_STATUS
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a96d86f9eff782b5207b78ea26c6e3b2b">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_SUPPORTED_LOG_PAGES
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a6d21eaf5a38ce3511b0ce1a4ce21947e">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_LOG_TELEMETRY_CTRLR_INITIATED
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa21d97922f4ef61731fd20986d30b2c8">nvme_spec.h</a>
@@ -2586,8 +3049,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPDK_NVME_LOG_TELEMETRY_HOST_INITIATED
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a6b0a3950980fadba16d971811a31afa0">nvme_spec.h</a>
 </li>
-<li>spdk_nvme_map_cmd()
-: <a class="el" href="nvme_8h.html#abe78bfe779380af49ed2416c8974cff3">nvme.h</a>
+<li>SPDK_NVME_MAX_CHANGED_NAMESPACES
+: <a class="el" href="nvme__spec_8h.html#a5974e1d01942a43f9b95d77a31c2123b">nvme_spec.h</a>
 </li>
 <li>spdk_nvme_media_error_status_code
 : <a class="el" href="nvme__spec_8h.html#ae2a432232311e948e133a1a56325418f">nvme_spec.h</a>
@@ -2622,11 +3085,20 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_ns_cmd_comparev_with_md()
 : <a class="el" href="nvme_8h.html#a47e7d5f0f025d25026f1225d2f6c9a4b">nvme.h</a>
 </li>
+<li>spdk_nvme_ns_cmd_copy()
+: <a class="el" href="nvme_8h.html#ad6604babca780495c910145f915d5ea2">nvme.h</a>
+</li>
 <li>spdk_nvme_ns_cmd_dataset_management()
 : <a class="el" href="nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d">nvme.h</a>
 </li>
 <li>spdk_nvme_ns_cmd_flush()
 : <a class="el" href="nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6">nvme.h</a>
+</li>
+<li>spdk_nvme_ns_cmd_io_mgmt_recv()
+: <a class="el" href="nvme_8h.html#ac37d0d0eaebbc73c1dcaa246a3d1253a">nvme.h</a>
+</li>
+<li>spdk_nvme_ns_cmd_io_mgmt_send()
+: <a class="el" href="nvme_8h.html#ac2d713cade7319ea13dcebe41fff2431">nvme.h</a>
 </li>
 <li>spdk_nvme_ns_cmd_read()
 : <a class="el" href="nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5">nvme.h</a>
@@ -2636,6 +3108,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_nvme_ns_cmd_readv()
 : <a class="el" href="nvme_8h.html#acb47ce7de6b6e963ec9fb8de261466ae">nvme.h</a>
+</li>
+<li>spdk_nvme_ns_cmd_readv_ext()
+: <a class="el" href="nvme_8h.html#af4a40bbc5ff993609f20d6b4f2a35f93">nvme.h</a>
 </li>
 <li>spdk_nvme_ns_cmd_readv_with_md()
 : <a class="el" href="nvme_8h.html#a08afb91732d92d84a054012cd3d236aa">nvme.h</a>
@@ -2652,6 +3127,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_ns_cmd_reservation_report()
 : <a class="el" href="nvme_8h.html#a9a7b5944bda3fe9ef1c83fcd2025b39a">nvme.h</a>
 </li>
+<li>spdk_nvme_ns_cmd_verify()
+: <a class="el" href="nvme_8h.html#a686bdbdf30351e164ce8f8c317621ace">nvme.h</a>
+</li>
 <li>spdk_nvme_ns_cmd_write()
 : <a class="el" href="nvme_8h.html#a3065f669d8b605efdcadffbf94a50538">nvme.h</a>
 </li>
@@ -2666,6 +3144,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_nvme_ns_cmd_writev()
 : <a class="el" href="nvme_8h.html#adfcbb5d31f0b572847cc8ae8b07dfcfb">nvme.h</a>
+</li>
+<li>spdk_nvme_ns_cmd_writev_ext()
+: <a class="el" href="nvme_8h.html#a7c98eff7f5474a7044112202fbbf77bb">nvme.h</a>
 </li>
 <li>spdk_nvme_ns_cmd_writev_with_md()
 : <a class="el" href="nvme_8h.html#ab4d42660e3de76f75f4b5d79ed9b1d01">nvme.h</a>
@@ -2712,6 +3193,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_ns_get_flags()
 : <a class="el" href="nvme_8h.html#a5eff1c1b6fbfb348a1f158b3cf70626f">nvme.h</a>
 </li>
+<li>spdk_nvme_ns_get_format_index()
+: <a class="el" href="nvme_8h.html#a95da4dc7b98bfeed010a4a7a899e0ac7">nvme.h</a>
+</li>
 <li>spdk_nvme_ns_get_id()
 : <a class="el" href="nvme_8h.html#a54052303ef2870d6d1856f79ef6ff88a">nvme.h</a>
 </li>
@@ -2720,6 +3204,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_nvme_ns_get_md_size()
 : <a class="el" href="nvme_8h.html#ab48657f8cb6561b35e1c1b0bc18376d2">nvme.h</a>
+</li>
+<li>spdk_nvme_ns_get_nguid()
+: <a class="el" href="nvme_8h.html#a67c20210c6490d4545b40e43faa8af23">nvme.h</a>
 </li>
 <li>spdk_nvme_ns_get_num_sectors()
 : <a class="el" href="nvme_8h.html#a7c522609f730db26f66e7f5b6b3501e0">nvme.h</a>
@@ -2802,6 +3289,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_poll_group_add()
 : <a class="el" href="nvme_8h.html#ade4eafe3d6b7b4a0a1c317a49b3ba1e5">nvme.h</a>
 </li>
+<li>spdk_nvme_poll_group_all_connected()
+: <a class="el" href="nvme_8h.html#aba8083fac113bd027ff1f8c93fe704d6">nvme.h</a>
+</li>
 <li>spdk_nvme_poll_group_create()
 : <a class="el" href="nvme_8h.html#afb7c3d1cbb9ef2dbe39344ad65490f2d">nvme.h</a>
 </li>
@@ -2859,6 +3349,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_qpair_get_id()
 : <a class="el" href="nvme_8h.html#add6ae73013499c8fc3c197f47231b8d2">nvme.h</a>
 </li>
+<li>spdk_nvme_qpair_get_num_outstanding_reqs()
+: <a class="el" href="nvme_8h.html#a54fff8d7ba08d00a5e4f322dd1b6af2d">nvme.h</a>
+</li>
 <li>spdk_nvme_qpair_get_optimal_poll_group()
 : <a class="el" href="nvme_8h.html#a8a891c5683c340e0426cd0268d29d689">nvme.h</a>
 </li>
@@ -2874,11 +3367,17 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_qpair_remove_cmd_error_injection()
 : <a class="el" href="nvme_8h.html#ad720b23786450b5a2b2d7d65c6dd6b7c">nvme.h</a>
 </li>
+<li>spdk_nvme_qpair_set_abort_dnr()
+: <a class="el" href="nvme_8h.html#a0538f261b89d0cdb455638dba52ea4b8">nvme.h</a>
+</li>
 <li>spdk_nvme_qprio
 : <a class="el" href="nvme__spec_8h.html#ae83a61e254cf9d1fd59376ceedd1b4e6">nvme_spec.h</a>
 </li>
 <li>spdk_nvme_rdma_init_hooks()
 : <a class="el" href="nvme_8h.html#a82cdb425c9fad7b94ad0b8f5c27bb8b2">nvme.h</a>
+</li>
+<li>spdk_nvme_reg_cb
+: <a class="el" href="nvme_8h.html#a0893350626b0eff85b931c570876f28a">nvme.h</a>
 </li>
 <li>spdk_nvme_remove_cb
 : <a class="el" href="nvme_8h.html#a05f1aa545be57a03bb2dd0c6180172b6">nvme.h</a>
@@ -2976,8 +3475,14 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPDK_NVME_TRANSPORT_CUSTOM
 : <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecead9c4d8737f8d49b432c3f2d9d0f86a0a">nvme.h</a>
 </li>
+<li>SPDK_NVME_TRANSPORT_CUSTOM_FABRICS
+: <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecead22a6399d96bc2c38efb261319c04ffc">nvme.h</a>
+</li>
 <li>SPDK_NVME_TRANSPORT_FC
 : <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f">nvme.h</a>
+</li>
+<li>spdk_nvme_transport_get_opts()
+: <a class="el" href="nvme_8h.html#acb9e59ab20d92979f2995646c8191e9a">nvme.h</a>
 </li>
 <li>spdk_nvme_transport_id_adrfam_str()
 : <a class="el" href="nvme_8h.html#afb95c5452e84e2c5c1984341fc816ea7">nvme.h</a>
@@ -3009,6 +3514,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_transport_register()
 : <a class="el" href="nvme_8h.html#a6e4165e918b05158286f5984a136acbf">nvme.h</a>
 </li>
+<li>spdk_nvme_transport_set_opts()
+: <a class="el" href="nvme_8h.html#a327cc2f4818d3111bdc8485a9b844d4f">nvme.h</a>
+</li>
 <li>SPDK_NVME_TRANSPORT_TCP
 : <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea1b74e6a5b484b71142aa6ac9821a6de3">nvme.h</a>
 </li>
@@ -3032,6 +3540,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_nvme_zns_ctrlr_get_max_zone_append_size()
 : <a class="el" href="nvme__zns_8h.html#a617d5c38aafe14358922c3eeffa6c93b">nvme_zns.h</a>
+</li>
+<li>spdk_nvme_zns_ext_report_zones()
+: <a class="el" href="nvme__zns_8h.html#ad88778a20396b5b10621c39e44a5fdd0">nvme_zns.h</a>
 </li>
 <li>spdk_nvme_zns_finish_zone()
 : <a class="el" href="nvme__zns_8h.html#a78c8da36da7f1e66ec0aceee68e326d5">nvme_zns.h</a>
@@ -3069,6 +3580,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_zns_reset_zone()
 : <a class="el" href="nvme__zns_8h.html#af976a7e45715b3a6db365f9baf8d3225">nvme_zns.h</a>
 </li>
+<li>spdk_nvme_zns_set_zone_desc_ext()
+: <a class="el" href="nvme__zns_8h.html#ac6808ae83b9fa6535d699ad9c2104e09">nvme_zns.h</a>
+</li>
 <li>spdk_nvme_zns_zone_append()
 : <a class="el" href="nvme__zns_8h.html#afe28a5a089886cadf0008c7b2b03d5c9">nvme_zns.h</a>
 </li>
@@ -3099,6 +3613,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPDK_NVMF_ADRFAM_IPV6
 : <a class="el" href="nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6a67a7b7b64f228fc424de6ec9d1c93fd4">nvmf_spec.h</a>
 </li>
+<li>spdk_nvmf_ctrlr_abort_aer()
+: <a class="el" href="nvmf__transport_8h.html#aa94fd5f0f0b96442400d1b00dfe84bf6">nvmf_transport.h</a>
+</li>
+<li>spdk_nvmf_ctrlr_async_event_error_event()
+: <a class="el" href="nvmf__transport_8h.html#a7d79bc92dddeeef50e0b26cbdbbf9b07">nvmf_transport.h</a>
+</li>
 <li>spdk_nvmf_ctrlr_get_id()
 : <a class="el" href="nvmf__transport_8h.html#a4be21e1e7c78a65458f3cb7d8ed08997">nvmf_transport.h</a>
 </li>
@@ -3113,6 +3633,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SPDK_NVMF_CTRLR_MODEL_STATIC
 : <a class="el" href="nvme__spec_8h.html#a2b71fb615deb505826eaeddd093e06bca387c04ba873422f553eec7360e4ea599">nvme_spec.h</a>
+</li>
+<li>spdk_nvmf_ctrlr_restore_migr_data()
+: <a class="el" href="nvmf__transport_8h.html#a3fbe83688b786970a84adb1ef45b5f5b">nvmf_transport.h</a>
+</li>
+<li>spdk_nvmf_ctrlr_save_migr_data()
+: <a class="el" href="nvmf__transport_8h.html#a1010bdb10323d264654356742abeeaee">nvmf_transport.h</a>
 </li>
 <li>spdk_nvmf_get_first_tgt()
 : <a class="el" href="nvmf_8h.html#a306b55570dbe1da898083657d382f6f5">nvmf.h</a>
@@ -3164,9 +3690,6 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_nvmf_poll_group_dump_stat()
 : <a class="el" href="nvmf_8h.html#aba3584185c147f5b10cf8c2e2b3fa181">nvmf.h</a>
-</li>
-<li>spdk_nvmf_poll_group_get_stat()
-: <a class="el" href="nvmf_8h.html#ac5d5611a2cd71a7d71a08c990cbd29e7">nvmf.h</a>
 </li>
 <li>spdk_nvmf_poll_group_remove()
 : <a class="el" href="nvmf__transport_8h.html#a9ea012aeb9897f188acdf41481c0217f">nvmf_transport.h</a>
@@ -3235,7 +3758,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="nvmf_8h.html#ad1b7f34d31e34d784fb54b70b02bdb15">nvmf.h</a>
 </li>
 <li>spdk_nvmf_subsystem_destroy()
-: <a class="el" href="nvmf_8h.html#a1609f4c58179de803a755cc38c5c2940">nvmf.h</a>
+: <a class="el" href="nvmf_8h.html#a3fec6c155a532a9a6e4c786930f507a2">nvmf.h</a>
 </li>
 <li>spdk_nvmf_subsystem_disconnect_host()
 : <a class="el" href="nvmf_8h.html#a18b4cfdef8236b13193ad8e69be247fe">nvmf.h</a>
@@ -3255,11 +3778,17 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvmf_subsystem_get_first_ns()
 : <a class="el" href="nvmf_8h.html#ab797c6df2dc8fab9833de1711b6fe7f4">nvmf.h</a>
 </li>
+<li>spdk_nvmf_subsystem_get_max_cntlid()
+: <a class="el" href="nvmf_8h.html#afcf923218a78791aaea0653fbb61bfdc">nvmf.h</a>
+</li>
 <li>spdk_nvmf_subsystem_get_max_namespaces()
 : <a class="el" href="nvmf_8h.html#a414b91bad7200ab931f14a06585ccc74">nvmf.h</a>
 </li>
 <li>spdk_nvmf_subsystem_get_max_nsid()
 : <a class="el" href="nvmf_8h.html#acfae99734ec18b90dbb6ef39d1b73860">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_min_cntlid()
+: <a class="el" href="nvmf_8h.html#a5b02975c7384755db60436a49e64faec">nvmf.h</a>
 </li>
 <li>spdk_nvmf_subsystem_get_mn()
 : <a class="el" href="nvmf_8h.html#a802a4bacfab2f4e57fbc12cef490dfda">nvmf.h</a>
@@ -3357,6 +3886,21 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvmf_tgt_destroy()
 : <a class="el" href="nvmf_8h.html#a21638f4d81002e93d410cd0d267f608c">nvmf.h</a>
 </li>
+<li>spdk_nvmf_tgt_discovery_filter
+: <a class="el" href="nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3">nvmf.h</a>
+</li>
+<li>SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY
+: <a class="el" href="nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3ababebed136f083311d77a55d9182aa85">nvmf.h</a>
+</li>
+<li>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_ADDRESS
+: <a class="el" href="nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a7805f8d4d557f754e3725eb7b7c60605">nvmf.h</a>
+</li>
+<li>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_SVCID
+: <a class="el" href="nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a2980fd83e5e8eb239cc1c8dd6d4dc12d">nvmf.h</a>
+</li>
+<li>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_TYPE
+: <a class="el" href="nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3ace922fc963e9598bb4e7569b145a3629">nvmf.h</a>
+</li>
 <li>spdk_nvmf_tgt_find_subsystem()
 : <a class="el" href="nvmf_8h.html#aae62b7fa6ac05a6ad022007f60068d16">nvmf.h</a>
 </li>
@@ -3372,6 +3916,18 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvmf_tgt_new_qpair()
 : <a class="el" href="nvmf__transport_8h.html#ae540481943a9be15eacf93e111714db9">nvmf_transport.h</a>
 </li>
+<li>spdk_nvmf_tgt_pause_polling()
+: <a class="el" href="nvmf_8h.html#a92156a86ff95452980a34428c9312f62">nvmf.h</a>
+</li>
+<li>spdk_nvmf_tgt_pause_polling_cb_fn
+: <a class="el" href="nvmf_8h.html#a50bd8ee037dbbe33729db2eb626267cf">nvmf.h</a>
+</li>
+<li>spdk_nvmf_tgt_resume_polling()
+: <a class="el" href="nvmf_8h.html#a3d98c9772e618a0eff5bfc5a4a799c3a">nvmf.h</a>
+</li>
+<li>spdk_nvmf_tgt_resume_polling_cb_fn
+: <a class="el" href="nvmf_8h.html#a654c4a14a9de2ba863abfc1538a3b158">nvmf.h</a>
+</li>
 <li>spdk_nvmf_tgt_stop_listen()
 : <a class="el" href="nvmf_8h.html#ac796e8f25381f344119ef0f44c2a017c">nvmf.h</a>
 </li>
@@ -3383,6 +3939,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_nvmf_transport_create()
 : <a class="el" href="nvmf_8h.html#a141be89e55c37dc017ddeb2494f508c7">nvmf.h</a>
+</li>
+<li>spdk_nvmf_transport_create_async()
+: <a class="el" href="nvmf_8h.html#a0849e6b60e188527618dcbde9067b9d3">nvmf.h</a>
 </li>
 <li>spdk_nvmf_transport_destroy()
 : <a class="el" href="nvmf_8h.html#af35ee91438fbca24adac655694c64a27">nvmf.h</a>
@@ -3399,12 +3958,6 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvmf_transport_opts_init()
 : <a class="el" href="nvmf_8h.html#a8e8e8b2a3f7a8d4b8ab52e1beef87ab0">nvmf.h</a>
 </li>
-<li>spdk_nvmf_transport_poll_group_free_stat()
-: <a class="el" href="nvmf_8h.html#ab03fc0bf9946107905bf8148495966f9">nvmf.h</a>
-</li>
-<li>spdk_nvmf_transport_poll_group_get_stat()
-: <a class="el" href="nvmf_8h.html#ae4e59ef25ba7e6a45ab1d613c006f1bb">nvmf.h</a>
-</li>
 <li>spdk_nvmf_transport_register()
 : <a class="el" href="nvmf__transport_8h.html#ab53a8667860940846986a85db26a7236">nvmf_transport.h</a>
 </li>
@@ -3412,7 +3965,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df">nvmf.h</a>
 </li>
 <li>spdk_nvmf_transport_stop_listen_async()
-: <a class="el" href="nvmf_8h.html#a8f456c0ef4f8b11aef74df3ea98fdf9d">nvmf.h</a>
+: <a class="el" href="nvmf_8h.html#a51c3554ddcd16dc80f8d016c9d5d7c9f">nvmf.h</a>
 </li>
 <li>spdk_nvmf_treq_secure_channel
 : <a class="el" href="nvmf__spec_8h.html#a0a92190b8c6824182974e20f84ee0a3c">nvmf_spec.h</a>
@@ -3540,6 +4093,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_pci_device_detach()
 : <a class="el" href="env_8h.html#aa98502fc8d794fadaae348496d421082">env.h</a>
 </li>
+<li>spdk_pci_device_disable_interrupt()
+: <a class="el" href="env_8h.html#ab796808f5105da215e5da178ad39e3ac">env.h</a>
+</li>
+<li>spdk_pci_device_enable_interrupt()
+: <a class="el" href="env_8h.html#a3ca80b3a77dfc8b35e65dc281737019d">env.h</a>
+</li>
 <li>spdk_pci_device_get_addr()
 : <a class="el" href="env_8h.html#a71622d665e7b50f34d2279e7e86b557e">env.h</a>
 </li>
@@ -3560,6 +4119,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_pci_device_get_id()
 : <a class="el" href="env_8h.html#a5c5c2f463bddbce4cc846e04246f6414">env.h</a>
+</li>
+<li>spdk_pci_device_get_interrupt_efd()
+: <a class="el" href="env_8h.html#a6b50d57653132fb21a10a4ff120125c7">env.h</a>
 </li>
 <li>spdk_pci_device_get_serial_number()
 : <a class="el" href="env_8h.html#a69b979316610b357a35d03500c3059af">env.h</a>
@@ -3606,20 +4168,17 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_pci_event_listen()
 : <a class="el" href="env_8h.html#ac0a1b068221b7d1f1a1e2981ec3ba4d4">env.h</a>
 </li>
+<li>spdk_pci_for_each_device()
+: <a class="el" href="env_8h.html#a4705df2fb00412d72deda48ab9bf088a">env.h</a>
+</li>
 <li>spdk_pci_get_driver()
 : <a class="el" href="env_8h.html#a0cedd84c4dbf700c387d8fb6ebc42578">env.h</a>
 </li>
 <li>spdk_pci_get_event()
 : <a class="el" href="env_8h.html#a35497ea1837fa72486971df83005c0a4">env.h</a>
 </li>
-<li>spdk_pci_get_first_device()
-: <a class="el" href="env_8h.html#ac98526545d85af08018dcbaebca8c49c">env.h</a>
-</li>
-<li>spdk_pci_get_next_device()
-: <a class="el" href="env_8h.html#ad5292c669ec570b15694bfd1952f0868">env.h</a>
-</li>
 <li>spdk_pci_hook_device()
-: <a class="el" href="env_8h.html#ac3850938d8aaf6363bd76e690f17de30">env.h</a>
+: <a class="el" href="env_8h.html#a4ed436524e4df7525045e488206aa648">env.h</a>
 </li>
 <li>spdk_pci_idxd_get_driver()
 : <a class="el" href="env_8h.html#aba107481f435164bef55ae65652775a8">env.h</a>
@@ -3629,6 +4188,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_pci_nvme_get_driver()
 : <a class="el" href="env_8h.html#aa4a5c3c4f51c1eaac132f6093fe219f4">env.h</a>
+</li>
+<li>spdk_pci_register_device_provider()
+: <a class="el" href="env_8h.html#af30e499f580512a07adde59837ea6b5e">env.h</a>
 </li>
 <li>spdk_pci_register_error_handler()
 : <a class="el" href="env_8h.html#aca05711bef2f8f8fa648e5715667f623">env.h</a>
@@ -3699,6 +4261,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_put_io_channel()
 : <a class="el" href="thread_8h.html#a717571a5011db0cdd730498146f25f9a">thread.h</a>
 </li>
+<li>SPDK_RDMA_DMA_DEVICE
+: <a class="el" href="dma_8h.html#a6d96f9e4e12eef5b83a1e85c0643edef">dma.h</a>
+</li>
 <li>spdk_realloc()
 : <a class="el" href="env_8h.html#acbf96e1e440b86ba23728e226b0745c6">env.h</a>
 </li>
@@ -3750,6 +4315,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_rmb
 : <a class="el" href="barrier_8h.html#a876d9f9e955882ee02432d8796c63213">barrier.h</a>
 </li>
+<li>spdk_rpc_finish()
+: <a class="el" href="init_8h.html#ada2202d341585d983143604ff93fa411">init.h</a>
+</li>
+<li>spdk_rpc_initialize()
+: <a class="el" href="init_8h.html#a5fe0edfe5ce6192fa78c63b089974f2c">init.h</a>
+</li>
 <li>spdk_scsi_dev_add_lun()
 : <a class="el" href="scsi_8h.html#ae2a96b70c616896d33f6904ead1b7e5b">scsi.h</a>
 </li>
@@ -3783,6 +4354,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_scsi_dev_free_io_channels()
 : <a class="el" href="scsi_8h.html#a09579688597a2ab594671a00b20fd2cd">scsi.h</a>
 </li>
+<li>spdk_scsi_dev_get_first_lun()
+: <a class="el" href="scsi_8h.html#a0b4dab3919530239f19a554405449219">scsi.h</a>
+</li>
 <li>spdk_scsi_dev_get_id()
 : <a class="el" href="scsi_8h.html#aa53c0ae5af6584eb19cfcc75799dfce8">scsi.h</a>
 </li>
@@ -3791,6 +4365,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_scsi_dev_get_name()
 : <a class="el" href="scsi_8h.html#a6e92c13ec584430c7fb2ace1f84d4022">scsi.h</a>
+</li>
+<li>spdk_scsi_dev_get_next_lun()
+: <a class="el" href="scsi_8h.html#aa31cf1e76bf117238522daf034e4d20c">scsi.h</a>
 </li>
 <li>spdk_scsi_dev_has_pending_tasks()
 : <a class="el" href="scsi_8h.html#a7c9b33030b7b39787f8dc3b369a49382">scsi.h</a>
@@ -3891,6 +4468,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_sighandler_t
 : <a class="el" href="event_8h.html#a6371e3e4903529f9c94e25d224580a44">event.h</a>
 </li>
+<li>SPDK_SIZEOF_MEMBER
+: <a class="el" href="util_8h.html#a84582307b17e6428bfdd287c9b8b5e3d">util.h</a>
+</li>
 <li>spdk_smp_mb
 : <a class="el" href="barrier_8h.html#a07ef3ca027c4f24491ec4114c0e0a727">barrier.h</a>
 </li>
@@ -3919,10 +4499,10 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="sock_8h.html#a407c7aebae3d1a1556109da46a73213e">sock.h</a>
 </li>
 <li>spdk_sock_connect()
-: <a class="el" href="sock_8h.html#afcbfb1e52df2160547b6f5e2bb8ec636">sock.h</a>
+: <a class="el" href="sock_8h.html#a2403fc0793791d53756e8c12feaceeff">sock.h</a>
 </li>
 <li>spdk_sock_connect_ext()
-: <a class="el" href="sock_8h.html#ae4a2a815e571ea3401cb94ed915cf251">sock.h</a>
+: <a class="el" href="sock_8h.html#ada8c37591bce5d7bcede5413cad350ba">sock.h</a>
 </li>
 <li>spdk_sock_flush()
 : <a class="el" href="sock_8h.html#a1501ed80f4cbac9912d10f4e1900905d">sock.h</a>
@@ -3931,7 +4511,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="sock_8h.html#a66cae415827aa6aa31adb05c120ba803">sock.h</a>
 </li>
 <li>spdk_sock_get_optimal_sock_group()
-: <a class="el" href="sock_8h.html#a8d38ca36abb4f475b362c485116678b9">sock.h</a>
+: <a class="el" href="sock_8h.html#ad24c07b476251c95ed574ce3f61a2faa">sock.h</a>
 </li>
 <li>spdk_sock_getaddr()
 : <a class="el" href="sock_8h.html#ab596707e3e18b6f3e4ceb365369a3b8f">sock.h</a>
@@ -3973,13 +4553,16 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="sock_8h.html#ae2fc8fd68b9988e2ec771a82914dcc80">sock.h</a>
 </li>
 <li>spdk_sock_listen()
-: <a class="el" href="sock_8h.html#a47043c348fe296ba0ff0ad0d96050430">sock.h</a>
+: <a class="el" href="sock_8h.html#ad87a8349ed85162c22d8fe714eb8b26f">sock.h</a>
 </li>
 <li>spdk_sock_listen_ext()
-: <a class="el" href="sock_8h.html#ace429a6a4c422da111effe7f17689dfd">sock.h</a>
+: <a class="el" href="sock_8h.html#aa82e6ab1c31e26a4ea696fdd540ac572">sock.h</a>
 </li>
 <li>spdk_sock_readv()
 : <a class="el" href="sock_8h.html#aec412e1537891ed4a02c24615df619b0">sock.h</a>
+</li>
+<li>spdk_sock_readv_async()
+: <a class="el" href="sock_8h.html#a5c50eded982e67fd11b004f3ffd78cb1">sock.h</a>
 </li>
 <li>spdk_sock_recv()
 : <a class="el" href="sock_8h.html#abab9e8eaebfc2857e05848580fba864e">sock.h</a>
@@ -4005,20 +4588,29 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_sock_writev_async()
 : <a class="el" href="sock_8h.html#a7aa61e0b299d1f0dff273dcd48156d67">sock.h</a>
 </li>
+<li>spdk_spin_destroy()
+: <a class="el" href="thread_8h.html#a082f55ea269d3f171f00917099debb67">thread.h</a>
+</li>
+<li>spdk_spin_held()
+: <a class="el" href="thread_8h.html#a14cf080d22a52b5ae3025221411096f5">thread.h</a>
+</li>
+<li>spdk_spin_init()
+: <a class="el" href="thread_8h.html#ad9618326108ac7d4a47fefb33e21879f">thread.h</a>
+</li>
+<li>spdk_spin_lock()
+: <a class="el" href="thread_8h.html#ac03bb794fec774061fc77367bc6bdfa2">thread.h</a>
+</li>
+<li>spdk_spin_unlock()
+: <a class="el" href="thread_8h.html#adcaee781de4118a2f789dd76ef4b3b83">thread.h</a>
+</li>
 <li>spdk_sprintf_alloc()
 : <a class="el" href="string_8h.html#ac80f349c77c57bc28690f46e5de7fe03">string.h</a>
 </li>
 <li>spdk_sprintf_append_realloc()
 : <a class="el" href="string_8h.html#a749731b95349503d787f623980d32241">string.h</a>
 </li>
-<li>spdk_start_poller
-: <a class="el" href="thread_8h.html#a6f70f5e9b4d498e843f81f1a6ada6370">thread.h</a>
-</li>
 <li>SPDK_STATIC_ASSERT
 : <a class="el" href="assert_8h.html#ab961047b92ac1428376ef1ae1e4fa1cf">assert.h</a>
-</li>
-<li>spdk_stop_poller
-: <a class="el" href="thread_8h.html#adfddbbbb13145f26741106cb8296a05a">thread.h</a>
 </li>
 <li>spdk_str_chomp()
 : <a class="el" href="string_8h.html#a713ec7967f4c2c3cb8c031421edee78a">string.h</a>
@@ -4026,8 +4618,20 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_str_trim()
 : <a class="el" href="string_8h.html#a93efecd5ee3d49df20a51b65718efbd1">string.h</a>
 </li>
+<li>spdk_strarray_dup()
+: <a class="el" href="string_8h.html#a7d2c0c2ba20e00339a281cfa5c249680">string.h</a>
+</li>
+<li>spdk_strarray_free()
+: <a class="el" href="string_8h.html#a204f9062adca879642296b993293fd04">string.h</a>
+</li>
+<li>spdk_strarray_from_string()
+: <a class="el" href="string_8h.html#a13d372255f0c2738bb5279704455c131">string.h</a>
+</li>
 <li>spdk_strcpy_pad()
 : <a class="el" href="string_8h.html#aa333ebed7fc3529d446f819b647e2d88">string.h</a>
+</li>
+<li>spdk_strcpy_replace()
+: <a class="el" href="string_8h.html#a2409f826e23aea462d0362d0bf45b7f5">string.h</a>
 </li>
 <li>spdk_strerror()
 : <a class="el" href="string_8h.html#a166b61997b364910553051f1bc002e2c">string.h</a>
@@ -4050,17 +4654,32 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_strtoll()
 : <a class="el" href="string_8h.html#a317132c2abb23a53dc3d53846689e2b6">string.h</a>
 </li>
+<li>spdk_subsystem_fini()
+: <a class="el" href="init_8h.html#a4beb9b1736d0ae82c2a5e764e1c5687b">init.h</a>
+</li>
+<li>spdk_subsystem_init()
+: <a class="el" href="init_8h.html#aa0d0a3b14e1b3dbbfdc5868167099ef1">init.h</a>
+</li>
+<li>spdk_subsystem_init_from_json_config()
+: <a class="el" href="init_8h.html#ab7168c69aeb807fe235c2d1d6900ca72">init.h</a>
+</li>
 <li>SPDK_T10DIF_CRC16_POLYNOMIAL
 : <a class="el" href="crc16_8h.html#a4c5c6b44eafbb4bb09df424150da7508">crc16.h</a>
 </li>
 <li>spdk_thread_create()
-: <a class="el" href="thread_8h.html#a4eada7bac2a5c7ceaea891d57f8d3e21">thread.h</a>
+: <a class="el" href="thread_8h.html#a49abb69cad49e5f35363d9b8ee990ae2">thread.h</a>
 </li>
 <li>spdk_thread_destroy()
 : <a class="el" href="thread_8h.html#a10aa5a8ec5228fa87db97f7655f8c0d6">thread.h</a>
 </li>
+<li>spdk_thread_exec_msg()
+: <a class="el" href="thread_8h.html#a6695466847e7a751b768ab4b8bcd53d0">thread.h</a>
+</li>
 <li>spdk_thread_exit()
 : <a class="el" href="thread_8h.html#a5132d2abe39a40a0e14e19bb2bd15489">thread.h</a>
+</li>
+<li>spdk_thread_get_app_thread()
+: <a class="el" href="thread_8h.html#a5e4e0f6527f81dc3277989d05b4c7111">thread.h</a>
 </li>
 <li>spdk_thread_get_by_id()
 : <a class="el" href="thread_8h.html#a24c90cd523aad947dad7e651074d9f1d">thread.h</a>
@@ -4083,6 +4702,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_thread_get_interrupt_fd()
 : <a class="el" href="thread_8h.html#a6b33abb26c349950555f71a34cf507c6">thread.h</a>
 </li>
+<li>spdk_thread_get_interrupt_fd_group()
+: <a class="el" href="thread_8h.html#a0d1e717df13e86ea95c36e661bb8568d">thread.h</a>
+</li>
 <li>spdk_thread_get_last_tsc()
 : <a class="el" href="thread_8h.html#ae8d7fd3db7cd91ff37c3898e69811f7a">thread.h</a>
 </li>
@@ -4104,6 +4726,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_thread_is_idle()
 : <a class="el" href="thread_8h.html#adc45e09bda68d13cfc0ae010738cd658">thread.h</a>
 </li>
+<li>spdk_thread_is_running()
+: <a class="el" href="thread_8h.html#a67c3bf0e066520e8eeeaec589d021b6c">thread.h</a>
+</li>
 <li>spdk_thread_lib_fini()
 : <a class="el" href="thread_8h.html#afe409bf16664f461daa516b6a6d1682c">thread.h</a>
 </li>
@@ -4111,7 +4736,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="thread_8h.html#a96c6e1cadb3b5a83c5723487e3f02c23">thread.h</a>
 </li>
 <li>spdk_thread_lib_init_ext()
-: <a class="el" href="thread_8h.html#a820faedd428f6e689ecb28d721a8d0bf">thread.h</a>
+: <a class="el" href="thread_8h.html#a7219c832e5483b4318d2533cb45ff22e">thread.h</a>
 </li>
 <li>spdk_thread_next_poller_expiration()
 : <a class="el" href="thread_8h.html#a474fcfc5c14928eda42c684ba2b4cba9">thread.h</a>
@@ -4130,6 +4755,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_thread_poll()
 : <a class="el" href="thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91">thread.h</a>
+</li>
+<li>spdk_thread_poller_rc
+: <a class="el" href="thread_8h.html#a9df2d253885de944794d6810ff98fc4e">thread.h</a>
 </li>
 <li>spdk_thread_send_critical_msg()
 : <a class="el" href="thread_8h.html#a91a7e9d44c2a332dfcea5e23df471c8d">thread.h</a>
@@ -4155,6 +4783,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_trace_clear_tpoints()
 : <a class="el" href="trace_8h.html#a7ecb50e2b95e9c75eeddd9884ec0aafe">trace.h</a>
 </li>
+<li>spdk_trace_create_tpoint_group_mask()
+: <a class="el" href="trace_8h.html#a5f00b86acc0c5a41bf639c068d197b53">trace.h</a>
+</li>
 <li>spdk_trace_disable_tpoint_group()
 : <a class="el" href="trace_8h.html#ace590b7acf549112daa89640dcb87447">trace.h</a>
 </li>
@@ -4176,14 +4807,44 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_trace_mask_usage()
 : <a class="el" href="trace_8h.html#a2057ffa0d5eaf0680a8d970646c157af">trace.h</a>
 </li>
-<li>spdk_trace_record()
-: <a class="el" href="trace_8h.html#afc39939001d5fd77c208808141534dde">trace.h</a>
+<li>spdk_trace_parser_cleanup()
+: <a class="el" href="trace__parser_8h.html#a4fa645b01c18c3c7b2545fb0bb834c10">trace_parser.h</a>
 </li>
-<li>spdk_trace_record_tsc()
-: <a class="el" href="trace_8h.html#aa38bbe4d79cf0aca5a7d18956a0a62f7">trace.h</a>
+<li>spdk_trace_parser_get_entry_count()
+: <a class="el" href="trace__parser_8h.html#a74ebe6fa3d5870d54b4fa91f9b56ad45">trace_parser.h</a>
+</li>
+<li>spdk_trace_parser_get_flags()
+: <a class="el" href="trace__parser_8h.html#a1b994704d23a15e18539de081be045be">trace_parser.h</a>
+</li>
+<li>spdk_trace_parser_get_tsc_offset()
+: <a class="el" href="trace__parser_8h.html#aae729da36784f7e2da4107c77c11926b">trace_parser.h</a>
+</li>
+<li>spdk_trace_parser_init()
+: <a class="el" href="trace__parser_8h.html#a90b8b1b08e6d9aec3b55d59d0a2a9a16">trace_parser.h</a>
+</li>
+<li>spdk_trace_parser_mode
+: <a class="el" href="trace__parser_8h.html#a4253a898fb3f2ff1a047a1f6e4a1e3ab">trace_parser.h</a>
+</li>
+<li>SPDK_TRACE_PARSER_MODE_FILE
+: <a class="el" href="trace__parser_8h.html#a4253a898fb3f2ff1a047a1f6e4a1e3abad09ef51b1f3f5fcbcb004a95dd01a4be">trace_parser.h</a>
+</li>
+<li>SPDK_TRACE_PARSER_MODE_SHM
+: <a class="el" href="trace__parser_8h.html#a4253a898fb3f2ff1a047a1f6e4a1e3aba2bbc1491612eafb6472caba04b3c0e2d">trace_parser.h</a>
+</li>
+<li>spdk_trace_parser_next_entry()
+: <a class="el" href="trace__parser_8h.html#a102d5c564cad8f4932f96fe073d94622">trace_parser.h</a>
+</li>
+<li>spdk_trace_record
+: <a class="el" href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">trace.h</a>
+</li>
+<li>spdk_trace_record_tsc
+: <a class="el" href="trace_8h.html#a9200d8670cb27a4569440782888087e0">trace.h</a>
 </li>
 <li>spdk_trace_register_description()
 : <a class="el" href="trace_8h.html#a272510f870f932fd0e081481f6e51e58">trace.h</a>
+</li>
+<li>spdk_trace_register_description_ext()
+: <a class="el" href="trace_8h.html#a4d34f0091a2eda78ea2749e40db1d625">trace.h</a>
 </li>
 <li>spdk_trace_register_object()
 : <a class="el" href="trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe">trace.h</a>
@@ -4197,8 +4858,14 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_trace_set_tpoints()
 : <a class="el" href="trace_8h.html#a6f2131f1fc35d495f51552eb2838630b">trace.h</a>
 </li>
+<li>spdk_trace_tpoint_register_relation()
+: <a class="el" href="trace_8h.html#a0ec4843a02b23b8e0a8f4fe8c91fca3b">trace.h</a>
+</li>
 <li>spdk_u32_is_pow2()
 : <a class="el" href="util_8h.html#a63e2af9bd97c1250c11a2e585336f377">util.h</a>
+</li>
+<li>spdk_u64_is_pow2()
+: <a class="el" href="util_8h.html#ac2b85ac7ccc6fc631cb341ecae073e3e">util.h</a>
 </li>
 <li>spdk_unaffinitize_thread()
 : <a class="el" href="env_8h.html#a925f8e1d1ed12fc1b7eb057a5c5b7bfd">env.h</a>
@@ -4214,6 +4881,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_uuid_generate()
 : <a class="el" href="uuid_8h.html#a397f151075d3a0a5651221bd74c13c66">uuid.h</a>
+</li>
+<li>spdk_uuid_generate_sha1()
+: <a class="el" href="uuid_8h.html#a5c3dce52beab5ae68f5bbd011d646693">uuid.h</a>
 </li>
 <li>spdk_uuid_parse()
 : <a class="el" href="uuid_8h.html#a8cd6b61828b9ff4d0abbae64c81d1262">uuid.h</a>
@@ -4239,11 +4909,17 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPDK_VERSION_SUFFIX
 : <a class="el" href="version_8h.html#a1636e53b1038906ece3a9addb0473bf0">version.h</a>
 </li>
-<li>spdk_vhost_blk_construct()
-: <a class="el" href="vhost_8h.html#a2095d6d1e85f5841375ac04b5cff50ec">vhost.h</a>
+<li>spdk_vhost_blk_config_json()
+: <a class="el" href="vhost_8h.html#aad817236a58d94b5993275ae16a567ec">vhost.h</a>
 </li>
-<li>spdk_vhost_config_json()
-: <a class="el" href="vhost_8h.html#a256ce5abb39df6f4627e3fac7863998f">vhost.h</a>
+<li>spdk_vhost_blk_construct()
+: <a class="el" href="vhost_8h.html#ad2c49e6e73478eb1974dd38ecfb2eb3d">vhost.h</a>
+</li>
+<li>spdk_vhost_blk_fini()
+: <a class="el" href="vhost_8h.html#a4e41f1b4db2605981b3194b83d90c35a">vhost.h</a>
+</li>
+<li>spdk_vhost_blk_init()
+: <a class="el" href="vhost_8h.html#afa85eecef82ce3ee26fd16a210be9466">vhost.h</a>
 </li>
 <li>spdk_vhost_dev_find()
 : <a class="el" href="vhost_8h.html#a08ca8ab0522c25869c31c163175e6299">vhost.h</a>
@@ -4263,23 +4939,20 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_vhost_event_fn
 : <a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">vhost.h</a>
 </li>
-<li>spdk_vhost_fini()
-: <a class="el" href="vhost_8h.html#af358eac95a16bd456349fcfaa00379bb">vhost.h</a>
-</li>
 <li>spdk_vhost_fini_cb
 : <a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">vhost.h</a>
 </li>
 <li>spdk_vhost_get_coalescing()
 : <a class="el" href="vhost_8h.html#a8be392083ae01ad34cc05b1b5ce2b5e0">vhost.h</a>
 </li>
-<li>spdk_vhost_init()
-: <a class="el" href="vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5">vhost.h</a>
-</li>
 <li>spdk_vhost_init_cb
 : <a class="el" href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">vhost.h</a>
 </li>
 <li>spdk_vhost_lock()
 : <a class="el" href="vhost_8h.html#afd4fd557673a9bc3518add4f5c0d611b">vhost.h</a>
+</li>
+<li>spdk_vhost_scsi_config_json()
+: <a class="el" href="vhost_8h.html#a0631424062751f68ec295722786370a8">vhost.h</a>
 </li>
 <li>spdk_vhost_scsi_dev_add_tgt()
 : <a class="el" href="vhost_8h.html#afe5b0a12a12a26d2ddfe6a64f2a8a5e2">vhost.h</a>
@@ -4292,6 +4965,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_vhost_scsi_dev_remove_tgt()
 : <a class="el" href="vhost_8h.html#ae1ea27c8ae7616e92d916e5c6fc34231">vhost.h</a>
+</li>
+<li>spdk_vhost_scsi_fini()
+: <a class="el" href="vhost_8h.html#a92afea7023f0f61a2038047e2328dd85">vhost.h</a>
+</li>
+<li>spdk_vhost_scsi_init()
+: <a class="el" href="vhost_8h.html#afa0a16e2e24f4439d1457d9fa2b1a316">vhost.h</a>
 </li>
 <li>spdk_vhost_set_coalescing()
 : <a class="el" href="vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797">vhost.h</a>
@@ -4329,6 +5008,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_vmd_pci_device_list()
 : <a class="el" href="vmd_8h.html#a5372b99a3024346162b47b9890d88f28">vmd.h</a>
 </li>
+<li>spdk_vmd_remove_device()
+: <a class="el" href="vmd_8h.html#a34ea25bfc9f5e9a642ef00bc79e97968">vmd.h</a>
+</li>
+<li>spdk_vmd_rescan()
+: <a class="el" href="vmd_8h.html#aacedaf86daff8e6246f877f8169f86a6">vmd.h</a>
+</li>
 <li>spdk_vmd_set_led_state()
 : <a class="el" href="vmd_8h.html#aca3923828bec8148b3e671420ba0f547">vmd.h</a>
 </li>
@@ -4353,10 +5038,35 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_xattr_names_get_name()
 : <a class="el" href="blob_8h.html#ad0d58654483ac10df65d4b55356eff84">blob.h</a>
 </li>
+<li>spdk_xor_gen()
+: <a class="el" href="xor_8h.html#aa889762f3d7ce0f9bb8b91c5c3add079">xor.h</a>
+</li>
+<li>spdk_xor_get_optimal_alignment()
+: <a class="el" href="xor_8h.html#a714307c955fae9782a0cf6f7bf2632c5">xor.h</a>
+</li>
+<li>spdk_zipf_create()
+: <a class="el" href="zipf_8h.html#a3a154549b87e9aef0cdbb0363c94c491">zipf.h</a>
+</li>
+<li>spdk_zipf_free()
+: <a class="el" href="zipf_8h.html#ae5169bdd1cd00263997198f572f14ee7">zipf.h</a>
+</li>
+<li>spdk_zipf_generate()
+: <a class="el" href="zipf_8h.html#a1d0c4163406557239aefa1ab446c2422">zipf.h</a>
+</li>
 <li>spdk_zmalloc()
 : <a class="el" href="env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596">env.h</a>
 </li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

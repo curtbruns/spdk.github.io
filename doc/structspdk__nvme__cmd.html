@@ -1,102 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.9.1" />
   <title>SPDK: spdk_nvme_cmd Struct Reference</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/doxyboot.js"></script>
+  <script type="text/javascript" src="./navtree.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.9.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Search');
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structspdk__nvme__cmd.html','');});
+$(document).ready(function(){initNavTree('structspdk__nvme__cmd.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -150,27 +94,32 @@ $(document).ready(function(){initNavTree('structspdk__nvme__cmd.html','');});
 <div class="dynheader">
 Collaboration diagram for spdk_nvme_cmd:</div>
 <div class="dyncontent">
-<div class="center"><img src="structspdk__nvme__cmd__coll__graph.png" border="0" usemap="#spdk__nvme__cmd_coll__map" alt="Collaboration graph"/></div>
-<map name="spdk__nvme__cmd_coll__map" id="spdk__nvme__cmd_coll__map">
-<area shape="rect"  title=" " alt="" coords="773,468,905,495"/>
-<area shape="rect"  href="unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="460,417,641,444"/>
-<area shape="rect"  href="unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="460,468,641,495"/>
-<area shape="rect"  href="unionspdk__nvme__feat__error__recovery.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ERROR_RECOVERY." alt="" coords="31,17,199,58"/>
-<area shape="rect"  href="unionspdk__nvme__feat__keep__alive__timer.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_KEEP_ALIVE_TIMER." alt="" coords="31,82,199,123"/>
-<area shape="rect"  href="unionspdk__nvme__feat__volatile__write__cache.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_VOLATILE_WRITE_CACHE." alt="" coords="21,147,208,189"/>
-<area shape="rect"  href="unionspdk__nvme__feat__lba__range__type.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_LBA_RANGE_TYPE." alt="" coords="36,213,193,254"/>
-<area shape="rect"  href="unionspdk__nvme__feat__arbitration.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ARBITRATION." alt="" coords="12,279,217,305"/>
-<area shape="rect"  href="unionspdk__nvme__feat__temperature__threshold.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_TEMPERATURE_THRESHOLD." alt="" coords="5,330,224,371"/>
-<area shape="rect"  href="unionspdk__nvme__feat__host__identifier.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_HOST_IDENTIFIER." alt="" coords="32,395,197,437"/>
-<area shape="rect"  href="unionspdk__nvme__feat__interrupt__vector__configuration.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_INTERRUPT_VECTOR_CONFIGURATION." alt="" coords="18,461,211,502"/>
-<area shape="rect"  href="unionspdk__nvme__feat__interrupt__coalescing.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_INTERRUPT_COALESCING." alt="" coords="18,526,211,567"/>
-<area shape="rect"  href="unionspdk__nvme__feat__number__of__queues.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_NUMBER_OF_QUEUES." alt="" coords="21,591,208,633"/>
-<area shape="rect"  href="unionspdk__nvme__feat__power__management.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_POWER_MANAGEMENT." alt="" coords="26,657,203,698"/>
-<area shape="rect"  href="unionspdk__nvme__feat__reservation__persistence.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_HOST_RESERVE_PERSIST." alt="" coords="9,722,220,763"/>
-<area shape="rect"  href="unionspdk__nvme__feat__reservation__notification__mask.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_HOST_RESERVE_MASK." alt="" coords="9,787,220,829"/>
-<area shape="rect"  href="unionspdk__nvme__feat__write__atomicity.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_WRITE_ATOMICITY." alt="" coords="29,853,200,894"/>
-<area shape="rect"  href="unionspdk__nvme__feat__async__event__configuration.html" title="Data used by Set Features / Get Features SPDK_NVME_FEAT_ASYNC_EVENT_CONFIGURATION." alt="" coords="27,918,202,959"/>
-<area shape="rect"  href="structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="453,519,648,545"/>
+<div class="center"><img src="structspdk__nvme__cmd__coll__graph.png" border="0" usemap="#aspdk__nvme__cmd_coll__map" alt="Collaboration graph"/></div>
+<map name="aspdk__nvme__cmd_coll__map" id="aspdk__nvme__cmd_coll__map">
+<area shape="rect" title=" " alt="" coords="773,707,905,733"/>
+<area shape="rect" href="unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="460,548,641,575"/>
+<area shape="rect" href="unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="460,599,641,625"/>
+<area shape="rect" href="unionspdk__nvme__feat__error__recovery.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ERROR_RECOVERY." alt="" coords="31,17,199,58"/>
+<area shape="rect" href="unionspdk__nvme__feat__keep__alive__timer.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_KEEP_ALIVE_TIMER." alt="" coords="31,82,199,123"/>
+<area shape="rect" href="unionspdk__nvme__feat__volatile__write__cache.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_VOLATILE_WRITE_CACHE." alt="" coords="21,147,208,189"/>
+<area shape="rect" href="unionspdk__nvme__feat__lba__range__type.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_LBA_RANGE_TYPE." alt="" coords="36,213,193,254"/>
+<area shape="rect" href="unionspdk__nvme__feat__arbitration.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ARBITRATION." alt="" coords="12,279,217,305"/>
+<area shape="rect" href="unionspdk__nvme__feat__temperature__threshold.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_TEMPERATURE_THRESHOLD." alt="" coords="5,330,224,371"/>
+<area shape="rect" href="unionspdk__nvme__feat__host__identifier.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_HOST_IDENTIFIER." alt="" coords="32,395,197,437"/>
+<area shape="rect" href="unionspdk__nvme__feat__fdp__cdw11.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_FDP." alt="" coords="35,461,194,502"/>
+<area shape="rect" href="unionspdk__nvme__feat__interrupt__vector__configuration.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_INTERRUPT_VECTOR_CONFIGURATION." alt="" coords="18,526,211,567"/>
+<area shape="rect" href="unionspdk__nvme__feat__interrupt__coalescing.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_INTERRUPT_COALESCING." alt="" coords="18,591,211,633"/>
+<area shape="rect" href="unionspdk__nvme__feat__number__of__queues.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_NUMBER_OF_QUEUES." alt="" coords="21,657,208,698"/>
+<area shape="rect" href="unionspdk__nvme__feat__power__management.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_POWER_MANAGEMENT." alt="" coords="26,722,203,763"/>
+<area shape="rect" href="unionspdk__nvme__feat__reservation__persistence.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_HOST_RESERVE_PERSIST." alt="" coords="9,787,220,829"/>
+<area shape="rect" href="unionspdk__nvme__feat__reservation__notification__mask.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_HOST_RESERVE_MASK." alt="" coords="9,853,220,894"/>
+<area shape="rect" href="unionspdk__nvme__feat__write__atomicity.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_WRITE_ATOMICITY." alt="" coords="29,918,200,959"/>
+<area shape="rect" href="unionspdk__nvme__feat__fdp__events__cdw11.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_FDP_EVENTS." alt="" coords="35,983,194,1025"/>
+<area shape="rect" href="unionspdk__nvme__feat__async__event__configuration.html" title="Data used by Set Features / Get Features SPDK_NVME_FEAT_ASYNC_EVENT_CONFIGURATION." alt="" coords="27,1049,202,1090"/>
+<area shape="rect" href="unionspdk__nvme__cmd__cdw12.html" title=" " alt="" coords="460,885,641,912"/>
+<area shape="rect" href="unionspdk__nvme__feat__fdp__events__cdw12.html" title="Data used by Set Feature SPDK_NVME_FEAT_FDP_EVENTS." alt="" coords="35,1114,194,1155"/>
+<area shape="rect" href="unionspdk__nvme__feat__fdp__cdw12.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_FDP." alt="" coords="35,1179,194,1221"/>
+<area shape="rect" href="structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="453,936,648,963"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -203,46 +152,53 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>rsvd3</b></td></t
 <tr class="memitem:aa55c5c1c346bf2a3e128a43dde7f5b00"><td class="memItemLeft" align="right" valign="top"><a id="aa55c5c1c346bf2a3e128a43dde7f5b00"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>mptr</b></td></tr>
 <tr class="separator:aa55c5c1c346bf2a3e128a43dde7f5b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d19607a8a83c05ff9c32a776dcce258"><td class="memItemLeft" ><a id="a4d19607a8a83c05ff9c32a776dcce258"></a>
+<tr class="memitem:a4c4c522c06885461bb04eae14ee7a28e"><td class="memItemLeft" ><a id="a4c4c522c06885461bb04eae14ee7a28e"></a>
 union {</td></tr>
-<tr class="memitem:a9bd714ef957f6fdfb80354fbc9f935a1"><td class="memItemLeft" >
+<tr class="memitem:a3159add595657028d6496b12f1426e91"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ab13a6dd5993030dbd510684b20ec8135"><td class="memItemLeft" >
+<tr class="memitem:a2d81b4999e0eb72f309fd43c76c9bb5a"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>prp1</b></td></tr>
-<tr class="separator:ab13a6dd5993030dbd510684b20ec8135"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0314b526974eac83ccb8710d505d438a"><td class="memItemLeft" >
+<tr class="separator:a2d81b4999e0eb72f309fd43c76c9bb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7352853d25d24ae6d6cb2465ccce5db0"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>prp2</b></td></tr>
-<tr class="separator:a0314b526974eac83ccb8710d505d438a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd714ef957f6fdfb80354fbc9f935a1"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>prp</b></td></tr>
-<tr class="separator:a9bd714ef957f6fdfb80354fbc9f935a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1eebe34c06244f210db658378f5bda8"><td class="memItemLeft" >
+<tr class="separator:a7352853d25d24ae6d6cb2465ccce5db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3159add595657028d6496b12f1426e91"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>prp</b></td></tr>
+<tr class="separator:a3159add595657028d6496b12f1426e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4716bf384dc448e78478865a2c90469f"><td class="memItemLeft" >
 &#160;&#160;&#160;struct <a class="el" href="structspdk__nvme__sgl__descriptor.html">spdk_nvme_sgl_descriptor</a>&#160;&#160;&#160;<b>sgl1</b></td></tr>
-<tr class="separator:ab1eebe34c06244f210db658378f5bda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d19607a8a83c05ff9c32a776dcce258"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>dptr</b></td></tr>
-<tr class="separator:a4d19607a8a83c05ff9c32a776dcce258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cc7537d07b6ae62ac7a2d5baf7b8ce7"><td class="memItemLeft" ><a id="a3cc7537d07b6ae62ac7a2d5baf7b8ce7"></a>
+<tr class="separator:a4716bf384dc448e78478865a2c90469f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4c522c06885461bb04eae14ee7a28e"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>dptr</b></td></tr>
+<tr class="separator:a4c4c522c06885461bb04eae14ee7a28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0dd01f1b866dce6203e3b76130a7980"><td class="memItemLeft" ><a id="ae0dd01f1b866dce6203e3b76130a7980"></a>
 union {</td></tr>
-<tr class="memitem:acbd9ee9e267f62a8c078a5ca2dabede3"><td class="memItemLeft" >
+<tr class="memitem:a50ea401186996a81552a6cdb0d226e54"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>cdw10</b></td></tr>
-<tr class="separator:acbd9ee9e267f62a8c078a5ca2dabede3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a930b9007ea9e310778e2933178d04880"><td class="memItemLeft" >
+<tr class="separator:a50ea401186996a81552a6cdb0d226e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f6dcb1abdff3ba73142684d24128971"><td class="memItemLeft" >
 &#160;&#160;&#160;union <a class="el" href="unionspdk__nvme__cmd__cdw10.html">spdk_nvme_cmd_cdw10</a>&#160;&#160;&#160;<b>cdw10_bits</b></td></tr>
-<tr class="separator:a930b9007ea9e310778e2933178d04880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cc7537d07b6ae62ac7a2d5baf7b8ce7"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a3cc7537d07b6ae62ac7a2d5baf7b8ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a021dc018de53b73d3bee41a2ef5f71"><td class="memItemLeft" ><a id="a5a021dc018de53b73d3bee41a2ef5f71"></a>
+<tr class="separator:a4f6dcb1abdff3ba73142684d24128971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0dd01f1b866dce6203e3b76130a7980"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ae0dd01f1b866dce6203e3b76130a7980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20156338870656c17fb96f84df070cb5"><td class="memItemLeft" ><a id="a20156338870656c17fb96f84df070cb5"></a>
 union {</td></tr>
-<tr class="memitem:a98fda62675c3bce06ec3db308eef614c"><td class="memItemLeft" >
+<tr class="memitem:ab93b6d088e73ffb9b6a50e2bbb31d80c"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>cdw11</b></td></tr>
-<tr class="separator:a98fda62675c3bce06ec3db308eef614c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac697e968b30b7ba2c2366cb9104f71a5"><td class="memItemLeft" >
+<tr class="separator:ab93b6d088e73ffb9b6a50e2bbb31d80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf401c730d8d3d63f57951f8504fb7d"><td class="memItemLeft" >
 &#160;&#160;&#160;union <a class="el" href="unionspdk__nvme__cmd__cdw11.html">spdk_nvme_cmd_cdw11</a>&#160;&#160;&#160;<b>cdw11_bits</b></td></tr>
-<tr class="separator:ac697e968b30b7ba2c2366cb9104f71a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a021dc018de53b73d3bee41a2ef5f71"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a5a021dc018de53b73d3bee41a2ef5f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba9d305c387e3bf81e77477bf294b2d5"><td class="memItemLeft" align="right" valign="top"><a id="aba9d305c387e3bf81e77477bf294b2d5"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>cdw12</b></td></tr>
-<tr class="separator:aba9d305c387e3bf81e77477bf294b2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a9bf401c730d8d3d63f57951f8504fb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20156338870656c17fb96f84df070cb5"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a20156338870656c17fb96f84df070cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf9bf0e72fa493bdf5b02423925e4df"><td class="memItemLeft" ><a id="aacf9bf0e72fa493bdf5b02423925e4df"></a>
+union {</td></tr>
+<tr class="memitem:a7715d6647c7dc47dc1033ebd4aa0abca"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>cdw12</b></td></tr>
+<tr class="separator:a7715d6647c7dc47dc1033ebd4aa0abca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c1b7bcd99eebfee6c560fa36625484"><td class="memItemLeft" >
+&#160;&#160;&#160;union <a class="el" href="unionspdk__nvme__cmd__cdw12.html">spdk_nvme_cmd_cdw12</a>&#160;&#160;&#160;<b>cdw12_bits</b></td></tr>
+<tr class="separator:a26c1b7bcd99eebfee6c560fa36625484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf9bf0e72fa493bdf5b02423925e4df"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:aacf9bf0e72fa493bdf5b02423925e4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7423e4adcaa81e81838f8ad42a9fbb43"><td class="memItemLeft" align="right" valign="top"><a id="a7423e4adcaa81e81838f8ad42a9fbb43"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>cdw13</b></td></tr>
 <tr class="separator:a7423e4adcaa81e81838f8ad42a9fbb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,4 +214,14 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>cdw15</b></td></t
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

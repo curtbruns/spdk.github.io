@@ -1,102 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.9.1" />
   <title>SPDK: spdk_bdev Struct Reference</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/doxyboot.js"></script>
+  <script type="text/javascript" src="./navtree.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.9.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Search');
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structspdk__bdev.html','');});
+$(document).ready(function(){initNavTree('structspdk__bdev.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -152,17 +96,19 @@ $(document).ready(function(){initNavTree('structspdk__bdev.html','');});
 <div class="dynheader">
 Collaboration diagram for spdk_bdev:</div>
 <div class="dyncontent">
-<div class="center"><img src="structspdk__bdev__coll__graph.png" border="0" usemap="#spdk__bdev_coll__map" alt="Collaboration graph"/></div>
-<map name="spdk__bdev_coll__map" id="spdk__bdev_coll__map">
-<area shape="rect"  title=" " alt="" coords="595,88,687,115"/>
-<area shape="rect"  href="structspdk__bdev__io.html" title=" " alt="" coords="848,179,959,205"/>
-<area shape="rect"  href="structspdk__bdev__module.html" title="Block device module." alt="" coords="339,20,487,47"/>
-<area shape="rect"  href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1143,86,1345,127"/>
-<area shape="rect"  href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,5,187,61"/>
-<area shape="rect"  href="structspdk__uuid.html" title=" " alt="" coords="369,133,457,160"/>
-<area shape="rect"  href="structspdk__bdev__io__stat.html" title=" " alt="" coords="832,229,975,256"/>
-<area shape="rect"  href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="31,128,161,155"/>
-<area shape="rect"  href="structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="337,83,489,109"/>
+<div class="center"><img src="structspdk__bdev__coll__graph.png" border="0" usemap="#aspdk__bdev_coll__map" alt="Collaboration graph"/></div>
+<map name="aspdk__bdev_coll__map" id="aspdk__bdev_coll__map">
+<area shape="rect" title=" " alt="" coords="769,143,861,169"/>
+<area shape="rect" href="structspdk__bdev__name.html" title=" " alt="" coords="988,57,1124,84"/>
+<area shape="rect" href="structspdk__bdev__io.html" title=" " alt="" coords="1001,161,1111,188"/>
+<area shape="rect" href="structspdk__bdev__module.html" title="Block device module." alt="" coords="513,81,661,108"/>
+<area shape="rect" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="227,59,408,115"/>
+<area shape="rect" href="structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK." alt="" coords="5,39,120,65"/>
+<area shape="rect" href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1333,181,1536,222"/>
+<area shape="rect" href="structspdk__uuid.html" title=" " alt="" coords="543,192,631,219"/>
+<area shape="rect" href="structspdk__bdev__io__stat.html" title=" " alt="" coords="985,275,1127,301"/>
+<area shape="rect" href="unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim.html" title="Which module has claimed this bdev." alt="" coords="947,326,1165,367"/>
+<area shape="rect" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="511,141,663,168"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -174,8 +120,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6af2c003c0428ec514d45fade176d22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ad6af2c003c0428ec514d45fade176d22">TAILQ_HEAD</a> (spdk_bdev_aliases_list, <a class="el" href="structspdk__bdev__alias.html">spdk_bdev_alias</a>) aliases</td></tr>
-<tr class="memdesc:ad6af2c003c0428ec514d45fade176d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique aliases for this block device.  <a href="#ad6af2c003c0428ec514d45fade176d22">More...</a><br /></td></tr>
+<tr class="memitem:ad6af2c003c0428ec514d45fade176d22"><td class="memItemLeft" align="right" valign="top"><a id="ad6af2c003c0428ec514d45fade176d22"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ad6af2c003c0428ec514d45fade176d22">TAILQ_HEAD</a> (spdk_bdev_aliases_list, <a class="el" href="structspdk__bdev__alias.html">spdk_bdev_alias</a>) aliases</td></tr>
+<tr class="memdesc:ad6af2c003c0428ec514d45fade176d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique aliases for this block device. <br /></td></tr>
 <tr class="separator:ad6af2c003c0428ec514d45fade176d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -184,11 +131,13 @@ Data Fields</h2></td></tr>
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a0329aa7395f9784d4dc8c596efc4ac8c">ctxt</a></td></tr>
 <tr class="memdesc:a0329aa7395f9784d4dc8c596efc4ac8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">User context passed in by the backend. <br /></td></tr>
 <tr class="separator:a0329aa7395f9784d4dc8c596efc4ac8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab17e7679c64536f704ed4fe41555a70a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ab17e7679c64536f704ed4fe41555a70a">name</a></td></tr>
-<tr class="memdesc:ab17e7679c64536f704ed4fe41555a70a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique name for this block device.  <a href="#ab17e7679c64536f704ed4fe41555a70a">More...</a><br /></td></tr>
+<tr class="memitem:ab17e7679c64536f704ed4fe41555a70a"><td class="memItemLeft" align="right" valign="top"><a id="ab17e7679c64536f704ed4fe41555a70a"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ab17e7679c64536f704ed4fe41555a70a">name</a></td></tr>
+<tr class="memdesc:ab17e7679c64536f704ed4fe41555a70a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique name for this block device. <br /></td></tr>
 <tr class="separator:ab17e7679c64536f704ed4fe41555a70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3abe8a06500954332614d8657eaf1d9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ad3abe8a06500954332614d8657eaf1d9">product_name</a></td></tr>
-<tr class="memdesc:ad3abe8a06500954332614d8657eaf1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique product name for this kind of block device.  <a href="#ad3abe8a06500954332614d8657eaf1d9">More...</a><br /></td></tr>
+<tr class="memitem:ad3abe8a06500954332614d8657eaf1d9"><td class="memItemLeft" align="right" valign="top"><a id="ad3abe8a06500954332614d8657eaf1d9"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ad3abe8a06500954332614d8657eaf1d9">product_name</a></td></tr>
+<tr class="memdesc:ad3abe8a06500954332614d8657eaf1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique product name for this kind of block device. <br /></td></tr>
 <tr class="separator:ad3abe8a06500954332614d8657eaf1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ccb256340bc2e8b2d6f7793d977c0d"><td class="memItemLeft" align="right" valign="top"><a id="ac2ccb256340bc2e8b2d6f7793d977c0d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ac2ccb256340bc2e8b2d6f7793d977c0d">write_cache</a></td></tr>
@@ -198,10 +147,17 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ac737d9458e1184f313aed88b8af9b862">blocklen</a></td></tr>
 <tr class="memdesc:ac737d9458e1184f313aed88b8af9b862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in bytes of a logical block for the backend. <br /></td></tr>
 <tr class="separator:ac737d9458e1184f313aed88b8af9b862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef4969020beb7938bcbac9b535d87e4"><td class="memItemLeft" align="right" valign="top"><a id="afef4969020beb7938bcbac9b535d87e4"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#afef4969020beb7938bcbac9b535d87e4">phys_blocklen</a></td></tr>
+<tr class="memdesc:afef4969020beb7938bcbac9b535d87e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in bytes of a physical block for the backend. <br /></td></tr>
+<tr class="separator:afef4969020beb7938bcbac9b535d87e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef65d7444968b8981d46d0c520fd5287"><td class="memItemLeft" align="right" valign="top"><a id="aef65d7444968b8981d46d0c520fd5287"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287">blockcnt</a></td></tr>
 <tr class="memdesc:aef65d7444968b8981d46d0c520fd5287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of blocks. <br /></td></tr>
 <tr class="separator:aef65d7444968b8981d46d0c520fd5287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19101e574d1a54c9f57f02a5077170b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a19101e574d1a54c9f57f02a5077170b5">split_on_write_unit</a></td></tr>
+<tr class="memdesc:a19101e574d1a54c9f57f02a5077170b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether the write_unit_size is mandatory or only advisory.  <a href="structspdk__bdev.html#a19101e574d1a54c9f57f02a5077170b5">More...</a><br /></td></tr>
+<tr class="separator:a19101e574d1a54c9f57f02a5077170b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d7dcd12f4c3600eac4dbb202bdb4397"><td class="memItemLeft" align="right" valign="top"><a id="a1d7dcd12f4c3600eac4dbb202bdb4397"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a1d7dcd12f4c3600eac4dbb202bdb4397">write_unit_size</a></td></tr>
 <tr class="memdesc:a1d7dcd12f4c3600eac4dbb202bdb4397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of blocks required for write. <br /></td></tr>
@@ -211,33 +167,46 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memdesc:ab10f57ea24409424fd71a3b53d6fe31e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomic compare &amp; write unit. <br /></td></tr>
 <tr class="separator:ab10f57ea24409424fd71a3b53d6fe31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a149453df246d04c8640fb567c58a61f0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a149453df246d04c8640fb567c58a61f0">required_alignment</a></td></tr>
-<tr class="memdesc:a149453df246d04c8640fb567c58a61f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies an alignment requirement for data buffers associated with an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>.  <a href="#a149453df246d04c8640fb567c58a61f0">More...</a><br /></td></tr>
+<tr class="memdesc:a149453df246d04c8640fb567c58a61f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies an alignment requirement for data buffers associated with an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>.  <a href="structspdk__bdev.html#a149453df246d04c8640fb567c58a61f0">More...</a><br /></td></tr>
 <tr class="separator:a149453df246d04c8640fb567c58a61f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85a794d02620e3e8730bb11791c0c592"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a85a794d02620e3e8730bb11791c0c592">split_on_optimal_io_boundary</a></td></tr>
-<tr class="memdesc:a85a794d02620e3e8730bb11791c0c592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether the optimal_io_boundary is mandatory or only advisory.  <a href="#a85a794d02620e3e8730bb11791c0c592">More...</a><br /></td></tr>
+<tr class="memdesc:a85a794d02620e3e8730bb11791c0c592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether the optimal_io_boundary is mandatory or only advisory.  <a href="structspdk__bdev.html#a85a794d02620e3e8730bb11791c0c592">More...</a><br /></td></tr>
 <tr class="separator:a85a794d02620e3e8730bb11791c0c592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2dcdd94b1bbfd2709c6040f861819fb"><td class="memItemLeft" align="right" valign="top"><a id="af2dcdd94b1bbfd2709c6040f861819fb"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#af2dcdd94b1bbfd2709c6040f861819fb">optimal_io_boundary</a></td></tr>
 <tr class="memdesc:af2dcdd94b1bbfd2709c6040f861819fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimal I/O boundary in blocks, or 0 for no value reported. <br /></td></tr>
 <tr class="separator:af2dcdd94b1bbfd2709c6040f861819fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af33e3553f5bb1f626d137859c6933c64"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#af33e3553f5bb1f626d137859c6933c64">max_segment_size</a></td></tr>
-<tr class="memdesc:af33e3553f5bb1f626d137859c6933c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max io size in bytes of a single segment.  <a href="#af33e3553f5bb1f626d137859c6933c64">More...</a><br /></td></tr>
+<tr class="memdesc:af33e3553f5bb1f626d137859c6933c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max io size in bytes of a single segment.  <a href="structspdk__bdev.html#af33e3553f5bb1f626d137859c6933c64">More...</a><br /></td></tr>
 <tr class="separator:af33e3553f5bb1f626d137859c6933c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad498826a1d9197050bd0ed110df96fb0"><td class="memItemLeft" align="right" valign="top"><a id="ad498826a1d9197050bd0ed110df96fb0"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_num_segments</b></td></tr>
 <tr class="separator:ad498826a1d9197050bd0ed110df96fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a9e1b01c90310e4698569e425849064"><td class="memItemLeft" align="right" valign="top"><a id="a1a9e1b01c90310e4698569e425849064"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_unmap</b></td></tr>
+<tr class="separator:a1a9e1b01c90310e4698569e425849064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91b6959eae8243fd62e92791644ac71a"><td class="memItemLeft" align="right" valign="top"><a id="a91b6959eae8243fd62e92791644ac71a"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_unmap_segments</b></td></tr>
+<tr class="separator:a91b6959eae8243fd62e92791644ac71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b26bd1826992f8b35374ebc84e645a"><td class="memItemLeft" align="right" valign="top"><a id="a43b26bd1826992f8b35374ebc84e645a"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_write_zeroes</b></td></tr>
+<tr class="separator:a43b26bd1826992f8b35374ebc84e645a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c77ed32b1b714060141d1f3cddb6a3"><td class="memItemLeft" align="right" valign="top"><a id="a69c77ed32b1b714060141d1f3cddb6a3"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a69c77ed32b1b714060141d1f3cddb6a3">max_copy</a></td></tr>
+<tr class="memdesc:a69c77ed32b1b714060141d1f3cddb6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum copy size in unit of logical block Should be set explicitly when backing device support copy command. <br /></td></tr>
+<tr class="separator:a69c77ed32b1b714060141d1f3cddb6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cc1248944325a12c4cadaa3856f573a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a">uuid</a></td></tr>
-<tr class="memdesc:a5cc1248944325a12c4cadaa3856f573a"><td class="mdescLeft">&#160;</td><td class="mdescRight">UUID for this bdev.  <a href="#a5cc1248944325a12c4cadaa3856f573a">More...</a><br /></td></tr>
+<tr class="memdesc:a5cc1248944325a12c4cadaa3856f573a"><td class="mdescLeft">&#160;</td><td class="mdescRight">UUID for this bdev.  <a href="structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a">More...</a><br /></td></tr>
 <tr class="separator:a5cc1248944325a12c4cadaa3856f573a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab53361e758d7ebe3edec7598f86fa576"><td class="memItemLeft" align="right" valign="top"><a id="ab53361e758d7ebe3edec7598f86fa576"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ab53361e758d7ebe3edec7598f86fa576">md_len</a></td></tr>
 <tr class="memdesc:ab53361e758d7ebe3edec7598f86fa576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in bytes of a metadata for the backend. <br /></td></tr>
 <tr class="separator:ab53361e758d7ebe3edec7598f86fa576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e68d5fa768ba5d3c8af32e68e1a992c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c">md_interleave</a></td></tr>
-<tr class="memdesc:a4e68d5fa768ba5d3c8af32e68e1a992c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify metadata location and set to true if metadata is interleaved with block data or false if metadata is separated with block data.  <a href="#a4e68d5fa768ba5d3c8af32e68e1a992c">More...</a><br /></td></tr>
+<tr class="memdesc:a4e68d5fa768ba5d3c8af32e68e1a992c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify metadata location and set to true if metadata is interleaved with block data or false if metadata is separated with block data.  <a href="structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c">More...</a><br /></td></tr>
 <tr class="separator:a4e68d5fa768ba5d3c8af32e68e1a992c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf4e6c5be82c271a681db4b9b2fd427"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#abcf4e6c5be82c271a681db4b9b2fd427">dif_type</a></td></tr>
-<tr class="memdesc:abcf4e6c5be82c271a681db4b9b2fd427"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF type for this bdev.  <a href="#abcf4e6c5be82c271a681db4b9b2fd427">More...</a><br /></td></tr>
+<tr class="memdesc:abcf4e6c5be82c271a681db4b9b2fd427"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF type for this bdev.  <a href="structspdk__bdev.html#abcf4e6c5be82c271a681db4b9b2fd427">More...</a><br /></td></tr>
 <tr class="separator:abcf4e6c5be82c271a681db4b9b2fd427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a6b7f9bd595b3b800f35cc63efa3aab"><td class="memItemLeft" align="right" valign="top"><a id="a1a6b7f9bd595b3b800f35cc63efa3aab"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>dif_is_head_of_md</b></td></tr>
@@ -274,6 +243,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#acec83a7ec7f21c7a88d644dad2f0a8fe">media_events</a></td></tr>
 <tr class="memdesc:acec83a7ec7f21c7a88d644dad2f0a8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether bdev supports media management events. <br /></td></tr>
 <tr class="separator:acec83a7ec7f21c7a88d644dad2f0a8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00db663b395d596c633624ed7554a440"><td class="memItemLeft" align="right" valign="top"><a id="a00db663b395d596c633624ed7554a440"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>reset_io_drain_timeout</b></td></tr>
+<tr class="separator:a00db663b395d596c633624ed7554a440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb6058d0394545714377a60c34682fa0"><td class="memItemLeft" align="right" valign="top"><a id="afb6058d0394545714377a60c34682fa0"></a>
 struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#afb6058d0394545714377a60c34682fa0">module</a></td></tr>
 <tr class="memdesc:afb6058d0394545714377a60c34682fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the bdev module that registered this bdev. <br /></td></tr>
@@ -282,41 +254,10 @@ struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *
 const struct <a class="el" href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a1c3d6e810863f31e2301949bfd1c5d37">fn_table</a></td></tr>
 <tr class="memdesc:a1c3d6e810863f31e2301949bfd1c5d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">function table for all LUN ops <br /></td></tr>
 <tr class="separator:a1c3d6e810863f31e2301949bfd1c5d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af79765ae9547cde698fa00a46f7bfa68"><td class="memItemLeft" align="right" valign="top"><a id="af79765ae9547cde698fa00a46f7bfa68"></a>
+<tr class="memitem:a027888b234afc8af8282da025bec83fb"><td class="memItemLeft" align="right" valign="top"><a id="a027888b234afc8af8282da025bec83fb"></a>
 struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">spdk_bdev::__bdev_internal_fields</a>&#160;</td><td class="memItemRight" valign="bottom"><b>internal</b></td></tr>
-<tr class="separator:af79765ae9547cde698fa00a46f7bfa68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a027888b234afc8af8282da025bec83fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad6af2c003c0428ec514d45fade176d22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6af2c003c0428ec514d45fade176d22">&#9670;&nbsp;</a></span>TAILQ_HEAD()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">spdk_bdev::TAILQ_HEAD </td>
-          <td>(</td>
-          <td class="paramtype">spdk_bdev_aliases_list&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structspdk__bdev__alias.html">spdk_bdev_alias</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unique aliases for this block device. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="abcf4e6c5be82c271a681db4b9b2fd427"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcf4e6c5be82c271a681db4b9b2fd427">&#9670;&nbsp;</a></span>dif_type</h2>
@@ -369,38 +310,6 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 
 </div>
 </div>
-<a id="ab17e7679c64536f704ed4fe41555a70a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab17e7679c64536f704ed4fe41555a70a">&#9670;&nbsp;</a></span>name</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* spdk_bdev::name</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unique name for this block device. </p>
-
-</div>
-</div>
-<a id="ad3abe8a06500954332614d8657eaf1d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3abe8a06500954332614d8657eaf1d9">&#9670;&nbsp;</a></span>product_name</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* spdk_bdev::product_name</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unique product name for this kind of block device. </p>
-
-</div>
-</div>
 <a id="a149453df246d04c8640fb567c58a61f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a149453df246d04c8640fb567c58a61f0">&#9670;&nbsp;</a></span>required_alignment</h2>
 
@@ -436,6 +345,25 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 
 </div>
 </div>
+<a id="a19101e574d1a54c9f57f02a5077170b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19101e574d1a54c9f57f02a5077170b5">&#9670;&nbsp;</a></span>split_on_write_unit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev::split_on_write_unit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies whether the write_unit_size is mandatory or only advisory. </p>
+<p>If set to true, the bdev layer will split WRITE I/O that span the write_unit_size before submitting them to the bdev module.</p>
+<p>This field takes precedence over split_on_optimal_io_boundary for WRITE I/O if both are set to true.</p>
+<p>Note that this field cannot be used to force splitting of UNMAP, WRITE_ZEROES or FLUSH I/O. </p>
+
+</div>
+</div>
 <a id="a5cc1248944325a12c4cadaa3856f573a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5cc1248944325a12c4cadaa3856f573a">&#9670;&nbsp;</a></span>uuid</h2>
 
@@ -449,7 +377,7 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 </div><div class="memdoc">
 
 <p>UUID for this bdev. </p>
-<p>Fill with zeroes if no uuid is available. The bdev layer will automatically populate this if necessary. </p>
+<p>If not provided, it will be generated by bdev layer. </p>
 
 </div>
 </div>
@@ -458,4 +386,14 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

@@ -1,102 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.9.1" />
   <title>SPDK: spdk_ioat_dma_hw_desc Struct Reference</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/doxyboot.js"></script>
+  <script type="text/javascript" src="./navtree.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.9.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Search');
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structspdk__ioat__dma__hw__desc.html','');});
+$(document).ready(function(){initNavTree('structspdk__ioat__dma__hw__desc.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -153,56 +97,56 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a1cf12a9633a179363bbcf5f0898785c4"><td class="memItemLeft" align="right" valign="top"><a id="a1cf12a9633a179363bbcf5f0898785c4"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
 <tr class="separator:a1cf12a9633a179363bbcf5f0898785c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06ffb3db7db1b12dd4145ef6ee6c08bc"><td class="memItemLeft" ><a id="a06ffb3db7db1b12dd4145ef6ee6c08bc"></a>
+<tr class="memitem:aba31c8bc74eafed4ab66236dfc83709d"><td class="memItemLeft" ><a id="aba31c8bc74eafed4ab66236dfc83709d"></a>
 union {</td></tr>
-<tr class="memitem:a30f905ae46e6cb3b69212e094e1dab9a"><td class="memItemLeft" >
+<tr class="memitem:acd3c945903256009dd2b9018c09e973e"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>control_raw</b></td></tr>
-<tr class="separator:a30f905ae46e6cb3b69212e094e1dab9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac94a587adfb659788b24bb8a9e32395f"><td class="memItemLeft" >
+<tr class="separator:acd3c945903256009dd2b9018c09e973e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad11bca378d403e2c2605fe83e9aabec"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:adfbac2428e1028bc6464013df851c168"><td class="memItemLeft" >
+<tr class="memitem:aa5c779e3486889c4546e168a9aff5788"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>int_enable</b>: 1</td></tr>
-<tr class="separator:adfbac2428e1028bc6464013df851c168"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e5e3998eb05e2dfbd1ad26fe5334a7a"><td class="memItemLeft" >
+<tr class="separator:aa5c779e3486889c4546e168a9aff5788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56041e6278ec17e94131115554aafe04"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>src_snoop_disable</b>: 1</td></tr>
-<tr class="separator:a1e5e3998eb05e2dfbd1ad26fe5334a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01f2fda2f3cfd2b0d267532307e6d95b"><td class="memItemLeft" >
+<tr class="separator:a56041e6278ec17e94131115554aafe04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8921e6a6ce31750f7231d9f5ac838af5"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>dest_snoop_disable</b>: 1</td></tr>
-<tr class="separator:a01f2fda2f3cfd2b0d267532307e6d95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5099ad50e8b6e94e9c3c85f4902e5dc1"><td class="memItemLeft" >
+<tr class="separator:a8921e6a6ce31750f7231d9f5ac838af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6445f4e05743e14dee8f7e99b61aad"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>completion_update</b>: 1</td></tr>
-<tr class="separator:a5099ad50e8b6e94e9c3c85f4902e5dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5ec995fa4cd269147bb6aa14dd49c50"><td class="memItemLeft" >
+<tr class="separator:acf6445f4e05743e14dee8f7e99b61aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a7db828db36992146e5c5d371ca3f1"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>fence</b>: 1</td></tr>
-<tr class="separator:ae5ec995fa4cd269147bb6aa14dd49c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff344b2b22ea1b96989178401fd03b24"><td class="memItemLeft" >
+<tr class="separator:a35a7db828db36992146e5c5d371ca3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a1b597e0d7c57a5186d0b2e4c6e736"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>null</b>: 1</td></tr>
-<tr class="separator:aff344b2b22ea1b96989178401fd03b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f9ad3ea843efe0727fa96d95c6df2fc"><td class="memItemLeft" >
+<tr class="separator:a61a1b597e0d7c57a5186d0b2e4c6e736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27e08461b8a6dd9b6340a6314d60e22"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>src_page_break</b>: 1</td></tr>
-<tr class="separator:a1f9ad3ea843efe0727fa96d95c6df2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31ab703b16f8398248668db4d88c79c9"><td class="memItemLeft" >
+<tr class="separator:ac27e08461b8a6dd9b6340a6314d60e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959f26ea164652ce022b6067ac79c0de"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>dest_page_break</b>: 1</td></tr>
-<tr class="separator:a31ab703b16f8398248668db4d88c79c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38581be8fa4789de279fe2ac03902237"><td class="memItemLeft" >
+<tr class="separator:a959f26ea164652ce022b6067ac79c0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de3514c388ac2ccaf13a8ecedd0356c"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>bundle</b>: 1</td></tr>
-<tr class="separator:a38581be8fa4789de279fe2ac03902237"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43715ef6a626452156859e71c7735aed"><td class="memItemLeft" >
+<tr class="separator:a1de3514c388ac2ccaf13a8ecedd0356c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3538efc00625af86451924abf7d426"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>dest_dca</b>: 1</td></tr>
-<tr class="separator:a43715ef6a626452156859e71c7735aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b8a9fc0cf00dbc2eafcdde6d387c910"><td class="memItemLeft" >
+<tr class="separator:aae3538efc00625af86451924abf7d426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ca6d9db12f74e4c3848db23aead951"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>hint</b>: 1</td></tr>
-<tr class="separator:a2b8a9fc0cf00dbc2eafcdde6d387c910"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cbc4ed7cb533829752265566c3edbf5"><td class="memItemLeft" >
+<tr class="separator:a82ca6d9db12f74e4c3848db23aead951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe42328050567554165537f21db29b3f"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved</b>: 13</td></tr>
-<tr class="separator:a5cbc4ed7cb533829752265566c3edbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52531e0ef97e9a2db64e15e77bbf6dce"><td class="memItemLeft" >
+<tr class="separator:abe42328050567554165537f21db29b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5358fdf17fad9abcc06ab3027a2fef"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>op</b>: 8</td></tr>
-<tr class="separator:a52531e0ef97e9a2db64e15e77bbf6dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac94a587adfb659788b24bb8a9e32395f"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>control</b></td></tr>
-<tr class="separator:ac94a587adfb659788b24bb8a9e32395f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06ffb3db7db1b12dd4145ef6ee6c08bc"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>u</b></td></tr>
-<tr class="separator:a06ffb3db7db1b12dd4145ef6ee6c08bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aba5358fdf17fad9abcc06ab3027a2fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad11bca378d403e2c2605fe83e9aabec"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>control</b></td></tr>
+<tr class="separator:aad11bca378d403e2c2605fe83e9aabec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba31c8bc74eafed4ab66236dfc83709d"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>u</b></td></tr>
+<tr class="separator:aba31c8bc74eafed4ab66236dfc83709d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab97b84143ca553640521d4469246607b"><td class="memItemLeft" align="right" valign="top"><a id="ab97b84143ca553640521d4469246607b"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>src_addr</b></td></tr>
 <tr class="separator:ab97b84143ca553640521d4469246607b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,4 +174,14 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>user2</b></td></t
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

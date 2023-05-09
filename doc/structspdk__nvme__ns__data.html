@@ -1,102 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.9.1" />
   <title>SPDK: spdk_nvme_ns_data Struct Reference</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/doxyboot.js"></script>
+  <script type="text/javascript" src="./navtree.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.9.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Search');
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structspdk__nvme__ns__data.html','');});
+$(document).ready(function(){initNavTree('structspdk__nvme__ns__data.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -162,201 +106,206 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a9ca1ea6d0d79fd1440a9a2003ac98253">nuse</a></td></tr>
 <tr class="memdesc:a9ca1ea6d0d79fd1440a9a2003ac98253"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace utilization <br /></td></tr>
 <tr class="separator:a9ca1ea6d0d79fd1440a9a2003ac98253"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7ae7c6333177ea70a6a8a85e8984a8e"><td class="memItemLeft" ><a id="aa7ae7c6333177ea70a6a8a85e8984a8e"></a>
+<tr class="memitem:a63ba9ee089ea02d176cf152180e720d9"><td class="memItemLeft" ><a id="a63ba9ee089ea02d176cf152180e720d9"></a>
 struct {</td></tr>
-<tr class="memitem:ac05a710ead41150ff7cc3a71bce7fcf1"><td class="memItemLeft" >
+<tr class="memitem:a5ceb3af8df3f1a9058c3213c5d38135d"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a66c12446fe238c223433a307b4a55856">thin_prov</a>: 1</td></tr>
-<tr class="memdesc:ac05a710ead41150ff7cc3a71bce7fcf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">thin provisioning <br /></td></tr>
-<tr class="separator:ac05a710ead41150ff7cc3a71bce7fcf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d9e812bfad338108314838ae9d31549"><td class="memItemLeft" >
+<tr class="memdesc:a5ceb3af8df3f1a9058c3213c5d38135d"><td class="mdescLeft">&#160;</td><td class="mdescRight">thin provisioning <br /></td></tr>
+<tr class="separator:a5ceb3af8df3f1a9058c3213c5d38135d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8de008dbebae340c01548dd9ef7576"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#aa9cd6ae4141efa9167775b1c85fcfd13">ns_atomic_write_unit</a>: 1</td></tr>
-<tr class="memdesc:a4d9e812bfad338108314838ae9d31549"><td class="mdescLeft">&#160;</td><td class="mdescRight">NAWUN, NAWUPF, and NACWU are defined for this namespace. <br /></td></tr>
-<tr class="separator:a4d9e812bfad338108314838ae9d31549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8175a791f8df683ddcaf5bf54553dcb4"><td class="memItemLeft" >
+<tr class="memdesc:a4a8de008dbebae340c01548dd9ef7576"><td class="mdescLeft">&#160;</td><td class="mdescRight">NAWUN, NAWUPF, and NACWU are defined for this namespace. <br /></td></tr>
+<tr class="separator:a4a8de008dbebae340c01548dd9ef7576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc9394bd1c4dc0948f06820890ab85c"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a9db6d23a3a10ec735fb97ae62fba8432">dealloc_or_unwritten_error</a>: 1</td></tr>
-<tr class="memdesc:a8175a791f8df683ddcaf5bf54553dcb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supports Deallocated or Unwritten LBA error for this namespace. <br /></td></tr>
-<tr class="separator:a8175a791f8df683ddcaf5bf54553dcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f5be9d5d71621ad878d37b1e96ac8a0"><td class="memItemLeft" >
+<tr class="memdesc:a3cc9394bd1c4dc0948f06820890ab85c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supports Deallocated or Unwritten LBA error for this namespace. <br /></td></tr>
+<tr class="separator:a3cc9394bd1c4dc0948f06820890ab85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd58c55b5f5f7be5fb1ff8e61000aff"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a1d90d25be4a3d74fcc8097cdd437da25">guid_never_reused</a>: 1</td></tr>
-<tr class="memdesc:a8f5be9d5d71621ad878d37b1e96ac8a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-zero NGUID and EUI64 for namespace are never reused. <br /></td></tr>
-<tr class="separator:a8f5be9d5d71621ad878d37b1e96ac8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a847dd887e7f96c48417a5ba95227ae40"><td class="memItemLeft" >
+<tr class="memdesc:a5cd58c55b5f5f7be5fb1ff8e61000aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-zero NGUID and EUI64 for namespace are never reused. <br /></td></tr>
+<tr class="separator:a5cd58c55b5f5f7be5fb1ff8e61000aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa962a0a19c44a78462ef665c43ca0f62"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a1a6b7a697e3eabceb3c2922e5410138d">optperf</a>: 1</td></tr>
-<tr class="memdesc:a847dd887e7f96c48417a5ba95227ae40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimal Performance field. <br /></td></tr>
-<tr class="separator:a847dd887e7f96c48417a5ba95227ae40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f05c443d3750e66c6417ade935104b4"><td class="memItemLeft" >
+<tr class="memdesc:aa962a0a19c44a78462ef665c43ca0f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimal Performance field. <br /></td></tr>
+<tr class="separator:aa962a0a19c44a78462ef665c43ca0f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc67d5c88d4ea583fe4fb76f9d86ce1d"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved1</b>: 3</td></tr>
-<tr class="separator:a6f05c443d3750e66c6417ade935104b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7ae7c6333177ea70a6a8a85e8984a8e"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#aa7ae7c6333177ea70a6a8a85e8984a8e">nsfeat</a></td></tr>
-<tr class="memdesc:aa7ae7c6333177ea70a6a8a85e8984a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace features <br /></td></tr>
-<tr class="separator:aa7ae7c6333177ea70a6a8a85e8984a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:afc67d5c88d4ea583fe4fb76f9d86ce1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ba9ee089ea02d176cf152180e720d9"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a63ba9ee089ea02d176cf152180e720d9">nsfeat</a></td></tr>
+<tr class="memdesc:a63ba9ee089ea02d176cf152180e720d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace features <br /></td></tr>
+<tr class="separator:a63ba9ee089ea02d176cf152180e720d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a4ebf525c7d166d31f52530999ddcdf"><td class="memItemLeft" align="right" valign="top"><a id="a2a4ebf525c7d166d31f52530999ddcdf"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a2a4ebf525c7d166d31f52530999ddcdf">nlbaf</a></td></tr>
 <tr class="memdesc:a2a4ebf525c7d166d31f52530999ddcdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of lba formats <br /></td></tr>
 <tr class="separator:a2a4ebf525c7d166d31f52530999ddcdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a609ac486b6c550162ed4e5bebfb91cb4"><td class="memItemLeft" ><a id="a609ac486b6c550162ed4e5bebfb91cb4"></a>
+<tr class="memitem:a7cc62e0664a2efc3fb03d4ae8a06674b"><td class="memItemLeft" ><a id="a7cc62e0664a2efc3fb03d4ae8a06674b"></a>
 struct {</td></tr>
-<tr class="memitem:ae98e6d808afa4c5fc303e4a22f7adad8"><td class="memItemLeft" >
-&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>format</b>: 4</td></tr>
-<tr class="separator:ae98e6d808afa4c5fc303e4a22f7adad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3ee9f2b06cf617cf5118b23062952e5"><td class="memItemLeft" >
+<tr class="memitem:a5637b276f5da2f9651a7185f799af06d"><td class="memItemLeft" >
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a7e8c86f4719c2d4ffe638399f42edf03">format</a>: 4</td></tr>
+<tr class="memdesc:a5637b276f5da2f9651a7185f799af06d"><td class="mdescLeft">&#160;</td><td class="mdescRight">LSB for Format index. <br /></td></tr>
+<tr class="separator:a5637b276f5da2f9651a7185f799af06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8eef25ceaace69fe1bf6e81709eeca"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>extended</b>: 1</td></tr>
-<tr class="separator:ab3ee9f2b06cf617cf5118b23062952e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad74cfdbafb4d62be98bfeed64f86b0ab"><td class="memItemLeft" >
-&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved2</b>: 3</td></tr>
-<tr class="separator:ad74cfdbafb4d62be98bfeed64f86b0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a609ac486b6c550162ed4e5bebfb91cb4"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a609ac486b6c550162ed4e5bebfb91cb4">flbas</a></td></tr>
-<tr class="memdesc:a609ac486b6c550162ed4e5bebfb91cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">formatted lba size <br /></td></tr>
-<tr class="separator:a609ac486b6c550162ed4e5bebfb91cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea5ec3b91bf35f50bbb6551fe6573fb2"><td class="memItemLeft" ><a id="aea5ec3b91bf35f50bbb6551fe6573fb2"></a>
+<tr class="separator:a0c8eef25ceaace69fe1bf6e81709eeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece8ec8b7eb5a2d3a404a61cdf2b0e9b"><td class="memItemLeft" >
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a3f66c075ec1543cf417c04c50f0da141">msb_format</a>: 2</td></tr>
+<tr class="memdesc:aece8ec8b7eb5a2d3a404a61cdf2b0e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MSB for Format index, to be ignored if nlbaf &lt;= 16. <br /></td></tr>
+<tr class="separator:aece8ec8b7eb5a2d3a404a61cdf2b0e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dfc7b25803cbb0b920b0b708797e4cc"><td class="memItemLeft" >
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved2</b>: 1</td></tr>
+<tr class="separator:a4dfc7b25803cbb0b920b0b708797e4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc62e0664a2efc3fb03d4ae8a06674b"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a7cc62e0664a2efc3fb03d4ae8a06674b">flbas</a></td></tr>
+<tr class="memdesc:a7cc62e0664a2efc3fb03d4ae8a06674b"><td class="mdescLeft">&#160;</td><td class="mdescRight">formatted lba size <br /></td></tr>
+<tr class="separator:a7cc62e0664a2efc3fb03d4ae8a06674b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104e566a96b6ed6e1b2cf35d00048ae9"><td class="memItemLeft" ><a id="a104e566a96b6ed6e1b2cf35d00048ae9"></a>
 struct {</td></tr>
-<tr class="memitem:aacf0d50d12f802bbd73d69a5db6cb07b"><td class="memItemLeft" >
+<tr class="memitem:a014662b78700bcfbdb6affd29d3ffdec"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a2758ffbbd3aa7376da3f35f3f1cd1a7f">extended</a>: 1</td></tr>
-<tr class="memdesc:aacf0d50d12f802bbd73d69a5db6cb07b"><td class="mdescLeft">&#160;</td><td class="mdescRight">metadata can be transferred as part of data prp list <br /></td></tr>
-<tr class="separator:aacf0d50d12f802bbd73d69a5db6cb07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b96aaed40681a9481bf93df889ba3a3"><td class="memItemLeft" >
+<tr class="memdesc:a014662b78700bcfbdb6affd29d3ffdec"><td class="mdescLeft">&#160;</td><td class="mdescRight">metadata can be transferred as part of data prp list <br /></td></tr>
+<tr class="separator:a014662b78700bcfbdb6affd29d3ffdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dff49a1742e9c6f6003792eadef2b68"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a29732c3e15b6b9ebb2e80e4841012d6a">pointer</a>: 1</td></tr>
-<tr class="memdesc:a0b96aaed40681a9481bf93df889ba3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">metadata can be transferred with separate metadata pointer <br /></td></tr>
-<tr class="separator:a0b96aaed40681a9481bf93df889ba3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70b9d97a2dbda4576b4421c809cbb271"><td class="memItemLeft" >
+<tr class="memdesc:a3dff49a1742e9c6f6003792eadef2b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">metadata can be transferred with separate metadata pointer <br /></td></tr>
+<tr class="separator:a3dff49a1742e9c6f6003792eadef2b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9bbac7f5d61e29750955f9a4341eded"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a2c4901dac069f03def8eba3cde6625e0">reserved3</a>: 6</td></tr>
-<tr class="memdesc:a70b9d97a2dbda4576b4421c809cbb271"><td class="mdescLeft">&#160;</td><td class="mdescRight">reserved <br /></td></tr>
-<tr class="separator:a70b9d97a2dbda4576b4421c809cbb271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea5ec3b91bf35f50bbb6551fe6573fb2"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#aea5ec3b91bf35f50bbb6551fe6573fb2">mc</a></td></tr>
-<tr class="memdesc:aea5ec3b91bf35f50bbb6551fe6573fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">metadata capabilities <br /></td></tr>
-<tr class="separator:aea5ec3b91bf35f50bbb6551fe6573fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c97e8f2ae4a93ab4569dc7e8b8ecb6a"><td class="memItemLeft" ><a id="a7c97e8f2ae4a93ab4569dc7e8b8ecb6a"></a>
+<tr class="memdesc:ab9bbac7f5d61e29750955f9a4341eded"><td class="mdescLeft">&#160;</td><td class="mdescRight">reserved <br /></td></tr>
+<tr class="separator:ab9bbac7f5d61e29750955f9a4341eded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104e566a96b6ed6e1b2cf35d00048ae9"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a104e566a96b6ed6e1b2cf35d00048ae9">mc</a></td></tr>
+<tr class="memdesc:a104e566a96b6ed6e1b2cf35d00048ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">metadata capabilities <br /></td></tr>
+<tr class="separator:a104e566a96b6ed6e1b2cf35d00048ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc6509200a02063ce7b35ee9a9bcbc2"><td class="memItemLeft" ><a id="a6cc6509200a02063ce7b35ee9a9bcbc2"></a>
 struct {</td></tr>
-<tr class="memitem:adb915dd61622afc9c07017d2e7c7278f"><td class="memItemLeft" >
+<tr class="memitem:ad6277a16292b0d47e7d73a8a01bd670f"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#ad904cb4c17ff2b844198314bb7aeabbc">pit1</a>: 1</td></tr>
-<tr class="memdesc:adb915dd61622afc9c07017d2e7c7278f"><td class="mdescLeft">&#160;</td><td class="mdescRight">protection information type 1 <br /></td></tr>
-<tr class="separator:adb915dd61622afc9c07017d2e7c7278f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f132781412479bef18858d3a9c9a8a7"><td class="memItemLeft" >
+<tr class="memdesc:ad6277a16292b0d47e7d73a8a01bd670f"><td class="mdescLeft">&#160;</td><td class="mdescRight">protection information type 1 <br /></td></tr>
+<tr class="separator:ad6277a16292b0d47e7d73a8a01bd670f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f439bca050f71b5135f704d857dee6d"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a9ae8a74d4dbae2fec5e858007a7fa2a7">pit2</a>: 1</td></tr>
-<tr class="memdesc:a6f132781412479bef18858d3a9c9a8a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">protection information type 2 <br /></td></tr>
-<tr class="separator:a6f132781412479bef18858d3a9c9a8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f67116dc2f8dcb4c97852dc642153bf"><td class="memItemLeft" >
+<tr class="memdesc:a2f439bca050f71b5135f704d857dee6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">protection information type 2 <br /></td></tr>
+<tr class="separator:a2f439bca050f71b5135f704d857dee6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de6fe00823496f0f24a0d9538e01e9a"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#ae160752518b32469ce2a74908d74a6c8">pit3</a>: 1</td></tr>
-<tr class="memdesc:a4f67116dc2f8dcb4c97852dc642153bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">protection information type 3 <br /></td></tr>
-<tr class="separator:a4f67116dc2f8dcb4c97852dc642153bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a9bb5bb4f3520ffb1cdea6ef6237811"><td class="memItemLeft" >
+<tr class="memdesc:a0de6fe00823496f0f24a0d9538e01e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">protection information type 3 <br /></td></tr>
+<tr class="separator:a0de6fe00823496f0f24a0d9538e01e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4faaa302ea7558f78e1575e8f1a2e9f3"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a1295065f7156b27aeb749b1ef5c0cdc7">md_start</a>: 1</td></tr>
-<tr class="memdesc:a3a9bb5bb4f3520ffb1cdea6ef6237811"><td class="mdescLeft">&#160;</td><td class="mdescRight">first eight bytes of metadata <br /></td></tr>
-<tr class="separator:a3a9bb5bb4f3520ffb1cdea6ef6237811"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae22ceba262831087183993f6f0e58a07"><td class="memItemLeft" >
+<tr class="memdesc:a4faaa302ea7558f78e1575e8f1a2e9f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">first eight bytes of metadata <br /></td></tr>
+<tr class="separator:a4faaa302ea7558f78e1575e8f1a2e9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa16940e92ce3c3177dda39b095afcc6"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#ab511e295c151b4d17911e474711168b9">md_end</a>: 1</td></tr>
-<tr class="memdesc:ae22ceba262831087183993f6f0e58a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">last eight bytes of metadata <br /></td></tr>
-<tr class="separator:ae22ceba262831087183993f6f0e58a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c97e8f2ae4a93ab4569dc7e8b8ecb6a"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a7c97e8f2ae4a93ab4569dc7e8b8ecb6a">dpc</a></td></tr>
-<tr class="memdesc:a7c97e8f2ae4a93ab4569dc7e8b8ecb6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">end-to-end data protection capabilities <br /></td></tr>
-<tr class="separator:a7c97e8f2ae4a93ab4569dc7e8b8ecb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba6c25a9c4bd902d158e0b4b3b8f411b"><td class="memItemLeft" ><a id="aba6c25a9c4bd902d158e0b4b3b8f411b"></a>
+<tr class="memdesc:aaa16940e92ce3c3177dda39b095afcc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">last eight bytes of metadata <br /></td></tr>
+<tr class="separator:aaa16940e92ce3c3177dda39b095afcc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc6509200a02063ce7b35ee9a9bcbc2"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a6cc6509200a02063ce7b35ee9a9bcbc2">dpc</a></td></tr>
+<tr class="memdesc:a6cc6509200a02063ce7b35ee9a9bcbc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">end-to-end data protection capabilities <br /></td></tr>
+<tr class="separator:a6cc6509200a02063ce7b35ee9a9bcbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27080bf619c11cefb4af19fe1911b5fe"><td class="memItemLeft" ><a id="a27080bf619c11cefb4af19fe1911b5fe"></a>
 struct {</td></tr>
-<tr class="memitem:aed646c361b92898967874ec8aba8c7c8"><td class="memItemLeft" >
+<tr class="memitem:ab9ac246c438c93195bc5684afe717fc2"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#ac13a2b9435ad685be10f79affa76b821">pit</a>: 3</td></tr>
-<tr class="memdesc:aed646c361b92898967874ec8aba8c7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">protection information type <br /></td></tr>
-<tr class="separator:aed646c361b92898967874ec8aba8c7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0533b960ad92eae8ac94731734c484ed"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a1295065f7156b27aeb749b1ef5c0cdc7">md_start</a>: 1</td></tr>
-<tr class="memdesc:a0533b960ad92eae8ac94731734c484ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">1 == protection info transferred at start of metadata  <a href="#a0533b960ad92eae8ac94731734c484ed">More...</a><br /></td></tr>
-<tr class="separator:a0533b960ad92eae8ac94731734c484ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab96a1a21b5a78f6b54f958caf944546d"><td class="memItemLeft" >
+<tr class="memdesc:ab9ac246c438c93195bc5684afe717fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">protection information type <br /></td></tr>
+<tr class="separator:ab9ac246c438c93195bc5684afe717fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6c0b840b99eda38a694c94611ad079"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a1295065f7156b27aeb749b1ef5c0cdc7">md_start</a>: 1</td></tr>
+<tr class="memdesc:a5a6c0b840b99eda38a694c94611ad079"><td class="mdescLeft">&#160;</td><td class="mdescRight">1 == protection info transferred at start of metadata  <a href="structspdk__nvme__ns__data_1_1_0d250.html#a5a6c0b840b99eda38a694c94611ad079">More...</a><br /></td></tr>
+<tr class="separator:a5a6c0b840b99eda38a694c94611ad079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b72a32efdb91fff7136364942a85d2"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved4</b>: 4</td></tr>
-<tr class="separator:ab96a1a21b5a78f6b54f958caf944546d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba6c25a9c4bd902d158e0b4b3b8f411b"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#aba6c25a9c4bd902d158e0b4b3b8f411b">dps</a></td></tr>
-<tr class="memdesc:aba6c25a9c4bd902d158e0b4b3b8f411b"><td class="mdescLeft">&#160;</td><td class="mdescRight">end-to-end data protection type settings <br /></td></tr>
-<tr class="separator:aba6c25a9c4bd902d158e0b4b3b8f411b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf6b39da9898267d0e4262841ca1aa84"><td class="memItemLeft" ><a id="acf6b39da9898267d0e4262841ca1aa84"></a>
+<tr class="separator:a00b72a32efdb91fff7136364942a85d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27080bf619c11cefb4af19fe1911b5fe"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a27080bf619c11cefb4af19fe1911b5fe">dps</a></td></tr>
+<tr class="memdesc:a27080bf619c11cefb4af19fe1911b5fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">end-to-end data protection type settings <br /></td></tr>
+<tr class="separator:a27080bf619c11cefb4af19fe1911b5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada0b400581380bf96d8df26488783b26"><td class="memItemLeft" ><a id="ada0b400581380bf96d8df26488783b26"></a>
 struct {</td></tr>
-<tr class="memitem:a8b8a3108cf6c3ce117676b0871e74d20"><td class="memItemLeft" >
+<tr class="memitem:a2477a56635bcc05c732627b0e6b08682"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>can_share</b>: 1</td></tr>
-<tr class="separator:a8b8a3108cf6c3ce117676b0871e74d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3453585e3a760927cfff4529697db779"><td class="memItemLeft" >
+<tr class="separator:a2477a56635bcc05c732627b0e6b08682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7768d1ca2d4987ca9b6c1b483029a55"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved</b>: 7</td></tr>
-<tr class="separator:a3453585e3a760927cfff4529697db779"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf6b39da9898267d0e4262841ca1aa84"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#acf6b39da9898267d0e4262841ca1aa84">nmic</a></td></tr>
-<tr class="memdesc:acf6b39da9898267d0e4262841ca1aa84"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace multi-path I/O and namespace sharing capabilities <br /></td></tr>
-<tr class="separator:acf6b39da9898267d0e4262841ca1aa84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7781a0c6825c262f988ca7455ed88d47"><td class="memItemLeft" ><a id="a7781a0c6825c262f988ca7455ed88d47"></a>
+<tr class="separator:ac7768d1ca2d4987ca9b6c1b483029a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada0b400581380bf96d8df26488783b26"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#ada0b400581380bf96d8df26488783b26">nmic</a></td></tr>
+<tr class="memdesc:ada0b400581380bf96d8df26488783b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace multi-path I/O and namespace sharing capabilities <br /></td></tr>
+<tr class="separator:ada0b400581380bf96d8df26488783b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9abd95feffd2d99fe1d4ff1ccad5c8d4"><td class="memItemLeft" ><a id="a9abd95feffd2d99fe1d4ff1ccad5c8d4"></a>
 union {</td></tr>
-<tr class="memitem:abf550a850a10d6eeaff97a84f102ac9e"><td class="memItemLeft" >
+<tr class="memitem:a185a76c8728aca7cdb64b77ce5fdf95d"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a32de020b9b7a1cd52081f9dcd556d38f"><td class="memItemLeft" >
+<tr class="memitem:af03b526e80e38cae935b4fbbdea12c88"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#ada850d5cd15ecc2d5f216b845bd5c3e8">persist</a>: 1</td></tr>
-<tr class="memdesc:a32de020b9b7a1cd52081f9dcd556d38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports persist through power loss <br /></td></tr>
-<tr class="separator:a32de020b9b7a1cd52081f9dcd556d38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9478b6b17268c27188afdb50e93b231a"><td class="memItemLeft" >
+<tr class="memdesc:af03b526e80e38cae935b4fbbdea12c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports persist through power loss <br /></td></tr>
+<tr class="separator:af03b526e80e38cae935b4fbbdea12c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2c3dd8ec5d15143579e40b297f498e"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a40fd3c4f8d853d8835d958ec1b7d2a90">write_exclusive</a>: 1</td></tr>
-<tr class="memdesc:a9478b6b17268c27188afdb50e93b231a"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports write exclusive <br /></td></tr>
-<tr class="separator:a9478b6b17268c27188afdb50e93b231a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae03f720302375a000c2fbcaaba3f0220"><td class="memItemLeft" >
+<tr class="memdesc:a2f2c3dd8ec5d15143579e40b297f498e"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports write exclusive <br /></td></tr>
+<tr class="separator:a2f2c3dd8ec5d15143579e40b297f498e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ee05bc83f407eebe83ebf07b2fe4f2"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#adc10938c25cd751dcf93a2a725040ec1">exclusive_access</a>: 1</td></tr>
-<tr class="memdesc:ae03f720302375a000c2fbcaaba3f0220"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports exclusive access <br /></td></tr>
-<tr class="separator:ae03f720302375a000c2fbcaaba3f0220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab90c8a4fd2105928da4ab64a79adf3b9"><td class="memItemLeft" >
+<tr class="memdesc:a50ee05bc83f407eebe83ebf07b2fe4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports exclusive access <br /></td></tr>
+<tr class="separator:a50ee05bc83f407eebe83ebf07b2fe4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace89ebe2b781930e7141322d53f4092"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a5d98f39aff9d34ffb633ffeb773a9554">write_exclusive_reg_only</a>: 1</td></tr>
-<tr class="memdesc:ab90c8a4fd2105928da4ab64a79adf3b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports write exclusive - registrants only <br /></td></tr>
-<tr class="separator:ab90c8a4fd2105928da4ab64a79adf3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abddad6c66f0ff070643a17b9e35c9641"><td class="memItemLeft" >
+<tr class="memdesc:aace89ebe2b781930e7141322d53f4092"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports write exclusive - registrants only <br /></td></tr>
+<tr class="separator:aace89ebe2b781930e7141322d53f4092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e73adafa76eb4cdab43907840be303e"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a3f73ed0c59226dc092e95cf6b82832f2">exclusive_access_reg_only</a>: 1</td></tr>
-<tr class="memdesc:abddad6c66f0ff070643a17b9e35c9641"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports exclusive access - registrants only <br /></td></tr>
-<tr class="separator:abddad6c66f0ff070643a17b9e35c9641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9adee2a655fb50067db383474e6af53"><td class="memItemLeft" >
+<tr class="memdesc:a5e73adafa76eb4cdab43907840be303e"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports exclusive access - registrants only <br /></td></tr>
+<tr class="separator:a5e73adafa76eb4cdab43907840be303e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d2085328e3b54999a57192d04f7e22"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a10c7b734c09cfd79d88f4fb4c1ffb666">write_exclusive_all_reg</a>: 1</td></tr>
-<tr class="memdesc:ab9adee2a655fb50067db383474e6af53"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports write exclusive - all registrants <br /></td></tr>
-<tr class="separator:ab9adee2a655fb50067db383474e6af53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a552a82149d1b0220a3508d6fed265d4b"><td class="memItemLeft" >
+<tr class="memdesc:a44d2085328e3b54999a57192d04f7e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports write exclusive - all registrants <br /></td></tr>
+<tr class="separator:a44d2085328e3b54999a57192d04f7e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8637a4bb397722f8e78ce207144c75c3"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#af4041c21ba5656fc9d649a698e868862">exclusive_access_all_reg</a>: 1</td></tr>
-<tr class="memdesc:a552a82149d1b0220a3508d6fed265d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports exclusive access - all registrants <br /></td></tr>
-<tr class="separator:a552a82149d1b0220a3508d6fed265d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace7d73939d251df466572236a20f57c2"><td class="memItemLeft" >
+<tr class="memdesc:a8637a4bb397722f8e78ce207144c75c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports exclusive access - all registrants <br /></td></tr>
+<tr class="separator:a8637a4bb397722f8e78ce207144c75c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d3704fb43fe12fa3cdd1cb7204cfaa"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#aa324a3eeb1fb7252010f8ec486a8cedb">ignore_existing_key</a>: 1</td></tr>
-<tr class="memdesc:ace7d73939d251df466572236a20f57c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports ignore existing key <br /></td></tr>
-<tr class="separator:ace7d73939d251df466572236a20f57c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf550a850a10d6eeaff97a84f102ac9e"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>rescap</b></td></tr>
-<tr class="separator:abf550a850a10d6eeaff97a84f102ac9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8429f85b58e01f8447ed6ecb7acc515"><td class="memItemLeft" >
+<tr class="memdesc:ac7d3704fb43fe12fa3cdd1cb7204cfaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">supports ignore existing key <br /></td></tr>
+<tr class="separator:ac7d3704fb43fe12fa3cdd1cb7204cfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185a76c8728aca7cdb64b77ce5fdf95d"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>rescap</b></td></tr>
+<tr class="separator:a185a76c8728aca7cdb64b77ce5fdf95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf669823433a03fc15b2aa6624bb87a"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>raw</b></td></tr>
-<tr class="separator:af8429f85b58e01f8447ed6ecb7acc515"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7781a0c6825c262f988ca7455ed88d47"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a7781a0c6825c262f988ca7455ed88d47">nsrescap</a></td></tr>
-<tr class="memdesc:a7781a0c6825c262f988ca7455ed88d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">reservation capabilities <br /></td></tr>
-<tr class="separator:a7781a0c6825c262f988ca7455ed88d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70873573c391f433d99610596c74ed0d"><td class="memItemLeft" ><a id="a70873573c391f433d99610596c74ed0d"></a>
+<tr class="separator:a3cf669823433a03fc15b2aa6624bb87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9abd95feffd2d99fe1d4ff1ccad5c8d4"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a9abd95feffd2d99fe1d4ff1ccad5c8d4">nsrescap</a></td></tr>
+<tr class="memdesc:a9abd95feffd2d99fe1d4ff1ccad5c8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">reservation capabilities <br /></td></tr>
+<tr class="separator:a9abd95feffd2d99fe1d4ff1ccad5c8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84010d2916c172b08fd62131ca13364"><td class="memItemLeft" ><a id="ad84010d2916c172b08fd62131ca13364"></a>
 struct {</td></tr>
-<tr class="memitem:ade1e38b3c7409a9eabbd798269558f57"><td class="memItemLeft" >
+<tr class="memitem:a25ff9c9c4a291d89c8ffed422d9de1ee"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>percentage_remaining</b>: 7</td></tr>
-<tr class="separator:ade1e38b3c7409a9eabbd798269558f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbe9b488a3c5433b5c36575c508e6817"><td class="memItemLeft" >
+<tr class="separator:a25ff9c9c4a291d89c8ffed422d9de1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50de973e969a55043d956e665cf59fc4"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>fpi_supported</b>: 1</td></tr>
-<tr class="separator:abbe9b488a3c5433b5c36575c508e6817"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70873573c391f433d99610596c74ed0d"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a70873573c391f433d99610596c74ed0d">fpi</a></td></tr>
-<tr class="memdesc:a70873573c391f433d99610596c74ed0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">format progress indicator <br /></td></tr>
-<tr class="separator:a70873573c391f433d99610596c74ed0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c09f422aef3869a04841f455c7d8b30"><td class="memItemLeft" ><a id="a5c09f422aef3869a04841f455c7d8b30"></a>
+<tr class="separator:a50de973e969a55043d956e665cf59fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84010d2916c172b08fd62131ca13364"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#ad84010d2916c172b08fd62131ca13364">fpi</a></td></tr>
+<tr class="memdesc:ad84010d2916c172b08fd62131ca13364"><td class="mdescLeft">&#160;</td><td class="mdescRight">format progress indicator <br /></td></tr>
+<tr class="separator:ad84010d2916c172b08fd62131ca13364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ffb36e2f02e13ed33b302aafddd70f3"><td class="memItemLeft" ><a id="a0ffb36e2f02e13ed33b302aafddd70f3"></a>
 union {</td></tr>
-<tr class="memitem:a7f2cb7bfab356fbb9ec1428129253e18"><td class="memItemLeft" >
+<tr class="memitem:a1aeff72da10f77ccbfd4a37754c788fd"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>raw</b></td></tr>
-<tr class="separator:a7f2cb7bfab356fbb9ec1428129253e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae41713c27ea53008d2c2e2dd6e83055a"><td class="memItemLeft" >
+<tr class="separator:a1aeff72da10f77ccbfd4a37754c788fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd838200b15e1efc1e17ce1d5cdf57b6"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ab2f6a8a3786acb5364d9a48b8afa60a5"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a7da578850bf0274652b7fcb640b60619">read_value</a>: 3</td></tr>
-<tr class="memdesc:ab2f6a8a3786acb5364d9a48b8afa60a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value read from deallocated blocks.  <a href="#ab2f6a8a3786acb5364d9a48b8afa60a5">More...</a><br /></td></tr>
-<tr class="separator:ab2f6a8a3786acb5364d9a48b8afa60a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4039d8b5143c6180f79ced5c97ef87f5"><td class="memItemLeft" >
+<tr class="memitem:a630c9edbdd8e0ce095eed461fe2a8594"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a7da578850bf0274652b7fcb640b60619">read_value</a>: 3</td></tr>
+<tr class="memdesc:a630c9edbdd8e0ce095eed461fe2a8594"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value read from deallocated blocks.  <a href="structspdk__nvme__ns__data_1_1_0d254_1_1_0d258.html#a630c9edbdd8e0ce095eed461fe2a8594">More...</a><br /></td></tr>
+<tr class="separator:a630c9edbdd8e0ce095eed461fe2a8594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b162d24a9830b0e42ba173aca37130"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#ae0ed9489f16678899fafd54bec980ccb">write_zero_deallocate</a>: 1</td></tr>
-<tr class="memdesc:a4039d8b5143c6180f79ced5c97ef87f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supports Deallocate bit in Write Zeroes. <br /></td></tr>
-<tr class="separator:a4039d8b5143c6180f79ced5c97ef87f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0f9b0f53955849cd26a5452710a21fd"><td class="memItemLeft" >
+<tr class="memdesc:a19b162d24a9830b0e42ba173aca37130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supports Deallocate bit in Write Zeroes. <br /></td></tr>
+<tr class="separator:a19b162d24a9830b0e42ba173aca37130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81c7785d71601981f320d6659c52c9b7"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a058bfec34018c099918420fbc79fab27">guard_value</a>: 1</td></tr>
-<tr class="memdesc:ad0f9b0f53955849cd26a5452710a21fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guard field behavior for deallocated logical blocks 0: contains 0xFFFF 1: contains CRC for read value. <br /></td></tr>
-<tr class="separator:ad0f9b0f53955849cd26a5452710a21fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2fe8fec99159c2f94ee33e49ac315d4"><td class="memItemLeft" >
+<tr class="memdesc:a81c7785d71601981f320d6659c52c9b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guard field behavior for deallocated logical blocks 0: contains 0xFFFF 1: contains CRC for read value. <br /></td></tr>
+<tr class="separator:a81c7785d71601981f320d6659c52c9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d8b512af48f4e64c02589e3eb05ba4"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved</b>: 3</td></tr>
-<tr class="separator:af2fe8fec99159c2f94ee33e49ac315d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae41713c27ea53008d2c2e2dd6e83055a"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bits</b></td></tr>
-<tr class="separator:ae41713c27ea53008d2c2e2dd6e83055a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c09f422aef3869a04841f455c7d8b30"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a5c09f422aef3869a04841f455c7d8b30">dlfeat</a></td></tr>
-<tr class="memdesc:a5c09f422aef3869a04841f455c7d8b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">deallocate logical features <br /></td></tr>
-<tr class="separator:a5c09f422aef3869a04841f455c7d8b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab9d8b512af48f4e64c02589e3eb05ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd838200b15e1efc1e17ce1d5cdf57b6"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bits</b></td></tr>
+<tr class="separator:afd838200b15e1efc1e17ce1d5cdf57b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ffb36e2f02e13ed33b302aafddd70f3"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a0ffb36e2f02e13ed33b302aafddd70f3">dlfeat</a></td></tr>
+<tr class="memdesc:a0ffb36e2f02e13ed33b302aafddd70f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">deallocate logical features <br /></td></tr>
+<tr class="separator:a0ffb36e2f02e13ed33b302aafddd70f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad28697ee63156180d84ef76496ca030f"><td class="memItemLeft" align="right" valign="top"><a id="ad28697ee63156180d84ef76496ca030f"></a>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#ad28697ee63156180d84ef76496ca030f">nawun</a></td></tr>
 <tr class="memdesc:ad28697ee63156180d84ef76496ca030f"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace atomic write unit normal <br /></td></tr>
@@ -409,16 +358,48 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a21b97afc8b857343556a151a15dc6ef8">nows</a></td></tr>
 <tr class="memdesc:a21b97afc8b857343556a151a15dc6ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace Optimal Write Size. <br /></td></tr>
 <tr class="separator:a21b97afc8b857343556a151a15dc6ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9d13a25d6cfd06ffca73433aa478ead"><td class="memItemLeft" align="right" valign="top"><a id="af9d13a25d6cfd06ffca73433aa478ead"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved64</b> [18]</td></tr>
-<tr class="separator:af9d13a25d6cfd06ffca73433aa478ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55dc985c0da5776763fb5a0c9e682e11"><td class="memItemLeft" align="right" valign="top"><a id="a55dc985c0da5776763fb5a0c9e682e11"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a55dc985c0da5776763fb5a0c9e682e11">mssrl</a></td></tr>
+<tr class="memdesc:a55dc985c0da5776763fb5a0c9e682e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum Single Source Range Length. <br /></td></tr>
+<tr class="separator:a55dc985c0da5776763fb5a0c9e682e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd197fa55299f5bb25af666b71392aa3"><td class="memItemLeft" align="right" valign="top"><a id="afd197fa55299f5bb25af666b71392aa3"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#afd197fa55299f5bb25af666b71392aa3">mcl</a></td></tr>
+<tr class="memdesc:afd197fa55299f5bb25af666b71392aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum Copy Length. <br /></td></tr>
+<tr class="separator:afd197fa55299f5bb25af666b71392aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e557174f2bc0a5b8c5c95e15237d8d"><td class="memItemLeft" align="right" valign="top"><a id="af2e557174f2bc0a5b8c5c95e15237d8d"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#af2e557174f2bc0a5b8c5c95e15237d8d">msrc</a></td></tr>
+<tr class="memdesc:af2e557174f2bc0a5b8c5c95e15237d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum Source Range Count. <br /></td></tr>
+<tr class="separator:af2e557174f2bc0a5b8c5c95e15237d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e93a03959f465f79cbcf0eb5db83b27"><td class="memItemLeft" align="right" valign="top"><a id="a0e93a03959f465f79cbcf0eb5db83b27"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved81</b> [11]</td></tr>
+<tr class="separator:a0e93a03959f465f79cbcf0eb5db83b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84357d9c3c97e9eec914e8992ad914fa"><td class="memItemLeft" align="right" valign="top"><a id="a84357d9c3c97e9eec914e8992ad914fa"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a84357d9c3c97e9eec914e8992ad914fa">anagrpid</a></td></tr>
 <tr class="memdesc:a84357d9c3c97e9eec914e8992ad914fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANA group identifier. <br /></td></tr>
 <tr class="separator:a84357d9c3c97e9eec914e8992ad914fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a107a98cd1a968ef8cd99179bd87b98a1"><td class="memItemLeft" align="right" valign="top"><a id="a107a98cd1a968ef8cd99179bd87b98a1"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved96</b> [8]</td></tr>
-<tr class="separator:a107a98cd1a968ef8cd99179bd87b98a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf9832e305e8bb650977e2623426565"><td class="memItemLeft" align="right" valign="top"><a id="a7cf9832e305e8bb650977e2623426565"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved96</b> [3]</td></tr>
+<tr class="separator:a7cf9832e305e8bb650977e2623426565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a46141bdde92baebea83713f237ddb9"><td class="memItemLeft" ><a id="a3a46141bdde92baebea83713f237ddb9"></a>
+struct {</td></tr>
+<tr class="memitem:a577905506ea89ba79b50516c0861cec8"><td class="memItemLeft" >
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a2d31ce64bc5986f84ea63060f6d410a3">write_protected</a>: 1</td></tr>
+<tr class="memdesc:a577905506ea89ba79b50516c0861cec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace write protected. <br /></td></tr>
+<tr class="separator:a577905506ea89ba79b50516c0861cec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2678f57d4de9346ea899190ecb7b578"><td class="memItemLeft" >
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved</b>: 7</td></tr>
+<tr class="separator:ad2678f57d4de9346ea899190ecb7b578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a46141bdde92baebea83713f237ddb9"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a3a46141bdde92baebea83713f237ddb9">nsattr</a></td></tr>
+<tr class="memdesc:a3a46141bdde92baebea83713f237ddb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace attributes <br /></td></tr>
+<tr class="separator:a3a46141bdde92baebea83713f237ddb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d261a38012333a80670caa873d4e2e"><td class="memItemLeft" align="right" valign="top"><a id="a49d261a38012333a80670caa873d4e2e"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a49d261a38012333a80670caa873d4e2e">nvmsetid</a></td></tr>
+<tr class="memdesc:a49d261a38012333a80670caa873d4e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVM Set Identifier. <br /></td></tr>
+<tr class="separator:a49d261a38012333a80670caa873d4e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a459bece07c735fc8a0fbc37bcf0df778"><td class="memItemLeft" align="right" valign="top"><a id="a459bece07c735fc8a0fbc37bcf0df778"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a459bece07c735fc8a0fbc37bcf0df778">endgid</a></td></tr>
+<tr class="memdesc:a459bece07c735fc8a0fbc37bcf0df778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Endurance group identifier. <br /></td></tr>
+<tr class="separator:a459bece07c735fc8a0fbc37bcf0df778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f0a3e19a15e892d1e842e1c83028bf0"><td class="memItemLeft" align="right" valign="top"><a id="a3f0a3e19a15e892d1e842e1c83028bf0"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a3f0a3e19a15e892d1e842e1c83028bf0">nguid</a> [16]</td></tr>
 <tr class="memdesc:a3f0a3e19a15e892d1e842e1c83028bf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace globally unique identifier <br /></td></tr>
@@ -427,29 +408,26 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a9b13e499da82c9fa1a7e4aca8520ae35">eui64</a></td></tr>
 <tr class="memdesc:a9b13e499da82c9fa1a7e4aca8520ae35"><td class="mdescLeft">&#160;</td><td class="mdescRight">IEEE extended unique identifier. <br /></td></tr>
 <tr class="separator:a9b13e499da82c9fa1a7e4aca8520ae35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ca028b59bfc0b0062552743d0429b23"><td class="memItemLeft" ><a id="a1ca028b59bfc0b0062552743d0429b23"></a>
+<tr class="memitem:a035dea6630de49762356c19f4278a040"><td class="memItemLeft" ><a id="a035dea6630de49762356c19f4278a040"></a>
 struct {</td></tr>
-<tr class="memitem:a2a5c21cec10ed2d1b1deaf7002562520"><td class="memItemLeft" >
+<tr class="memitem:a4a535ae82d86a41201918a7bbb1848b3"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#ae71d2fb221f55dd1bc0981e94e67f49d">ms</a>: 16</td></tr>
-<tr class="memdesc:a2a5c21cec10ed2d1b1deaf7002562520"><td class="mdescLeft">&#160;</td><td class="mdescRight">metadata size <br /></td></tr>
-<tr class="separator:a2a5c21cec10ed2d1b1deaf7002562520"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2ba05f882ec222f4e14d9b1b17a50a9"><td class="memItemLeft" >
+<tr class="memdesc:a4a535ae82d86a41201918a7bbb1848b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">metadata size <br /></td></tr>
+<tr class="separator:a4a535ae82d86a41201918a7bbb1848b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc19f8427d51ce537f8756ac659ec825"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#aad19d9beb62f0d1305c3a6874b11f284">lbads</a>: 8</td></tr>
-<tr class="memdesc:ab2ba05f882ec222f4e14d9b1b17a50a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">lba data size <br /></td></tr>
-<tr class="separator:ab2ba05f882ec222f4e14d9b1b17a50a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4058a05f72be75aa0b3150d739cc5f5"><td class="memItemLeft" >
+<tr class="memdesc:abc19f8427d51ce537f8756ac659ec825"><td class="mdescLeft">&#160;</td><td class="mdescRight">lba data size <br /></td></tr>
+<tr class="separator:abc19f8427d51ce537f8756ac659ec825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63add858b8347205fe34a35adc89a68"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a4133aa654a2f1e5af881d5293ba965cf">rp</a>: 2</td></tr>
-<tr class="memdesc:ab4058a05f72be75aa0b3150d739cc5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">relative performance <br /></td></tr>
-<tr class="separator:ab4058a05f72be75aa0b3150d739cc5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af26a153c75654c7a59b56865def2f3be"><td class="memItemLeft" >
+<tr class="memdesc:ac63add858b8347205fe34a35adc89a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">relative performance <br /></td></tr>
+<tr class="separator:ac63add858b8347205fe34a35adc89a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3bee03ab7cc8a65e828233d5fbdab7"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved6</b>: 6</td></tr>
-<tr class="separator:af26a153c75654c7a59b56865def2f3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ca028b59bfc0b0062552743d0429b23"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a1ca028b59bfc0b0062552743d0429b23">lbaf</a> [16]</td></tr>
-<tr class="memdesc:a1ca028b59bfc0b0062552743d0429b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">lba format support <br /></td></tr>
-<tr class="separator:a1ca028b59bfc0b0062552743d0429b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab519092fba38bc386c5bd2aa87feaf4f"><td class="memItemLeft" align="right" valign="top"><a id="ab519092fba38bc386c5bd2aa87feaf4f"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved6</b> [192]</td></tr>
-<tr class="separator:ab519092fba38bc386c5bd2aa87feaf4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a5e3bee03ab7cc8a65e828233d5fbdab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035dea6630de49762356c19f4278a040"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a035dea6630de49762356c19f4278a040">lbaf</a> [64]</td></tr>
+<tr class="memdesc:a035dea6630de49762356c19f4278a040"><td class="mdescLeft">&#160;</td><td class="mdescRight">lba format support <br /></td></tr>
+<tr class="separator:a035dea6630de49762356c19f4278a040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0468369f44f29842e4aea24130afbfd"><td class="memItemLeft" align="right" valign="top"><a id="ad0468369f44f29842e4aea24130afbfd"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>vendor_specific</b> [3712]</td></tr>
 <tr class="separator:ad0468369f44f29842e4aea24130afbfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -496,4 +474,14 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>vendor_specific</b
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

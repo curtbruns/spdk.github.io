@@ -9,6 +9,7 @@ var structspdk__nvmf__request =
     [ "data", "structspdk__nvmf__request.html#ad4050a61b10350d8839441d913ee6d60", null ],
     [ "data_from_pool", "structspdk__nvmf__request.html#a8435a0e6965e3ed10a84c8e000226dc8", null ],
     [ "dif", "structspdk__nvmf__request.html#ae30b6b5bc1ef629f68f6bc5596895f02", null ],
+    [ "dif_enabled", "structspdk__nvmf__request.html#a95ae1e6f9092297556824f85b4242965", null ],
     [ "first_fused_req", "structspdk__nvmf__request.html#a9157c88a81b8edfd08f98482c6d430e0", null ],
     [ "iov", "structspdk__nvmf__request.html#abd8a5aa92bdc3a3b98f2eb21f21e03b3", null ],
     [ "iovcnt", "structspdk__nvmf__request.html#a0ddf1cbaf2632b4621befe77f0fd4497", null ],
@@ -17,6 +18,9 @@ var structspdk__nvmf__request =
     [ "qpair", "structspdk__nvmf__request.html#a304463ec4c44227e688f772ed09df989", null ],
     [ "req_to_abort", "structspdk__nvmf__request.html#a049e86d7c375f5f5c08dc07c208d0419", null ],
     [ "rsp", "structspdk__nvmf__request.html#a4af9520e47b3e49ecfdc7e569ce1772f", null ],
+    [ "stripped_data", "structspdk__nvmf__request.html#aae70cc15ac6a9e57557b8174a42118fa", null ],
     [ "timeout_tsc", "structspdk__nvmf__request.html#ae405604e4160ec1916926c146b3a852e", null ],
-    [ "xfer", "structspdk__nvmf__request.html#a6b037c8915d678872f7e3e6535840b3a", null ]
+    [ "xfer", "structspdk__nvmf__request.html#a6d7a7b73198c6e8d4d892b446ef21eab", null ],
+    [ "zcopy_bdev_io", "structspdk__nvmf__request.html#a8c381f6bc2be17a2e4de29a5a813554a", null ],
+    [ "zcopy_phase", "structspdk__nvmf__request.html#a812aed2fc738ed663c5e510b2209f2fd", null ]
 ];

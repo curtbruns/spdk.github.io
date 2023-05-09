@@ -1,102 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.9.1" />
   <title>SPDK: Data Fields - Variables</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/doxyboot.js"></script>
+  <script type="text/javascript" src="./navtree.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.9.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Search');
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('functions_vars_r.html','');});
+$(document).ready(function(){initNavTree('functions_vars_r.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -151,8 +95,8 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 : <a class="el" href="unionspdk__nvme__pmrebs__register.html#a8c1bc63b833ba8549dd7c60f4632100d">spdk_nvme_pmrebs_register</a>
 </li>
 <li>rcsts
-: <a class="el" href="structspdk__nvme__registered__ctrlr__data.html#a89b42ca96752752282ae7363f209a786">spdk_nvme_registered_ctrlr_data</a>
-, <a class="el" href="structspdk__nvme__registered__ctrlr__extended__data.html#ad4e0bc9edc25b14a17b5f1ebe1604d0d">spdk_nvme_registered_ctrlr_extended_data</a>
+: <a class="el" href="structspdk__nvme__registered__ctrlr__data.html#a826e51c7fc1c54b97d1e19b5c095c9de">spdk_nvme_registered_ctrlr_data</a>
+, <a class="el" href="structspdk__nvme__registered__ctrlr__extended__data.html#abe897c79eb9196df0b7b6b7e6ce143d5">spdk_nvme_registered_ctrlr_extended_data</a>
 </li>
 <li>rdma
 : <a class="el" href="unionspdk__nvmf__transport__specific__address__subtype.html#aabae1c961d6f86f0d6b1e61cdaa7a9ce">spdk_nvmf_transport_specific_address_subtype</a>
@@ -168,6 +112,9 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 </li>
 <li>rdma_qptype
 : <a class="el" href="structspdk__nvmf__rdma__transport__specific__address__subtype.html#a7332600a60a55d05f8573789ce6a2ccf">spdk_nvmf_rdma_transport_specific_address_subtype</a>
+</li>
+<li>rdma_srq_size
+: <a class="el" href="structspdk__nvme__transport__opts.html#aa462c4ecdc0534781c8ce834462b11c7">spdk_nvme_transport_opts</a>
 </li>
 <li>rds
 : <a class="el" href="unionspdk__nvme__cmbsz__register.html#aa017da4c8e3418285501ca07822bdbf2">spdk_nvme_cmbsz_register</a>
@@ -188,6 +135,15 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>regctl
 : <a class="el" href="structspdk__nvme__reservation__status__data.html#a348be070c5ee99541496188e9913bc8b">spdk_nvme_reservation_status_data</a>
 </li>
+<li>related_index
+: <a class="el" href="structspdk__trace__parser__entry.html#a55b2e0aea7cca402a502ad4d043e7293">spdk_trace_parser_entry</a>
+</li>
+<li>related_objects
+: <a class="el" href="structspdk__trace__tpoint.html#a99648b4d0d54ee5086df48f7183ff7a9">spdk_trace_tpoint</a>
+</li>
+<li>related_type
+: <a class="el" href="structspdk__trace__parser__entry.html#a7e7ee46ec4c44c52caebb5ede88395c8">spdk_trace_parser_entry</a>
+</li>
 <li>required_alignment
 : <a class="el" href="structspdk__bdev.html#a149453df246d04c8640fb567c58a61f0">spdk_bdev</a>
 </li>
@@ -203,8 +159,17 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>reset
 : <a class="el" href="unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a74b5ac6a6ea150d582cc269f6987757b">spdk_nvme_intel_feat_reset_timed_workload_counters</a>
 </li>
+<li>reset_device
+: <a class="el" href="structspdk__vfu__endpoint__ops.html#aa03b83e4619fc137e847e3e327428a87">spdk_vfu_endpoint_ops</a>
+</li>
+<li>reset_device_stat
+: <a class="el" href="structspdk__bdev__fn__table.html#aed2c3f1df868458ed707508e950c7701">spdk_bdev_fn_table</a>
+</li>
 <li>reset_in_progress
 : <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#ae3603bee677af4d8eaafffce32e0deea">spdk_bdev::__bdev_internal_fields</a>
+</li>
+<li>retry_state
+: <a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a9229c61451e5ce6d6ca2560275f052b7">spdk_bdev_io::__bdev_io_internal_fields</a>
 </li>
 <li>rkey
 : <a class="el" href="structspdk__nvme__registered__ctrlr__data.html#a587d165328e3824ca07bd0d37a407934">spdk_nvme_registered_ctrlr_data</a>
@@ -217,10 +182,22 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 : <a class="el" href="structspdk__nvme__ns__data.html#a4133aa654a2f1e5af881d5293ba965cf">spdk_nvme_ns_data</a>
 </li>
 <li>rpmbs
-: <a class="el" href="structspdk__nvme__ctrlr__data.html#a3856a53f62530c0d6c8fc920f50a4ad8">spdk_nvme_ctrlr_data</a>
+: <a class="el" href="structspdk__nvme__ctrlr__data.html#a1155dd10017d842ce221bfda5f9386c1">spdk_nvme_ctrlr_data</a>
 </li>
 <li>rrl
 : <a class="el" href="structspdk__nvme__zns__ns__data.html#a7ec3330b0942e8a6a1be857ed3be85e7">spdk_nvme_zns_ns_data</a>
+</li>
+<li>rrl1
+: <a class="el" href="structspdk__nvme__zns__ns__data.html#a6fb4784c3844000a2984206632d4e973">spdk_nvme_zns_ns_data</a>
+</li>
+<li>rrl2
+: <a class="el" href="structspdk__nvme__zns__ns__data.html#a2f0f366212fb35e65e3d766eb7c339fb">spdk_nvme_zns_ns_data</a>
+</li>
+<li>rrl3
+: <a class="el" href="structspdk__nvme__zns__ns__data.html#a3249d3092c34193b02b6a3705cbea4c8">spdk_nvme_zns_ns_data</a>
+</li>
+<li>rrls
+: <a class="el" href="structspdk__nvme__ctrlr__data.html#ade4949c34f56a6700801a503af6c1ec9">spdk_nvme_ctrlr_data</a>
 </li>
 <li>rtd3e
 : <a class="el" href="structspdk__nvme__ctrlr__data.html#a4a9eba40118c1c94141534c7938a0f3a">spdk_nvme_ctrlr_data</a>
@@ -237,4 +214,14 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

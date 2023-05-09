@@ -1,16 +1,21 @@
 ---
 layout: default
 title:  "SPDK Common Vulnerabilities and Exposures (CVE) Process"
+
+toc:
+  - title: CVE Process
+    url: "#cve"
+  - title: Current CVEs
+    url: "#current"
+  - title: Threat Modeling
+    url: "#threat"
+  - title: "Use Case: Integrate NVMe Driver"
+    url: "#usecase"
+  - title: "Use Case: NVMe over Fabrics Target"
+    url: "#usecase"
+  - title: "Use Case: Vhost integration"
+    url: "#usecase"
 ---
-
-# In this document:
-
-* [CVE Process](#cve)
-* [Current CVEs](#current)
-* [Threat Modeling](#threat)
-* [Use Case: Integrate NVMe Driver](#usecase)
-* [Use Case: NVMe over Fabrics Target](#usecase)
-* [Use Case: Vhost integration](#usecase)
 
 <a id="cve"></a>
 ## Common Vulnerabilities and Exposures (CVE) Process
@@ -42,11 +47,13 @@ all, they should move to the new release.
 
 CVE Sub-Team Members:
 
-* Felipe Francosi, felipe@nutanix.com
 * Jim Harris, james.r.harris@intel.com
+* John Levon, john.levon@nutanix.com
 * Changpeng Liu, changpeng.liu@intel.com
 * Paul Luse, paul.e.luse@intel.com
-* Shuhei Matsumoto, shuhei.matsumoto.xt@hitachi.com
+* Alexey Marchuk, alexeymar@nvidia.com
+* Shuhei Matsumoto, smatsumoto@nvidia.com
+* Konrad Sztyber, konrad.sztyber@intel.com
 * Ben Walker, benjamin.walker@intel.com
 * Anna Wan, qun.wan@intel.com
 * Tomek Zawadzki, tomasz.zawadzki@intel.com

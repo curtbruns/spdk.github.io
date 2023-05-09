@@ -1,102 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.9.1" />
   <title>SPDK: lvol.h File Reference</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/doxyboot.js"></script>
+  <script type="text/javascript" src="./navtree.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.9.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Search');
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('lvol_8h.html','');});
+$(document).ready(function(){initNavTree('lvol_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -173,89 +117,140 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a757eefd4ce0d68328e7dec58eb2e8a50"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a>) (void *cb_arg, struct spdk_lvol_store *lvol_store, int lvserrno)</td></tr>
-<tr class="memdesc:a757eefd4ce0d68328e7dec58eb2e8a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback definition for lvolstore operations, including handle to lvs.  <a href="#a757eefd4ce0d68328e7dec58eb2e8a50">More...</a><br /></td></tr>
+<tr class="memdesc:a757eefd4ce0d68328e7dec58eb2e8a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback definition for lvolstore operations, including handle to lvs.  <a href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">More...</a><br /></td></tr>
 <tr class="separator:a757eefd4ce0d68328e7dec58eb2e8a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76f85d046acb7b35ae36dc83cf337075"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a>) (void *cb_arg, int lvserrno)</td></tr>
-<tr class="memdesc:a76f85d046acb7b35ae36dc83cf337075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback definition for lvolstore operations without handle.  <a href="#a76f85d046acb7b35ae36dc83cf337075">More...</a><br /></td></tr>
+<tr class="memdesc:a76f85d046acb7b35ae36dc83cf337075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback definition for lvolstore operations without handle.  <a href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">More...</a><br /></td></tr>
 <tr class="separator:a76f85d046acb7b35ae36dc83cf337075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a453c8a7896aafb644e21e1e960ab3759"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a>) (void *cb_arg, struct spdk_lvol *lvol, int lvolerrno)</td></tr>
-<tr class="memdesc:a453c8a7896aafb644e21e1e960ab3759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback definition for lvol operations with handle to lvol.  <a href="#a453c8a7896aafb644e21e1e960ab3759">More...</a><br /></td></tr>
+<tr class="memdesc:a453c8a7896aafb644e21e1e960ab3759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback definition for lvol operations with handle to lvol.  <a href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">More...</a><br /></td></tr>
 <tr class="separator:a453c8a7896aafb644e21e1e960ab3759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d5c96c4fe4512f99dcb3f1e5d5e86be"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a>) (void *cb_arg, int lvolerrno)</td></tr>
-<tr class="memdesc:a4d5c96c4fe4512f99dcb3f1e5d5e86be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback definition for lvol operations without handle to lvol.  <a href="#a4d5c96c4fe4512f99dcb3f1e5d5e86be">More...</a><br /></td></tr>
+<tr class="memdesc:a4d5c96c4fe4512f99dcb3f1e5d5e86be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback definition for lvol operations without handle to lvol.  <a href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">More...</a><br /></td></tr>
 <tr class="separator:a4d5c96c4fe4512f99dcb3f1e5d5e86be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48870c84403ddd07c81a78f8771eca44"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a48870c84403ddd07c81a78f8771eca44">spdk_lvol_iter_cb</a>) (void *cb_arg, struct spdk_lvol *lvol)</td></tr>
+<tr class="memdesc:a48870c84403ddd07c81a78f8771eca44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback definition for spdk_lvol_iter_clones.  <a href="lvol_8h.html#a48870c84403ddd07c81a78f8771eca44">More...</a><br /></td></tr>
+<tr class="separator:a48870c84403ddd07c81a78f8771eca44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a4fe537bc10bf854d592e6bbda42b26dc"><td class="memItemLeft" align="right" valign="top"><a id="a4fe537bc10bf854d592e6bbda42b26dc"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>lvol_clear_method</b> { <b>LVOL_CLEAR_WITH_DEFAULT</b> = BLOB_CLEAR_WITH_DEFAULT, 
-<b>LVOL_CLEAR_WITH_NONE</b> = BLOB_CLEAR_WITH_NONE, 
-<b>LVOL_CLEAR_WITH_UNMAP</b> = BLOB_CLEAR_WITH_UNMAP, 
-<b>LVOL_CLEAR_WITH_WRITE_ZEROES</b> = BLOB_CLEAR_WITH_WRITE_ZEROES
+<tr class="memitem:a4fe537bc10bf854d592e6bbda42b26dc"><td class="memItemLeft" align="right" valign="top"><a id="a4fe537bc10bf854d592e6bbda42b26dc"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>lvol_clear_method</b> { <b>LVOL_CLEAR_WITH_DEFAULT</b> = BLOB_CLEAR_WITH_DEFAULT
+, <b>LVOL_CLEAR_WITH_NONE</b> = BLOB_CLEAR_WITH_NONE
+, <b>LVOL_CLEAR_WITH_UNMAP</b> = BLOB_CLEAR_WITH_UNMAP
+, <b>LVOL_CLEAR_WITH_WRITE_ZEROES</b> = BLOB_CLEAR_WITH_WRITE_ZEROES
  }</td></tr>
 <tr class="separator:a4fe537bc10bf854d592e6bbda42b26dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a456e6d568f052c7f4bb6d780d66ef279"><td class="memItemLeft" align="right" valign="top"><a id="a456e6d568f052c7f4bb6d780d66ef279"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>lvs_clear_method</b> { <b>LVS_CLEAR_WITH_UNMAP</b> = BS_CLEAR_WITH_UNMAP, 
-<b>LVS_CLEAR_WITH_WRITE_ZEROES</b> = BS_CLEAR_WITH_WRITE_ZEROES, 
-<b>LVS_CLEAR_WITH_NONE</b> = BS_CLEAR_WITH_NONE
+<tr class="memitem:a456e6d568f052c7f4bb6d780d66ef279"><td class="memItemLeft" align="right" valign="top"><a id="a456e6d568f052c7f4bb6d780d66ef279"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>lvs_clear_method</b> { <b>LVS_CLEAR_WITH_UNMAP</b> = BS_CLEAR_WITH_UNMAP
+, <b>LVS_CLEAR_WITH_WRITE_ZEROES</b> = BS_CLEAR_WITH_WRITE_ZEROES
+, <b>LVS_CLEAR_WITH_NONE</b> = BS_CLEAR_WITH_NONE
  }</td></tr>
 <tr class="separator:a456e6d568f052c7f4bb6d780d66ef279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ab7c94fcc03c8691c451c57d7b23dccc3"><td class="memItemLeft" align="right" valign="top"><a id="ab7c94fcc03c8691c451c57d7b23dccc3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a>)==88, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:ab7c94fcc03c8691c451c57d7b23dccc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ecc81d4bcd4fd9090deb20c1a9e0db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a9ecc81d4bcd4fd9090deb20c1a9e0db8">spdk_lvs_opts_init</a> (struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a> *opts)</td></tr>
-<tr class="memdesc:a9ecc81d4bcd4fd9090deb20c1a9e0db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an <a class="el" href="structspdk__lvs__opts.html" title="Parameters for lvolstore initialization.">spdk_lvs_opts</a> structure to the defaults.  <a href="#a9ecc81d4bcd4fd9090deb20c1a9e0db8">More...</a><br /></td></tr>
+<tr class="memdesc:a9ecc81d4bcd4fd9090deb20c1a9e0db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an <a class="el" href="structspdk__lvs__opts.html" title="Parameters for lvolstore initialization.">spdk_lvs_opts</a> structure to the defaults.  <a href="lvol_8h.html#a9ecc81d4bcd4fd9090deb20c1a9e0db8">More...</a><br /></td></tr>
 <tr class="separator:a9ecc81d4bcd4fd9090deb20c1a9e0db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae12b16b8565ab63a3c9b919ab9664c0f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#ae12b16b8565ab63a3c9b919ab9664c0f">spdk_lvs_init</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a> *o, <a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ae12b16b8565ab63a3c9b919ab9664c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize lvolstore on given bs_bdev.  <a href="#ae12b16b8565ab63a3c9b919ab9664c0f">More...</a><br /></td></tr>
+<tr class="memdesc:ae12b16b8565ab63a3c9b919ab9664c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize lvolstore on given bs_bdev.  <a href="lvol_8h.html#ae12b16b8565ab63a3c9b919ab9664c0f">More...</a><br /></td></tr>
 <tr class="separator:ae12b16b8565ab63a3c9b919ab9664c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af406c5e7b0e7826b270c802b1431b76f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#af406c5e7b0e7826b270c802b1431b76f">spdk_lvs_rename</a> (struct spdk_lvol_store *lvs, const char *new_name, <a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:af406c5e7b0e7826b270c802b1431b76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rename the given lvolstore.  <a href="#af406c5e7b0e7826b270c802b1431b76f">More...</a><br /></td></tr>
+<tr class="memdesc:af406c5e7b0e7826b270c802b1431b76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rename the given lvolstore.  <a href="lvol_8h.html#af406c5e7b0e7826b270c802b1431b76f">More...</a><br /></td></tr>
 <tr class="separator:af406c5e7b0e7826b270c802b1431b76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f7032fa38dc1af638910018e07b0dd4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a9f7032fa38dc1af638910018e07b0dd4">spdk_lvs_unload</a> (struct spdk_lvol_store *lvol_store, <a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a9f7032fa38dc1af638910018e07b0dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload lvolstore.  <a href="#a9f7032fa38dc1af638910018e07b0dd4">More...</a><br /></td></tr>
+<tr class="memdesc:a9f7032fa38dc1af638910018e07b0dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload lvolstore.  <a href="lvol_8h.html#a9f7032fa38dc1af638910018e07b0dd4">More...</a><br /></td></tr>
 <tr class="separator:a9f7032fa38dc1af638910018e07b0dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c5d67c2711ee149784f5e5e5be0b7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#ac2c5d67c2711ee149784f5e5e5be0b7a">spdk_lvs_destroy</a> (struct spdk_lvol_store *lvol_store, <a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ac2c5d67c2711ee149784f5e5e5be0b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy lvolstore.  <a href="#ac2c5d67c2711ee149784f5e5e5be0b7a">More...</a><br /></td></tr>
+<tr class="memdesc:ac2c5d67c2711ee149784f5e5e5be0b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy lvolstore.  <a href="lvol_8h.html#ac2c5d67c2711ee149784f5e5e5be0b7a">More...</a><br /></td></tr>
 <tr class="separator:ac2c5d67c2711ee149784f5e5e5be0b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3586b04e9b91ac588f3f1ff2603876c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#ab3586b04e9b91ac588f3f1ff2603876c">spdk_lvol_create</a> (struct spdk_lvol_store *lvs, const char *name, uint64_t sz, bool thin_provisioned, enum lvol_clear_method clear_method, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ab3586b04e9b91ac588f3f1ff2603876c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create lvol on given lvolstore with specified size.  <a href="#ab3586b04e9b91ac588f3f1ff2603876c">More...</a><br /></td></tr>
+<tr class="memdesc:ab3586b04e9b91ac588f3f1ff2603876c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create lvol on given lvolstore with specified size.  <a href="lvol_8h.html#ab3586b04e9b91ac588f3f1ff2603876c">More...</a><br /></td></tr>
 <tr class="separator:ab3586b04e9b91ac588f3f1ff2603876c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7a0818546003c24d2236c1f201fdf28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#ab7a0818546003c24d2236c1f201fdf28">spdk_lvol_create_snapshot</a> (struct spdk_lvol *lvol, const char *snapshot_name, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ab7a0818546003c24d2236c1f201fdf28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create snapshot of given lvol.  <a href="#ab7a0818546003c24d2236c1f201fdf28">More...</a><br /></td></tr>
+<tr class="memdesc:ab7a0818546003c24d2236c1f201fdf28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create snapshot of given lvol.  <a href="lvol_8h.html#ab7a0818546003c24d2236c1f201fdf28">More...</a><br /></td></tr>
 <tr class="separator:ab7a0818546003c24d2236c1f201fdf28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dfba2354de69f535ab0c39693c9ae73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a2dfba2354de69f535ab0c39693c9ae73">spdk_lvol_create_clone</a> (struct spdk_lvol *lvol, const char *clone_name, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a2dfba2354de69f535ab0c39693c9ae73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create clone of given snapshot.  <a href="#a2dfba2354de69f535ab0c39693c9ae73">More...</a><br /></td></tr>
+<tr class="memdesc:a2dfba2354de69f535ab0c39693c9ae73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create clone of given snapshot.  <a href="lvol_8h.html#a2dfba2354de69f535ab0c39693c9ae73">More...</a><br /></td></tr>
 <tr class="separator:a2dfba2354de69f535ab0c39693c9ae73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560057dc8e66212f08f79c8017ab9b60"><td class="memItemLeft" align="right" valign="top"><a id="a560057dc8e66212f08f79c8017ab9b60"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_create_esnap_clone</b> (const void *esnap_id, uint32_t id_len, uint64_t size_bytes, struct spdk_lvol_store *lvs, const char *clone_name, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a560057dc8e66212f08f79c8017ab9b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a3d5d8be84217db4879d5bf79fa5c23f6">spdk_lvol_rename</a> (struct spdk_lvol *lvol, const char *new_name, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rename lvol with new_name.  <a href="#a3d5d8be84217db4879d5bf79fa5c23f6">More...</a><br /></td></tr>
+<tr class="memdesc:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rename lvol with new_name.  <a href="lvol_8h.html#a3d5d8be84217db4879d5bf79fa5c23f6">More...</a><br /></td></tr>
 <tr class="separator:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a526682c9b96877490b9611cc96a907b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a526682c9b96877490b9611cc96a907b1">spdk_lvol_deletable</a> (struct spdk_lvol *lvol)</td></tr>
-<tr class="memdesc:a526682c9b96877490b9611cc96a907b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if it is possible to delete an lvol (i.e.  <a href="#a526682c9b96877490b9611cc96a907b1">More...</a><br /></td></tr>
+<tr class="memdesc:a526682c9b96877490b9611cc96a907b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if it is possible to delete an lvol (i.e.  <a href="lvol_8h.html#a526682c9b96877490b9611cc96a907b1">More...</a><br /></td></tr>
 <tr class="separator:a526682c9b96877490b9611cc96a907b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87c4dadc88c211fb4e8ba0cddc474032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a87c4dadc88c211fb4e8ba0cddc474032">spdk_lvol_destroy</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a87c4dadc88c211fb4e8ba0cddc474032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close lvol and remove information about lvol from its lvolstore.  <a href="#a87c4dadc88c211fb4e8ba0cddc474032">More...</a><br /></td></tr>
+<tr class="memdesc:a87c4dadc88c211fb4e8ba0cddc474032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close lvol and remove information about lvol from its lvolstore.  <a href="lvol_8h.html#a87c4dadc88c211fb4e8ba0cddc474032">More...</a><br /></td></tr>
 <tr class="separator:a87c4dadc88c211fb4e8ba0cddc474032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89835586bb7e2e6e78bd0e4cd4c4d45b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a89835586bb7e2e6e78bd0e4cd4c4d45b">spdk_lvol_close</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a89835586bb7e2e6e78bd0e4cd4c4d45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close lvol, but information is kept on lvolstore.  <a href="#a89835586bb7e2e6e78bd0e4cd4c4d45b">More...</a><br /></td></tr>
+<tr class="memdesc:a89835586bb7e2e6e78bd0e4cd4c4d45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close lvol, but information is kept on lvolstore.  <a href="lvol_8h.html#a89835586bb7e2e6e78bd0e4cd4c4d45b">More...</a><br /></td></tr>
 <tr class="separator:a89835586bb7e2e6e78bd0e4cd4c4d45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e1700585830ce465b5a1479774c1f44"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a3e1700585830ce465b5a1479774c1f44">spdk_lvol_get_io_channel</a> (struct spdk_lvol *lvol)</td></tr>
-<tr class="memdesc:a3e1700585830ce465b5a1479774c1f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get I/O channel of bdev associated with specified lvol.  <a href="#a3e1700585830ce465b5a1479774c1f44">More...</a><br /></td></tr>
+<tr class="memitem:a6d43e92544d79d7e048be0e9ac794271"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a6d43e92544d79d7e048be0e9ac794271">spdk_lvol_iter_immediate_clones</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a48870c84403ddd07c81a78f8771eca44">spdk_lvol_iter_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a6d43e92544d79d7e048be0e9ac794271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate clones of an lvol.  <a href="lvol_8h.html#a6d43e92544d79d7e048be0e9ac794271">More...</a><br /></td></tr>
+<tr class="separator:a6d43e92544d79d7e048be0e9ac794271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1009dc7a2afd6915a5e434d11e0ef41b"><td class="memItemLeft" align="right" valign="top">struct spdk_lvol *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a1009dc7a2afd6915a5e434d11e0ef41b">spdk_lvol_get_by_uuid</a> (const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *uuid)</td></tr>
+<tr class="memdesc:a1009dc7a2afd6915a5e434d11e0ef41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lvol that has a particular UUID.  <a href="lvol_8h.html#a1009dc7a2afd6915a5e434d11e0ef41b">More...</a><br /></td></tr>
+<tr class="separator:a1009dc7a2afd6915a5e434d11e0ef41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdde6d39076c361d17f4bd45b3201f70"><td class="memItemLeft" align="right" valign="top">struct spdk_lvol *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#acdde6d39076c361d17f4bd45b3201f70">spdk_lvol_get_by_names</a> (const char *lvs_name, const char *lvol_name)</td></tr>
+<tr class="memdesc:acdde6d39076c361d17f4bd45b3201f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lvol that has the specified name in the specified lvolstore.  <a href="lvol_8h.html#acdde6d39076c361d17f4bd45b3201f70">More...</a><br /></td></tr>
+<tr class="separator:acdde6d39076c361d17f4bd45b3201f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1700585830ce465b5a1479774c1f44"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a3e1700585830ce465b5a1479774c1f44">spdk_lvol_get_io_channel</a> (struct spdk_lvol *lvol)</td></tr>
+<tr class="memdesc:a3e1700585830ce465b5a1479774c1f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get I/O channel of bdev associated with specified lvol.  <a href="lvol_8h.html#a3e1700585830ce465b5a1479774c1f44">More...</a><br /></td></tr>
 <tr class="separator:a3e1700585830ce465b5a1479774c1f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a003e23eb57e1318f2f60c5727cab54e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2">spdk_lvs_load</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, <a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a003e23eb57e1318f2f60c5727cab54e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load lvolstore from the given blobstore device.  <a href="#a003e23eb57e1318f2f60c5727cab54e2">More...</a><br /></td></tr>
+<tr class="memdesc:a003e23eb57e1318f2f60c5727cab54e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load lvolstore from the given blobstore device.  <a href="lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2">More...</a><br /></td></tr>
 <tr class="separator:a003e23eb57e1318f2f60c5727cab54e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e4f8c723692f69664fd91760cd30d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a22e4f8c723692f69664fd91760cd30d3">spdk_lvs_load_ext</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, const struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a> *lvs_opts, <a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a22e4f8c723692f69664fd91760cd30d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load lvolstore from the given blobstore device with options.  <a href="lvol_8h.html#a22e4f8c723692f69664fd91760cd30d3">More...</a><br /></td></tr>
+<tr class="separator:a22e4f8c723692f69664fd91760cd30d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ad389863de4d9fdf4284a0cd3d5f6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a46ad389863de4d9fdf4284a0cd3d5f6c">spdk_lvs_grow</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, <a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a46ad389863de4d9fdf4284a0cd3d5f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grow a lvstore to fill the underlying device.  <a href="lvol_8h.html#a46ad389863de4d9fdf4284a0cd3d5f6c">More...</a><br /></td></tr>
+<tr class="separator:a46ad389863de4d9fdf4284a0cd3d5f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25631f8da88352a540abc55f52c0ef2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a25631f8da88352a540abc55f52c0ef2e">spdk_lvol_open</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a25631f8da88352a540abc55f52c0ef2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a lvol.  <a href="#a25631f8da88352a540abc55f52c0ef2e">More...</a><br /></td></tr>
+<tr class="memdesc:a25631f8da88352a540abc55f52c0ef2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a lvol.  <a href="lvol_8h.html#a25631f8da88352a540abc55f52c0ef2e">More...</a><br /></td></tr>
 <tr class="separator:a25631f8da88352a540abc55f52c0ef2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a795f3fe355907d744d019d2b01f0aee9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a795f3fe355907d744d019d2b01f0aee9">spdk_lvol_inflate</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a795f3fe355907d744d019d2b01f0aee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inflate lvol.  <a href="#a795f3fe355907d744d019d2b01f0aee9">More...</a><br /></td></tr>
+<tr class="memdesc:a795f3fe355907d744d019d2b01f0aee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inflate lvol.  <a href="lvol_8h.html#a795f3fe355907d744d019d2b01f0aee9">More...</a><br /></td></tr>
 <tr class="separator:a795f3fe355907d744d019d2b01f0aee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15199efb9ca8b7309ec257c1a87360c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a15199efb9ca8b7309ec257c1a87360c5">spdk_lvol_decouple_parent</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a15199efb9ca8b7309ec257c1a87360c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decouple parent of lvol.  <a href="#a15199efb9ca8b7309ec257c1a87360c5">More...</a><br /></td></tr>
+<tr class="memdesc:a15199efb9ca8b7309ec257c1a87360c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decouple parent of lvol.  <a href="lvol_8h.html#a15199efb9ca8b7309ec257c1a87360c5">More...</a><br /></td></tr>
 <tr class="separator:a15199efb9ca8b7309ec257c1a87360c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1093dae877481711227c7b2f3aa9d879"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a1093dae877481711227c7b2f3aa9d879">spdk_lvol_is_degraded</a> (const struct spdk_lvol *lvol)</td></tr>
+<tr class="memdesc:a1093dae877481711227c7b2f3aa9d879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if an lvol is degraded.  <a href="lvol_8h.html#a1093dae877481711227c7b2f3aa9d879">More...</a><br /></td></tr>
+<tr class="separator:a1093dae877481711227c7b2f3aa9d879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logical Volume Interface. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a48870c84403ddd07c81a78f8771eca44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48870c84403ddd07c81a78f8771eca44">&#9670;&nbsp;</a></span>spdk_lvol_iter_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* spdk_lvol_iter_cb) (void *cb_arg, struct spdk_lvol *lvol)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback definition for spdk_lvol_iter_clones. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>An iterated lvol. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque context passed to spdk_lvol_iter_clone(). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 to continue iterating, any other value to stop iterating. </dd></dl>
+
+</div>
+</div>
 <a id="a4d5c96c4fe4512f99dcb3f1e5d5e86be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d5c96c4fe4512f99dcb3f1e5d5e86be">&#9670;&nbsp;</a></span>spdk_lvol_op_complete</h2>
 
@@ -684,6 +679,71 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="acdde6d39076c361d17f4bd45b3201f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdde6d39076c361d17f4bd45b3201f70">&#9670;&nbsp;</a></span>spdk_lvol_get_by_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_lvol* spdk_lvol_get_by_names </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>lvs_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>lvol_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the lvol that has the specified name in the specified lvolstore. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvs_name</td><td>Name of the lvolstore. </td></tr>
+    <tr><td class="paramname">lvol_name</td><td>Name ofthe lvol. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the requested lvol on success, else NULL. </dd></dl>
+
+</div>
+</div>
+<a id="a1009dc7a2afd6915a5e434d11e0ef41b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1009dc7a2afd6915a5e434d11e0ef41b">&#9670;&nbsp;</a></span>spdk_lvol_get_by_uuid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_lvol* spdk_lvol_get_by_uuid </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td>
+          <td class="paramname"><em>uuid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the lvol that has a particular UUID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uuid</td><td>The lvol's UUID. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the requested lvol on success, else NULL. </dd></dl>
+
+</div>
+</div>
 <a id="a3e1700585830ce465b5a1479774c1f44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e1700585830ce465b5a1479774c1f44">&#9670;&nbsp;</a></span>spdk_lvol_get_io_channel()</h2>
 
@@ -691,7 +751,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a>* spdk_lvol_get_io_channel </td>
+          <td class="memname">struct spdk_io_channel* spdk_lvol_get_io_channel </td>
           <td>(</td>
           <td class="paramtype">struct spdk_lvol *&#160;</td>
           <td class="paramname"><em>lvol</em></td><td>)</td>
@@ -752,6 +812,80 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a1093dae877481711227c7b2f3aa9d879"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1093dae877481711227c7b2f3aa9d879">&#9670;&nbsp;</a></span>spdk_lvol_is_degraded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_lvol_is_degraded </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_lvol *&#160;</td>
+          <td class="paramname"><em>lvol</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine if an lvol is degraded. </p>
+<p>A degraded lvol cannot perform IO.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>Handle to lvol </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the lvol has no open blob or the lvol's blob is degraded, else false. </dd></dl>
+
+</div>
+</div>
+<a id="a6d43e92544d79d7e048be0e9ac794271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d43e92544d79d7e048be0e9ac794271">&#9670;&nbsp;</a></span>spdk_lvol_iter_immediate_clones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_lvol_iter_immediate_clones </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_lvol *&#160;</td>
+          <td class="paramname"><em>lvol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a48870c84403ddd07c81a78f8771eca44">spdk_lvol_iter_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Iterate clones of an lvol. </p>
+<p>Iteration stops if cb_fn(cb_arg, clone_lvol) returns non-zero.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>Handle to lvol. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Function to call for each lvol that clones this lvol. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Context to pass wtih cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-ENOMEM if memory allocation failed, non-zero return from cb_fn(), or 0. </dd></dl>
 
 </div>
 </div>
@@ -896,6 +1030,50 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a46ad389863de4d9fdf4284a0cd3d5f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ad389863de4d9fdf4284a0cd3d5f6c">&#9670;&nbsp;</a></span>spdk_lvs_grow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_lvs_grow </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td>
+          <td class="paramname"><em>bs_dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grow a lvstore to fill the underlying device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs_dev</td><td>Pointer to the blobstore device. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae12b16b8565ab63a3c9b919ab9664c0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae12b16b8565ab63a3c9b919ab9664c0f">&#9670;&nbsp;</a></span>spdk_lvs_init()</h2>
 
@@ -937,7 +1115,7 @@ Functions</h2></td></tr>
 <p>Initialize lvolstore on given bs_bdev. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bs_dev</td><td>This is created on the given bdev by using spdk_bdev_create_bs_dev() beforehand. </td></tr>
+    <tr><td class="paramname">bs_dev</td><td>This is created on the given bdev by using <a class="el" href="blob__bdev_8h.html#a2a6d877fd0b0eaea06c55c972fa54497" title="Create a blobstore block device from a bdev.">spdk_bdev_create_bs_dev()</a> beforehand. </td></tr>
     <tr><td class="paramname">o</td><td>Options for lvolstore. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments.</td></tr>
@@ -986,6 +1164,58 @@ Functions</h2></td></tr>
     <tr><td class="paramname">bs_dev</td><td>Pointer to the blobstore device. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a22e4f8c723692f69664fd91760cd30d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e4f8c723692f69664fd91760cd30d3">&#9670;&nbsp;</a></span>spdk_lvs_load_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_lvs_load_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td>
+          <td class="paramname"><em>bs_dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a> *&#160;</td>
+          <td class="paramname"><em>lvs_opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load lvolstore from the given blobstore device with options. </p>
+<p>If lvs_opts is not NULL, it should be initalized with <a class="el" href="lvol_8h.html#a9ecc81d4bcd4fd9090deb20c1a9e0db8" title="Initialize an spdk_lvs_opts structure to the defaults.">spdk_lvs_opts_init()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs_dev</td><td>Pointer to the blobstore device. </td></tr>
+    <tr><td class="paramname">lvs_opts</td><td>lvolstore options. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. blobstore. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1117,4 +1347,14 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

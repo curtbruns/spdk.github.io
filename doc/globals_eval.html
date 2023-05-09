@@ -1,102 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.9.1" />
   <title>SPDK: Globals</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/doxyboot.js"></script>
+  <script type="text/javascript" src="./navtree.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.9.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Search');
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('globals_eval.html','');});
+$(document).ready(function(){initNavTree('globals_eval.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -144,6 +88,18 @@ $(document).ready(function(){initNavTree('globals_eval.html','');});
 &#160;
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>SPDK_BDEV_CLAIM_EXCL_WRITE
+: <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919a57e1235cb4553faad33f9b8389881f4b">bdev_module.h</a>
+</li>
+<li>SPDK_BDEV_CLAIM_READ_MANY_WRITE_NONE
+: <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919a9abbfbe6d44e3310f0108b3b85c64178">bdev_module.h</a>
+</li>
+<li>SPDK_BDEV_CLAIM_READ_MANY_WRITE_ONE
+: <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919ac66d93661ccaf703ef942ab82caa7af8">bdev_module.h</a>
+</li>
+<li>SPDK_BDEV_CLAIM_READ_MANY_WRITE_SHARED
+: <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919a476c43608edcb992be80419d92f3f52e">bdev_module.h</a>
+</li>
 <li>SPDK_BDEV_QOS_NUM_RATE_LIMIT_TYPES
 : <a class="el" href="bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a25c0a2574ea232ae0fd9fd3969c00b11">bdev.h</a>
 </li>
@@ -158,6 +114,21 @@ $(document).ready(function(){initNavTree('globals_eval.html','');});
 </li>
 <li>SPDK_BDEV_QOS_W_BPS_RATE_LIMIT
 : <a class="el" href="bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a1b3f5fed3a3173110561ff7c58f211dc">bdev.h</a>
+</li>
+<li>SPDK_DMA_DEVICE_TYPE_ACCEL
+: <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a065a87ed31fe120b25d6811ce9b37ba8">dma.h</a>
+</li>
+<li>SPDK_DMA_DEVICE_TYPE_DMA
+: <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586ae488329b2d5cebe0bc130e0803c4fefc">dma.h</a>
+</li>
+<li>SPDK_DMA_DEVICE_TYPE_RDMA
+: <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a00353a6b099210ed1c52cb9582f1ae01">dma.h</a>
+</li>
+<li>SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_END
+: <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a51d3c59fcd56fc712b1943b5a08dead2">dma.h</a>
+</li>
+<li>SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_START
+: <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a1201e15e1a81553cb3ac297e7f5648be">dma.h</a>
 </li>
 <li>SPDK_IOAT_ENGINE_COPY_SUPPORTED
 : <a class="el" href="ioat_8h.html#a9e773693f3aadb3dc526810a2e387402a46fdc856e01e8551a6f59b20c2189bc0">ioat.h</a>
@@ -261,6 +232,12 @@ $(document).ready(function(){initNavTree('globals_eval.html','');});
 <li>SPDK_NVME_FEAT_ERROR_RECOVERY
 : <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a057a6c718d973bf92bf4088c974fae0b">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_FEAT_FDP
+: <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25aa93d62eecf4ceba4c051eb8e3266be8c">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_FEAT_FDP_EVENTS
+: <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a4dee488f3e9c1ec877277be2f5a4d28b">nvme_spec.h</a>
+</li>
 <li>SPDK_NVME_FEAT_HOST_BEHAVIOR_SUPPORT
 : <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a1749c79457b5e762df54ee01a773a8bd">nvme_spec.h</a>
 </li>
@@ -321,11 +298,17 @@ $(document).ready(function(){initNavTree('globals_eval.html','');});
 <li>SPDK_NVME_FLUSH_BROADCAST_SUPPORTED
 : <a class="el" href="nvme__spec_8h.html#a3c8c529f3ac77e55d511145044fee588aad949659413cec230d2fd4529999ce14">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_FW_COMMIT_ACTIVATE_BOOT_PARTITION
+: <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea63a926a94e918914066d2c5a49ec00d8">nvme_spec.h</a>
+</li>
 <li>SPDK_NVME_FW_COMMIT_ENABLE_IMG
 : <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eab533ab92baec629b3cbeed4b81885c13">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_FW_COMMIT_REPLACE_AND_ENABLE_IMG
 : <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea85655a09e0cae5f157d3b005ba1f4b6f">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_FW_COMMIT_REPLACE_BOOT_PARTITION
+: <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea8fdb4354da92942c3c324d6690f99f0c">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_FW_COMMIT_REPLACE_IMG
 : <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eaf8349fa33534c363595859493747e93f">nvme_spec.h</a>
@@ -384,11 +367,23 @@ $(document).ready(function(){initNavTree('globals_eval.html','');});
 <li>SPDK_NVME_LOG_ASYMMETRIC_NAMESPACE_ACCESS
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a61628a94b6b41cd37e2b631ef551fc15">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_LOG_BOOT_PARTITION
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a2bbffe1e18289e3eff1e8ceea26d8489">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_CAPACITY_CONFIGURATION_LIST
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a631a622ee6e4324646f4d0b13bd738d8">nvme_spec.h</a>
+</li>
 <li>SPDK_NVME_LOG_CHANGED_NS_LIST
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aaa4a483997b6fa41a9e73755441d2186">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_LOG_CHANGED_ZONE_LIST
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a76dc06b40721e7750a3e65d4386e197f">nvme_spec.h</a>
+</li>
 <li>SPDK_NVME_LOG_COMMAND_EFFECTS_LOG
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aab219389150398bc1b23da1df91e634c">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_COMMAND_FEATURE_LOCKDOWN
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ac73c0d2babb8069cd86e31baf7ba1a24">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_LOG_DEVICE_SELF_TEST
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa41fe741a7a29377a4cfa29717aa94c0">nvme_spec.h</a>
@@ -396,8 +391,26 @@ $(document).ready(function(){initNavTree('globals_eval.html','');});
 <li>SPDK_NVME_LOG_DISCOVERY
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a373acc5fc6392f4af3cfd5c6123bb600">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_LOG_ENDURANCE_GROUP_EVENT
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ab64184e161e0d4e277993248aa7c750c">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_ENDURANCE_GROUP_INFORMATION
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ac3009a19fce8ef1ccf125ebca249d9b3">nvme_spec.h</a>
+</li>
 <li>SPDK_NVME_LOG_ERROR
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ad05013a36512c9cd6ad0249263a3f583">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_FDP_CONFIGURATIONS
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a3354a57a7020afe9749f4a3589b66e5f">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_FDP_EVENTS
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa1c2fd427c0e83dbb2121ec261794746">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_FDP_STATISTICS
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ae1b6fb3241903734f1c39e6a21e89900">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_FEATURE_IDS_EFFECTS
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ac9c14fba2a682e9b7998d40607215529">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_LOG_FIRMWARE_SLOT
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a898706714ccdcd0c5b2fee0170beecbb">nvme_spec.h</a>
@@ -405,11 +418,35 @@ $(document).ready(function(){initNavTree('globals_eval.html','');});
 <li>SPDK_NVME_LOG_HEALTH_INFORMATION
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a8c4e97d27e08924e29d76ea66780a886">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_LOG_MEDIA_UNIT_STATUS
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aaee8b290cff1d9a976c0ebebed994aa8">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_NVME_MI_COMMANDS_EFFECTS
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a2dd8a9225fca82648e22ec65f82f6c65">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_PERSISTENT_EVENT_LOG
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ab9c629e4685fc12333c98d8a9df28cc8">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_PREDICATBLE_LATENCY
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4adfadc15124f7118df41c99199da112fe">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_PREDICTABLE_LATENCY_EVENT
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a992e7edc18ba7496dd1daeed4e1cc85d">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_RECLAIM_UNIT_HANDLE_USAGE
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a52a6b512ee1fa6f2700dda29201a8fde">nvme_spec.h</a>
+</li>
 <li>SPDK_NVME_LOG_RESERVATION_NOTIFICATION
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a37f2ea0a63737907265ff3ed35088a09">nvme_spec.h</a>
 </li>
+<li>SPDK_NVME_LOG_ROTATIONAL_MEDIA_INFORMATION
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ae06fdca2b229e20571c25d9d01db540e">nvme_spec.h</a>
+</li>
 <li>SPDK_NVME_LOG_SANITIZE_STATUS
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a96d86f9eff782b5207b78ea26c6e3b2b">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_LOG_SUPPORTED_LOG_PAGES
+: <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a6d21eaf5a38ce3511b0ce1a4ce21947e">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_LOG_TELEMETRY_CTRLR_INITIATED
 : <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa21d97922f4ef61731fd20986d30b2c8">nvme_spec.h</a>
@@ -498,6 +535,9 @@ $(document).ready(function(){initNavTree('globals_eval.html','');});
 <li>SPDK_NVME_TRANSPORT_CUSTOM
 : <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecead9c4d8737f8d49b432c3f2d9d0f86a0a">nvme.h</a>
 </li>
+<li>SPDK_NVME_TRANSPORT_CUSTOM_FABRICS
+: <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecead22a6399d96bc2c38efb261319c04ffc">nvme.h</a>
+</li>
 <li>SPDK_NVME_TRANSPORT_FC
 : <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f">nvme.h</a>
 </li>
@@ -564,6 +604,18 @@ $(document).ready(function(){initNavTree('globals_eval.html','');});
 <li>SPDK_NVMF_SUBTYPE_NVME
 : <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4a3077cae3ec6525a14d3c3c5005a6326f">nvmf_spec.h</a>
 </li>
+<li>SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY
+: <a class="el" href="nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3ababebed136f083311d77a55d9182aa85">nvmf.h</a>
+</li>
+<li>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_ADDRESS
+: <a class="el" href="nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a7805f8d4d557f754e3725eb7b7c60605">nvmf.h</a>
+</li>
+<li>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_SVCID
+: <a class="el" href="nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a2980fd83e5e8eb239cc1c8dd6d4dc12d">nvmf.h</a>
+</li>
+<li>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_TYPE
+: <a class="el" href="nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3ace922fc963e9598bb4e7569b145a3629">nvmf.h</a>
+</li>
 <li>SPDK_NVMF_TREQ_SECURE_CHANNEL_NOT_REQUIRED
 : <a class="el" href="nvmf__spec_8h.html#a0a92190b8c6824182974e20f84ee0a3cac21a79c4125f0b8653d475367df146dd">nvmf_spec.h</a>
 </li>
@@ -612,7 +664,23 @@ $(document).ready(function(){initNavTree('globals_eval.html','');});
 <li>SPDK_OCSSD_SC_WRITE_FAIL_WRITE_NEXT_UNIT
 : <a class="el" href="nvme__ocssd__spec_8h.html#ae66ff1776aa8a6560e7c762726777deaa8e7b52037df17cbd3544bbe53e0dd8a6">nvme_ocssd_spec.h</a>
 </li>
+<li>SPDK_TRACE_PARSER_MODE_FILE
+: <a class="el" href="trace__parser_8h.html#a4253a898fb3f2ff1a047a1f6e4a1e3abad09ef51b1f3f5fcbcb004a95dd01a4be">trace_parser.h</a>
+</li>
+<li>SPDK_TRACE_PARSER_MODE_SHM
+: <a class="el" href="trace__parser_8h.html#a4253a898fb3f2ff1a047a1f6e4a1e3aba2bbc1491612eafb6472caba04b3c0e2d">trace_parser.h</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

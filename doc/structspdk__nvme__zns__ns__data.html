@@ -1,102 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.9.1" />
   <title>SPDK: spdk_nvme_zns_ns_data Struct Reference</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/doxyboot.js"></script>
+  <script type="text/javascript" src="./navtree.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.9.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Search');
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structspdk__nvme__zns__ns__data.html','');});
+$(document).ready(function(){initNavTree('structspdk__nvme__zns__ns__data.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -150,31 +94,31 @@ $(document).ready(function(){initNavTree('structspdk__nvme__zns__ns__data.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aeebb6b1070268fc6ff121efa6dacad7f"><td class="memItemLeft" ><a id="aeebb6b1070268fc6ff121efa6dacad7f"></a>
+<tr class="memitem:ad5ee2b7c394e554f3a03ff5f01c3a39b"><td class="memItemLeft" ><a id="ad5ee2b7c394e554f3a03ff5f01c3a39b"></a>
 struct {</td></tr>
-<tr class="memitem:ae64fd38901c2742a731d87a8c6a84145"><td class="memItemLeft" >
+<tr class="memitem:a607bfa6ceb9056d8f0857443726b4074"><td class="memItemLeft" >
 &#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>variable_zone_capacity</b>: 1</td></tr>
-<tr class="separator:ae64fd38901c2742a731d87a8c6a84145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad04c0cb135e8d9cb303874aa745f6465"><td class="memItemLeft" >
+<tr class="separator:a607bfa6ceb9056d8f0857443726b4074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069263d19bb56993e5cdcb7e478e2492"><td class="memItemLeft" >
 &#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>zone_active_excursions</b>: 1</td></tr>
-<tr class="separator:ad04c0cb135e8d9cb303874aa745f6465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a736c811bd839749c7d0979a9e47a801a"><td class="memItemLeft" >
+<tr class="separator:a069263d19bb56993e5cdcb7e478e2492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a449c22f0035aa92826f0bcab08577e59"><td class="memItemLeft" >
 &#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>reserved0</b>: 14</td></tr>
-<tr class="separator:a736c811bd839749c7d0979a9e47a801a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeebb6b1070268fc6ff121efa6dacad7f"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#aeebb6b1070268fc6ff121efa6dacad7f">zoc</a></td></tr>
-<tr class="memdesc:aeebb6b1070268fc6ff121efa6dacad7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">zone operation characteristics <br /></td></tr>
-<tr class="separator:aeebb6b1070268fc6ff121efa6dacad7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9e73a05095ed36a9b017bf26d5c53e8"><td class="memItemLeft" ><a id="ad9e73a05095ed36a9b017bf26d5c53e8"></a>
+<tr class="separator:a449c22f0035aa92826f0bcab08577e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ee2b7c394e554f3a03ff5f01c3a39b"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#ad5ee2b7c394e554f3a03ff5f01c3a39b">zoc</a></td></tr>
+<tr class="memdesc:ad5ee2b7c394e554f3a03ff5f01c3a39b"><td class="mdescLeft">&#160;</td><td class="mdescRight">zone operation characteristics <br /></td></tr>
+<tr class="separator:ad5ee2b7c394e554f3a03ff5f01c3a39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad14eb31cdffc65ec69ba9df513d3341a"><td class="memItemLeft" ><a id="ad14eb31cdffc65ec69ba9df513d3341a"></a>
 struct {</td></tr>
-<tr class="memitem:aaf56c6ab274ea0e804faf89e67f57509"><td class="memItemLeft" >
+<tr class="memitem:a85489d251d76897603d96a773f4b241d"><td class="memItemLeft" >
 &#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>read_across_zone_boundaries</b>: 1</td></tr>
-<tr class="separator:aaf56c6ab274ea0e804faf89e67f57509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb18ae08708f73d850e3d775d70cc174"><td class="memItemLeft" >
+<tr class="separator:a85489d251d76897603d96a773f4b241d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c18fd03f6193020e3e090dced6babb1"><td class="memItemLeft" >
 &#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>reserved0</b>: 15</td></tr>
-<tr class="separator:aeb18ae08708f73d850e3d775d70cc174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9e73a05095ed36a9b017bf26d5c53e8"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#ad9e73a05095ed36a9b017bf26d5c53e8">ozcs</a></td></tr>
-<tr class="memdesc:ad9e73a05095ed36a9b017bf26d5c53e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">optional zoned command support <br /></td></tr>
-<tr class="separator:ad9e73a05095ed36a9b017bf26d5c53e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a3c18fd03f6193020e3e090dced6babb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad14eb31cdffc65ec69ba9df513d3341a"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#ad14eb31cdffc65ec69ba9df513d3341a">ozcs</a></td></tr>
+<tr class="memdesc:ad14eb31cdffc65ec69ba9df513d3341a"><td class="mdescLeft">&#160;</td><td class="mdescRight">optional zoned command support <br /></td></tr>
+<tr class="separator:ad14eb31cdffc65ec69ba9df513d3341a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdd0f008b8756f17892579fb42ab57c0"><td class="memItemLeft" align="right" valign="top"><a id="abdd0f008b8756f17892579fb42ab57c0"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#abdd0f008b8756f17892579fb42ab57c0">mar</a></td></tr>
 <tr class="memdesc:abdd0f008b8756f17892579fb42ab57c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum active resources <br /></td></tr>
@@ -191,28 +135,49 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#a1aec112ccca1fbcd111fee012bf8c720">frl</a></td></tr>
 <tr class="memdesc:a1aec112ccca1fbcd111fee012bf8c720"><td class="mdescLeft">&#160;</td><td class="mdescRight">finish recommended limit <br /></td></tr>
 <tr class="separator:a1aec112ccca1fbcd111fee012bf8c720"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad119491b52edb9847751d19deb3fbc85"><td class="memItemLeft" align="right" valign="top"><a id="ad119491b52edb9847751d19deb3fbc85"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved20</b> [2796]</td></tr>
-<tr class="separator:ad119491b52edb9847751d19deb3fbc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3826eb38037e8325051a9ba51955fa3c"><td class="memItemLeft" ><a id="a3826eb38037e8325051a9ba51955fa3c"></a>
+<tr class="memitem:a6fb4784c3844000a2984206632d4e973"><td class="memItemLeft" align="right" valign="top"><a id="a6fb4784c3844000a2984206632d4e973"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#a6fb4784c3844000a2984206632d4e973">rrl1</a></td></tr>
+<tr class="memdesc:a6fb4784c3844000a2984206632d4e973"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset recommended limit 1 <br /></td></tr>
+<tr class="separator:a6fb4784c3844000a2984206632d4e973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0f366212fb35e65e3d766eb7c339fb"><td class="memItemLeft" align="right" valign="top"><a id="a2f0f366212fb35e65e3d766eb7c339fb"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#a2f0f366212fb35e65e3d766eb7c339fb">rrl2</a></td></tr>
+<tr class="memdesc:a2f0f366212fb35e65e3d766eb7c339fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset recommended limit 2 <br /></td></tr>
+<tr class="separator:a2f0f366212fb35e65e3d766eb7c339fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3249d3092c34193b02b6a3705cbea4c8"><td class="memItemLeft" align="right" valign="top"><a id="a3249d3092c34193b02b6a3705cbea4c8"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#a3249d3092c34193b02b6a3705cbea4c8">rrl3</a></td></tr>
+<tr class="memdesc:a3249d3092c34193b02b6a3705cbea4c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset recommended limit 3 <br /></td></tr>
+<tr class="separator:a3249d3092c34193b02b6a3705cbea4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a999ce9ad18611dfca853c60741be3c19"><td class="memItemLeft" align="right" valign="top"><a id="a999ce9ad18611dfca853c60741be3c19"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#a999ce9ad18611dfca853c60741be3c19">frl1</a></td></tr>
+<tr class="memdesc:a999ce9ad18611dfca853c60741be3c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">finish recommended limit 1 <br /></td></tr>
+<tr class="separator:a999ce9ad18611dfca853c60741be3c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa44e20702388419e7b0ac850259cf43f"><td class="memItemLeft" align="right" valign="top"><a id="aa44e20702388419e7b0ac850259cf43f"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#aa44e20702388419e7b0ac850259cf43f">frl2</a></td></tr>
+<tr class="memdesc:aa44e20702388419e7b0ac850259cf43f"><td class="mdescLeft">&#160;</td><td class="mdescRight">finish recommended limit 2 <br /></td></tr>
+<tr class="separator:aa44e20702388419e7b0ac850259cf43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252dddace1155cb65073139810cf096c"><td class="memItemLeft" align="right" valign="top"><a id="a252dddace1155cb65073139810cf096c"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#a252dddace1155cb65073139810cf096c">frl3</a></td></tr>
+<tr class="memdesc:a252dddace1155cb65073139810cf096c"><td class="mdescLeft">&#160;</td><td class="mdescRight">finish recommended limit 3 <br /></td></tr>
+<tr class="separator:a252dddace1155cb65073139810cf096c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b841e38d1c10cdbfb28115461b324d3"><td class="memItemLeft" align="right" valign="top"><a id="a4b841e38d1c10cdbfb28115461b324d3"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved44</b> [2772]</td></tr>
+<tr class="separator:a4b841e38d1c10cdbfb28115461b324d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae02852137c4e8cb833c20c8c9a0d5bef"><td class="memItemLeft" ><a id="ae02852137c4e8cb833c20c8c9a0d5bef"></a>
 struct {</td></tr>
-<tr class="memitem:aea1bf6bb8ac7665932be044bdd6b8c4d"><td class="memItemLeft" >
+<tr class="memitem:ac7a8b054e077b0d675f143a3ee3142f1"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__zns__ns__data.html#adca9d47db6e68a38bb6a2e611eadd643">zsze</a></td></tr>
-<tr class="memdesc:aea1bf6bb8ac7665932be044bdd6b8c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">zone size <br /></td></tr>
-<tr class="separator:aea1bf6bb8ac7665932be044bdd6b8c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac97e93445f281908d89a197632e90146"><td class="memItemLeft" >
+<tr class="memdesc:ac7a8b054e077b0d675f143a3ee3142f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">zone size <br /></td></tr>
+<tr class="separator:ac7a8b054e077b0d675f143a3ee3142f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25ee9800c524fa473ac2b9810ab6475"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__zns__ns__data.html#a689785f50f2dda21c0a7aa8c1fbb0412">zdes</a>: 8</td></tr>
-<tr class="memdesc:ac97e93445f281908d89a197632e90146"><td class="mdescLeft">&#160;</td><td class="mdescRight">zone descriptor extension size <br /></td></tr>
-<tr class="separator:ac97e93445f281908d89a197632e90146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1925f8bf38df63425216b7873848183b"><td class="memItemLeft" >
+<tr class="memdesc:ae25ee9800c524fa473ac2b9810ab6475"><td class="mdescLeft">&#160;</td><td class="mdescRight">zone descriptor extension size <br /></td></tr>
+<tr class="separator:ae25ee9800c524fa473ac2b9810ab6475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7d6b2be367a09ce27131efba5edd05"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>reserved15</b>: 56</td></tr>
-<tr class="separator:a1925f8bf38df63425216b7873848183b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3826eb38037e8325051a9ba51955fa3c"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#a3826eb38037e8325051a9ba51955fa3c">lbafe</a> [16]</td></tr>
-<tr class="memdesc:a3826eb38037e8325051a9ba51955fa3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">zns lba format extension support <br /></td></tr>
-<tr class="separator:a3826eb38037e8325051a9ba51955fa3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6adfa6addd884906055f075aca9e399c"><td class="memItemLeft" align="right" valign="top"><a id="a6adfa6addd884906055f075aca9e399c"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved3072</b> [768]</td></tr>
-<tr class="separator:a6adfa6addd884906055f075aca9e399c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aba7d6b2be367a09ce27131efba5edd05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae02852137c4e8cb833c20c8c9a0d5bef"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html#ae02852137c4e8cb833c20c8c9a0d5bef">lbafe</a> [64]</td></tr>
+<tr class="memdesc:ae02852137c4e8cb833c20c8c9a0d5bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">zns lba format extension support <br /></td></tr>
+<tr class="separator:ae02852137c4e8cb833c20c8c9a0d5bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb5a0a3551ecb7a92dbd5db2d4fdab31"><td class="memItemLeft" align="right" valign="top"><a id="afb5a0a3551ecb7a92dbd5db2d4fdab31"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>vendor_specific</b> [256]</td></tr>
 <tr class="separator:afb5a0a3551ecb7a92dbd5db2d4fdab31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,4 +187,14 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>vendor_specific</b
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

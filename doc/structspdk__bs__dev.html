@@ -1,102 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.9.1" />
   <title>SPDK: spdk_bs_dev Struct Reference</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/doxyboot.js"></script>
+  <script type="text/javascript" src="./navtree.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.9.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Search');
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structspdk__bs__dev.html','');});
+$(document).ready(function(){initNavTree('structspdk__bs__dev.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -150,53 +94,70 @@ $(document).ready(function(){initNavTree('structspdk__bs__dev.html','');});
 <div class="dynheader">
 Collaboration diagram for spdk_bs_dev:</div>
 <div class="dyncontent">
-<div class="center"><img src="structspdk__bs__dev__coll__graph.png" border="0" usemap="#spdk__bs__dev_coll__map" alt="Collaboration graph"/></div>
-<map name="spdk__bs__dev_coll__map" id="spdk__bs__dev_coll__map">
-<area shape="rect"  title=" " alt="" coords="5,288,112,315"/>
-<area shape="rect"  href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="29,5,160,32"/>
-<area shape="rect"  href="structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="75,102,227,129"/>
-<area shape="rect"  href="structspdk__bdev.html" title=" " alt="" coords="229,199,321,225"/>
-<area shape="rect"  href="structspdk__bdev__module.html" title="Block device module." alt="" coords="221,5,369,32"/>
-<area shape="rect"  href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="352,95,555,136"/>
-<area shape="rect"  href="structspdk__uuid.html" title=" " alt="" coords="579,102,667,129"/>
+<div class="center"><img src="structspdk__bs__dev__coll__graph.png" border="0" usemap="#aspdk__bs__dev_coll__map" alt="Collaboration graph"/></div>
+<map name="aspdk__bs__dev_coll__map" id="aspdk__bs__dev_coll__map">
+<area shape="rect" title=" " alt="" coords="253,199,359,225"/>
+<area shape="rect" href="structspdk__bdev.html" title=" " alt="" coords="260,109,352,136"/>
+<area shape="rect" href="structspdk__bdev__module.html" title="Block device module." alt="" coords="5,13,153,39"/>
+<area shape="rect" href="structspdk__uuid.html" title=" " alt="" coords="178,13,266,39"/>
+<area shape="rect" href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="290,5,493,47"/>
+<area shape="rect" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="517,13,669,39"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a6beeab94f487334af1a8c3a0ec330b52"><td class="memItemLeft" align="right" valign="top"><a id="a6beeab94f487334af1a8c3a0ec330b52"></a>
-struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><b>create_channel</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev)</td></tr>
+struct spdk_io_channel *(*&#160;</td><td class="memItemRight" valign="bottom"><b>create_channel</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev)</td></tr>
 <tr class="separator:a6beeab94f487334af1a8c3a0ec330b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ba5e6b593abc0fa5c9be89e51b8d79d"><td class="memItemLeft" align="right" valign="top"><a id="a0ba5e6b593abc0fa5c9be89e51b8d79d"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>destroy_channel</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>destroy_channel</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel)</td></tr>
 <tr class="separator:a0ba5e6b593abc0fa5c9be89e51b8d79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ae3bb18bf006e0f40f1ad36166a8369"><td class="memItemLeft" align="right" valign="top"><a id="a7ae3bb18bf006e0f40f1ad36166a8369"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev)</td></tr>
 <tr class="separator:a7ae3bb18bf006e0f40f1ad36166a8369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e782b655106c1d25b543960b7ba2c0f"><td class="memItemLeft" align="right" valign="top"><a id="a4e782b655106c1d25b543960b7ba2c0f"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, void *payload, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:a4e782b655106c1d25b543960b7ba2c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20356550a4ade5c4f8954c57e5d679e2"><td class="memItemLeft" align="right" valign="top"><a id="a20356550a4ade5c4f8954c57e5d679e2"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, void *payload, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:a20356550a4ade5c4f8954c57e5d679e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75564a4d0f1815b99c1fe1e1965b3770"><td class="memItemLeft" align="right" valign="top"><a id="a75564a4d0f1815b99c1fe1e1965b3770"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>readv</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>readv</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:a75564a4d0f1815b99c1fe1e1965b3770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a528b038c2389cf71b6739ac37ed6e7f6"><td class="memItemLeft" align="right" valign="top"><a id="a528b038c2389cf71b6739ac37ed6e7f6"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>writev</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>writev</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:a528b038c2389cf71b6739ac37ed6e7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69795838dfaaa45c3d58a5b91f179565"><td class="memItemLeft" align="right" valign="top"><a id="a69795838dfaaa45c3d58a5b91f179565"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>readv_ext</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args, struct <a class="el" href="structspdk__blob__ext__io__opts.html">spdk_blob_ext_io_opts</a> *ext_io_opts)</td></tr>
+<tr class="separator:a69795838dfaaa45c3d58a5b91f179565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15a95cf48752db0b6261e4d16132d23"><td class="memItemLeft" align="right" valign="top"><a id="af15a95cf48752db0b6261e4d16132d23"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>writev_ext</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args, struct <a class="el" href="structspdk__blob__ext__io__opts.html">spdk_blob_ext_io_opts</a> *ext_io_opts)</td></tr>
+<tr class="separator:af15a95cf48752db0b6261e4d16132d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0447419a84f9f1b4e883d9111d61e8ec"><td class="memItemLeft" align="right" valign="top"><a id="a0447419a84f9f1b4e883d9111d61e8ec"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:a0447419a84f9f1b4e883d9111d61e8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68eb7818ed5a656facffe12decf695fe"><td class="memItemLeft" align="right" valign="top"><a id="a68eb7818ed5a656facffe12decf695fe"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_zeroes</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
-<tr class="separator:a68eb7818ed5a656facffe12decf695fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3f9b4422f8c651e6a1975f77f1b4b62"><td class="memItemLeft" align="right" valign="top"><a id="ac3f9b4422f8c651e6a1975f77f1b4b62"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>unmap</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
-<tr class="separator:ac3f9b4422f8c651e6a1975f77f1b4b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2990026fbfdb710cce327beeae33aef9"><td class="memItemLeft" align="right" valign="top"><a id="a2990026fbfdb710cce327beeae33aef9"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_zeroes</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, uint64_t lba, uint64_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+<tr class="separator:a2990026fbfdb710cce327beeae33aef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737528549b8f240d5b82df1544ec5dcb"><td class="memItemLeft" align="right" valign="top"><a id="a737528549b8f240d5b82df1544ec5dcb"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>unmap</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, uint64_t lba, uint64_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+<tr class="separator:a737528549b8f240d5b82df1544ec5dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3a4996a37bdfe0ee29f88f2b97543e7"><td class="memItemLeft" align="right" valign="top"><a id="ab3a4996a37bdfe0ee29f88f2b97543e7"></a>
 struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_base_bdev</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev)</td></tr>
 <tr class="separator:ab3a4996a37bdfe0ee29f88f2b97543e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b626710afb0f6b51f03b6ce9310bdf8"><td class="memItemLeft" align="right" valign="top"><a id="a3b626710afb0f6b51f03b6ce9310bdf8"></a>
+bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>is_zeroes</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, uint64_t lba, uint64_t lba_count)</td></tr>
+<tr class="separator:a3b626710afb0f6b51f03b6ce9310bdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880362f4bf2aedc8a567243206770307"><td class="memItemLeft" align="right" valign="top"><a id="a880362f4bf2aedc8a567243206770307"></a>
+bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>translate_lba</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, uint64_t lba, uint64_t *base_lba)</td></tr>
+<tr class="separator:a880362f4bf2aedc8a567243206770307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2b0f93e3e1eb8fcab3dd735c0cc62e"><td class="memItemLeft" align="right" valign="top"><a id="aee2b0f93e3e1eb8fcab3dd735c0cc62e"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>copy</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, uint64_t dst_lba, uint64_t src_lba, uint64_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+<tr class="separator:aee2b0f93e3e1eb8fcab3dd735c0cc62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8288c853666c52d89e1303ba469a638"><td class="memItemLeft" align="right" valign="top"><a id="af8288c853666c52d89e1303ba469a638"></a>
+bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>is_degraded</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev)</td></tr>
+<tr class="separator:af8288c853666c52d89e1303ba469a638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c67b881f2f954ef2eb879796a4dee5a"><td class="memItemLeft" align="right" valign="top"><a id="a6c67b881f2f954ef2eb879796a4dee5a"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>blockcnt</b></td></tr>
 <tr class="separator:a6c67b881f2f954ef2eb879796a4dee5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,4 +170,14 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>blocklen</b></td>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

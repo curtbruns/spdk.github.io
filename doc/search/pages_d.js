@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rpms',['RPMs',['../rpms.html',1,'']]]
+  ['rpms_5924',['RPMs',['../rpms.html',1,'misc']]]
 ];

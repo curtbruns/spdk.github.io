@@ -1,30 +1,50 @@
 ---
 layout: default
 title:  "SPDK Development"
+
+toc:
+  - title: Process
+    url: "#"
+    items:
+    - title: License
+      url: "#license"
+    - title: Source
+      url: "#source"
+    - title: Contributing
+      url: "#contributing"
+    - title: Development Guidelines
+      url: "#guidelines"
+    - title: Gerrit Configuration
+      url: "#Gerrit"
+    - title: Submitting a Patch
+      url: "#patch"
+    - title: Continuous Integration
+      url: "#integration"
+    - title: False Positives in CI
+      url: "#integration_false_positive"
+    - title: Local Testing
+      url: "#local"
+    - title: Code Review
+      url: "#review"
+    - title: Review Hashtags
+      url: "#hashtags"
+    - title: Revising Patches
+      url: "#revise"
+    - title: Multi-Commit Patch Series
+      url: "#multi"
+    - title: Managing Submodule Patches
+      url: "#submodule"
+    - title: Core Maintainers
+      url: "#core"
+  - title: Continuous Integration
+    url: "../ci/"
+  - title: Roadmap
+    url: "https://trello.com/b/MN8auadQ/spdk-roadmap"
+  - title: CVE Process and Threat Modeling
+    url: "../cve_threat/"
+  - title: Debugging Tips
+    url: "../debug_tip/"
 ---
-
-# In this document:
-
-* [License](#license)
-* [Source Code](#source)
-* [Contributing](#contributing)
-* [Development Guidelines](#guidelines)
-* [Gerrit Configuration](#Gerrit)
-* [Submitting a Patch](#patch)
-* [Continuous Integration](#integration)
-* [False Positives in CI](#integration_false_positive)
-* [Local Testing](#local)
-* [Code Review](#review)
-* [Review Hashtags](#hashtags)
-* [Revising Patches](#revise)
-* [Multi-Commit Patch Series](#multi)
-* [Managing Submodule Patches](#submodule)
-* [Core Maintainers](#core)
-
-# Additional Documents
-
-* [CVE Process and Threat Modeling](../cve_threat/)
-* [Debugging Tips](../debug_tip/)
 
 <a id="license"></a>
 ## License
@@ -168,7 +188,8 @@ being solved, how was it discovered and how this patch solves the problem.  See 
 Request For Comments (RFC) type of patch.
 
 * The first line of your commit message should be in the form "component: short description of patch".
-There should be a blank line between this first line and the rest of the commit message.
+There should be a blank line between this first line and the rest of the commit message. For example:
+"nvme: add support for NVME_IOCTL_IO_CMD for cuse"
 
 * If your commit fixes a GitHub issue, please include "Fixes #issue number" on a separate line so that GitHub can link the two.
 
@@ -259,6 +280,43 @@ to the latest failure's log. We will prioritize tacking down and fixing these is
 is unable to match your comment to a valid GitHub issue, it will post back a comment on Gerrit letting you know it was unable to retrigger
 your patch.
 
+#### Triggering Specific Sub Job
+
+When debugging changes, it may be necessary to run a specific sub job without running the entire per-patch job. Especially when uploading 'Work in Progress'
+and [RFC] patches. To do this, you need to post a comment with the following content:
+
+~~~{.sh}
+tests:subjob1,subjob2,subjob3
+~~~
+
+where subjob is a job from the list:
+
+* BlobFS-autotest
+* centos7-vg-autotest
+* clang-vg-autotest
+* crypto-autotest
+* freebsd-vg-autotest
+* iscsi-vg-autotest
+* iscsi-uring-vg-autotest
+* lvol-vg-autotest
+* nvme-vg-autotest
+* nvme-cmb-pmr-vg-autotest
+* nvmf-phy-autotest
+* nvmf-phy-short-fuzz-autotest
+* nvmf-tcp-phy-autotest
+* nvmf-tcp-uring-vg-autotest
+* nvmf-tcp-vg-autotest
+* pmdk-vg-autotest
+* rocky8-vg-autotest
+* ubuntu18-vg-autotest
+* ubuntu20-vg-autotest
+* ubuntu22-vg-autotest
+* valgrind-vg-autotest
+* vfio-user-autotest
+* vhost-autotest
+* vhost-initiator-vg-autotest
+* zns-vg-autotest
+
 #### Mellanox Build Bot
 
 If Mellanox Build Bot gives your patch a -1 and you believe that this failure is not related to your patch, you can re-trigger a new
@@ -320,14 +378,8 @@ sudo gdb ./spdk/test/unit/lib/bdev/bdev.c/bdev_ut
 <a id="local_vhost"></a>
 ### vhost Tests
 
-The vhost tests under `test/vhost` require the presence of a virtual machine image on the host machine. We have made a tarball containing a working vm image
-that is available for download [here](https://ci.spdk.io/download/test_resources/vhost_vm_image.tar.gz). Please feel free to
-download and use this image as the guest when running the vhost tests locally. The credentials are below:
-
-~~~{.sh}
-uname: root
-pass: root
-~~~
+The vhost tests under `test/vhost` require the presence of a virtual machine image on the host machine.
+Please, see the [Virtual Test Configuration](https://github.com/spdk/spdk/blob/master/test/common/config/README.md) for steps to prepare it.
 
 <a id="review"></a>
 ## Code Review
@@ -456,8 +508,14 @@ The current list of SPDK core maintainers includes:
 * Changpeng Liu
 * Alexey Marchuk
 * Shuhei Matsumoto
+* Konrad Sztyber
 * Ben Walker
 * Tomek Zawadzki
+
+Additionally, SPDK has two maintainers focused on the spdk-csi project:
+
+* Yibo Cai
+* Antti Kervinen
 
 The bulk of this technical oversight is achieved through reviewing and approving patches.  Patches
 must receive +2 votes from two core maintainers and a +1 vote from the SPDK automated test pool before

@@ -6,7 +6,8 @@ var general =
         [ "Events", "event.html#event_component_events", null ],
         [ "Reactors", "event.html#event_component_reactors", null ],
         [ "Pollers", "event.html#event_component_pollers", null ],
-        [ "Application Framework", "event.html#event_component_app", null ]
+        [ "Application Framework", "event.html#event_component_app", null ],
+        [ "Custom shutdown callback", "event.html#event_component_shutdown", null ]
       ] ]
     ] ],
     [ "Scheduler", "scheduler.html", null ],
@@ -28,9 +29,12 @@ var general =
       [ "Acceleration Low Level Libraries", "accel_fw.html#accel_libs", null ],
       [ "Acceleration Plug-In Modules", "accel_fw.html#accel_modules", [
         [ "IOAT Module", "accel_fw.html#accel_ioat", null ],
-        [ "IDXD Module", "accel_fw.html#accel_idxd", null ],
+        [ "DSA Module", "accel_fw.html#accel_dsa", [
+          [ "How to use kernel idxd driver", "accel_fw.html#accel_idxd_kernel", null ]
+        ] ],
         [ "Software Module", "accel_fw.html#accel_sw", null ],
-        [ "Batching", "accel_fw.html#batching", null ]
+        [ "dpdk_cryptodev", "accel_fw.html#accel_dpdk_cryptodev", null ],
+        [ "Module to Operation Code Assignment", "accel_fw.html#accel_assignments", null ]
       ] ]
     ] ]
 ];

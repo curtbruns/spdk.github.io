@@ -24,7 +24,8 @@ var driver_modules =
         [ "Limitations", "nvme.html#nvme_multi_process_limitations", null ]
       ] ],
       [ "NVMe Hotplug", "nvme.html#nvme_hotplug", null ],
-      [ "NVMe Character Devices", "nvme.html#nvme_cuse", null ]
+      [ "NVMe Character Devices", "nvme.html#nvme_cuse", null ],
+      [ "NVMe LED management", "nvme.html#nvme_led", null ]
     ] ],
     [ "I/OAT Driver", "ioat.html", [
       [ "Public Interface", "ioat.html#ioat_interface", null ],
@@ -33,7 +34,7 @@ var driver_modules =
     [ "IDXD Driver", "idxd.html", [
       [ "Public Interface", "idxd.html#idxd_interface", null ],
       [ "Key Functions", "idxd.html#idxd_key_functions", null ],
-      [ "Pre-defined configurations", "idxd.html#idxd_configs", null ]
+      [ "Kernel vs User", "idxd.html#idxd_configs", null ]
     ] ],
     [ "Virtio driver", "virtio.html", [
       [ "Introduction", "virtio.html#virtio_intro", null ],
